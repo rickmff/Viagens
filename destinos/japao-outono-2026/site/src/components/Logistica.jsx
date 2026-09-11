@@ -1,10 +1,12 @@
 import { Secao, Card, Chip, Rotulo } from './Secao'
-import { data, dataCurta, duracao, moeda, paraData } from '../lib/formato'
+import { data, dataCurta, duracao, paraData } from '../lib/formato'
+import { usePrecos } from '../lib/precos'
 import { temConteudo } from '../lib/viagem'
 
 const TOM_STATUS = { cotado: 'neutro', reservado: 'acento', emitido: 'bom' }
 
 function Voo({ voo }) {
+  const { fmt } = usePrecos()
   const p = paraData(voo.partida), c = paraData(voo.chegada)
   const hora = (d) => d ? `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}` : '—'
   // Chegar num dia diferente do embarque é regra em voo longo, e é o detalhe
@@ -47,15 +49,14 @@ function Voo({ voo }) {
         {voo.cia && <Chip>{voo.cia}</Chip>}
         {voo.voo && <Chip>{voo.voo}</Chip>}
         {voo.localizador && <Chip tom="acento">{voo.localizador}</Chip>}
-        {voo.custo?.valor != null && (
-          <Chip>{moeda(voo.custo.valor, voo.custo.moeda)}{voo.custo.por === 'pessoa' ? ' / pessoa' : ''}</Chip>
-        )}
+        {voo.custo?.valor != null && <Chip>{fmt(voo.custo)}</Chip>}
       </div>
     </Card>
   )
 }
 
 export default function Logistica({ viagem }) {
+  const { fmt } = usePrecos()
   const { voos = [], hospedagens = [], transportes = [] } = viagem
   if (!temConteudo(voos, hospedagens, transportes)) return null
 
@@ -90,7 +91,7 @@ export default function Logistica({ viagem }) {
               {h.porque && <p className="mt-2 text-sm text-tinta-2 text-pretty">{h.porque}</p>}
               {h.custo?.valor != null && (
                 <p className="mt-2 text-sm font-medium">
-                  {moeda(h.custo.valor, h.custo.moeda)}
+                  {fmt(h.custo, { sufixo: false })}
                   <span className="text-tinta-3"> {h.custo.por === 'pessoa' ? '/ pessoa' : 'no total'}</span>
                 </p>
               )}
@@ -110,10 +111,7 @@ export default function Logistica({ viagem }) {
                   {t.observacao && <p className="text-sm text-tinta-2 text-pretty">{t.observacao}</p>}
                 </div>
                 {t.custo?.valor != null && (
-                  <span className="shrink-0 text-sm tabular-nums">
-                    {moeda(t.custo.valor, t.custo.moeda)}
-                    {t.custo.por === 'pessoa' ? ' / pessoa' : ''}
-                  </span>
+                  <span className="shrink-0 text-sm tabular-nums">{fmt(t.custo)}</span>
                 )}
               </li>
             ))}

@@ -35,6 +35,51 @@ Cheque explicitamente, porque cada um já barrou alguém no portão:
 Anote `documentacao.verificadoEm` com a data da consulta. Sem isso a informação
 não é auditável e daqui a três meses ninguém sabe se ainda vale.
 
+## Calendário: festivais, sazonalidade e aberturas
+
+Isto vem antes de preço. Padrões de busca:
+
+```
+"festivais <cidade> <mês> <ano>"
+"<city> events calendar <month> <year>"
+"<país> feriados <ano>"                      # feriados nacionais
+"vacances scolaires <ano> zones"             # França; cada país tem o seu
+"<fenômeno> previsão <ano>"                  # folhas de outono, floração, neve
+"<atração> horário de funcionamento dia de fecho"
+"<attraction> opening hours closed day"
+```
+
+**Fenômeno sazonal pede a previsão daquele ano, não a média histórica.** Datas
+de floração e de folhagem se deslocam com o clima do ano, e recomendar a média
+faz a pessoa chegar uma semana cedo demais no exato motivo da viagem.
+
+**Janela de venda de ingresso** é fato que molda o plano:
+
+```
+"<atração> quando abrem as vendas antecedência"
+"<attraction> tickets release date how far in advance"
+```
+
+Coliseu abre 30 dias antes às 9h de Roma; Torre Eiffel, 60 dias. Converta para
+o fuso do Brasil e escreva a data e a hora exatas no checklist.
+
+Ferramenta de busca de locais devolve horário por dia da semana — use isso e
+confira cada parada contra o dia em que ela vai cair.
+
+## Voos
+
+```
+"voos <origem> <destino> <mês> <ano> mais barato"
+"<city A> to <city B> multi-city open jaw"
+"<companhia> site oficial"
+"aeroportos próximos de <cidade>"
+```
+
+Compare no agregador, compre no site da companhia. Cheque sempre se
+multidestino (entra por uma cidade, sai por outra) não sai igual ou mais
+barato — costuma economizar um dia inteiro de trem.
+
+
 ## Clima e sazonalidade
 
 **Previsão (só até ~16 dias):**
@@ -111,6 +156,19 @@ resultado com data visível e converta para BRL na hora, anotando a taxa usada.
 Colete pelo menos: voo ida e volta do Brasil no período, diária de hospedagem
 na faixa do perfil, refeição simples, refeição decente, transporte urbano
 diário ou passe, e ingresso das três atrações principais.
+
+Dois itens que quase sempre escapam e mudam o total:
+
+```
+"<cidade> taxa de turismo por noite <ano>"     # Roma cobra ~€6 pp/noite
+"<país> tarifa residente não residente museu"  # França desde 2026
+"<serviço de aeroporto> <ano>"                 # pega serviço extinto
+```
+
+Taxa de turismo é linha de orçamento, cobrada na hospedagem e por pessoa por
+noite. Tarifa dupla residente/visitante vira duas colunas no `trip.json` e um
+botão no site. E busca com o ano no fim é o que revela que aquele ônibus de
+aeroporto recomendado pelo blog foi desativado há três anos.
 
 ## Transporte, bairros e roteiro
 

@@ -5,28 +5,65 @@
   "subtitulo": "Tóquio e Kyoto em 9 dias, com folgas para o jet lag e para chover.",
   "atualizadoEm": "2026-09-11",
   "status": "planejando",
-  "periodo": { "inicio": "2026-10-12", "fim": "2026-10-20" },
+  "periodo": {
+    "inicio": "2026-10-12",
+    "fim": "2026-10-20"
+  },
   "moedaBase": "BRL",
-  "origem": { "cidade": "São Paulo", "iata": "GRU" },
-  "viajantes": [{ "id": "rick", "nome": "Rick" }, { "id": "par", "nome": "Acompanhante" }],
-
-  "destinos": [
+  "origem": {
+    "cidade": "São Paulo",
+    "iata": "GRU"
+  },
+  "viajantes": [
     {
-      "id": "tokyo", "nome": "Tóquio", "pais": "Japão", "paisISO": "JP",
-      "moeda": "JPY", "lat": 35.6762, "lon": 139.6503, "fuso": "Asia/Tokyo",
-      "chegada": "2026-10-13", "saida": "2026-10-17",
-      "bairroBase": "Shinjuku",
-      "resumo": "Base para o começo da viagem: aeroporto perto, metrô denso e comida boa a qualquer hora."
+      "id": "rick",
+      "nome": "Rick"
     },
     {
-      "id": "kyoto", "nome": "Kyoto", "pais": "Japão", "paisISO": "JP",
-      "moeda": "JPY", "lat": 35.0116, "lon": 135.7681, "fuso": "Asia/Tokyo",
-      "chegada": "2026-10-17", "saida": "2026-10-20",
-      "bairroBase": "Higashiyama",
-      "resumo": "Ritmo mais lento, templos e a parte da viagem que pede caminhar sem hora."
+      "id": "par",
+      "nome": "Acompanhante"
     }
   ],
-
+  "destinos": [
+    {
+      "id": "tokyo",
+      "nome": "Tóquio",
+      "pais": "Japão",
+      "paisISO": "JP",
+      "moeda": "JPY",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "fuso": "Asia/Tokyo",
+      "chegada": "2026-10-13",
+      "saida": "2026-10-17",
+      "bairroBase": "Shinjuku",
+      "resumo": "Base para o começo da viagem: aeroporto perto, metrô denso e comida boa a qualquer hora.",
+      "taxaTurismo": {
+        "valor": 200,
+        "moeda": "JPY",
+        "por": "pessoa-noite"
+      }
+    },
+    {
+      "id": "kyoto",
+      "nome": "Kyoto",
+      "pais": "Japão",
+      "paisISO": "JP",
+      "moeda": "JPY",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "fuso": "Asia/Tokyo",
+      "chegada": "2026-10-17",
+      "saida": "2026-10-20",
+      "bairroBase": "Higashiyama",
+      "resumo": "Ritmo mais lento, templos e a parte da viagem que pede caminhar sem hora.",
+      "taxaTurismo": {
+        "valor": 200,
+        "moeda": "JPY",
+        "por": "pessoa-noite"
+      }
+    }
+  ],
   "documentacao": {
     "verificadoEm": "2026-09-11",
     "visto": {
@@ -34,207 +71,682 @@
       "detalhe": "Brasileiros têm isenção de visto para turismo por até 90 dias. Confirme no consulado antes de emitir passagem.",
       "fonte": "https://www.br.emb-japan.go.jp/"
     },
-    "passaporte": { "validadeMinimaMeses": 6, "observacao": "Contados a partir da data de retorno." },
-    "vacinas": [{ "nome": "Febre amarela", "obrigatoria": false, "observacao": "Não exigida para entrada vindo do Brasil." }],
-    "seguro": { "obrigatorio": false, "coberturaMinima": null, "observacao": "Não é exigido, mas atendimento médico particular no Japão é caro." },
-    "alfandega": ["Declarar valores acima de 1 milhão de ienes em espécie", "Alguns medicamentos comuns no Brasil são proibidos — confira a lista antes"],
+    "passaporte": {
+      "validadeMinimaMeses": 6,
+      "observacao": "Contados a partir da data de retorno."
+    },
+    "vacinas": [
+      {
+        "nome": "Febre amarela",
+        "obrigatoria": false,
+        "observacao": "Não exigida para entrada vindo do Brasil."
+      }
+    ],
+    "seguro": {
+      "obrigatorio": false,
+      "coberturaMinima": null,
+      "observacao": "Não é exigido, mas atendimento médico particular no Japão é caro."
+    },
+    "alfandega": [
+      "Declarar valores acima de 1 milhão de ienes em espécie",
+      "Alguns medicamentos comuns no Brasil são proibidos — confira a lista antes"
+    ],
     "checklist": [
-      { "id": "doc-passaporte", "texto": "Conferir validade do passaporte (até abr/2027)", "prazo": "2026-09-30" },
-      { "id": "doc-seguro", "texto": "Contratar seguro viagem", "prazo": "2026-10-05" },
-      { "id": "doc-esim", "texto": "Comprar eSIM de dados", "prazo": "2026-10-10" }
+      {
+        "id": "doc-passaporte",
+        "texto": "Conferir validade do passaporte (até abr/2027)",
+        "prazo": "2026-09-30"
+      },
+      {
+        "id": "doc-seguro",
+        "texto": "Contratar seguro viagem",
+        "prazo": "2026-10-05"
+      },
+      {
+        "id": "doc-esim",
+        "texto": "Comprar eSIM de dados",
+        "prazo": "2026-10-10"
+      }
     ]
   },
-
   "voos": [
     {
-      "id": "ida", "tipo": "ida", "de": "GRU", "para": "HND",
-      "partida": "2026-10-12T01:30", "chegada": "2026-10-13T16:55",
-      "cia": "Emirates", "voo": "EK 262", "escalas": ["DXB"],
+      "id": "ida",
+      "tipo": "ida",
+      "de": "GRU",
+      "para": "HND",
+      "partida": "2026-10-12T01:30",
+      "chegada": "2026-10-13T16:55",
+      "cia": "Emirates",
+      "voo": "EK 262",
+      "escalas": [
+        "DXB"
+      ],
       "duracaoTotalMin": 1645,
-      "custo": { "valor": 6200, "moeda": "BRL", "por": "pessoa" },
+      "custo": {
+        "valor": 6200,
+        "moeda": "BRL",
+        "por": "pessoa"
+      },
       "status": "cotado"
     },
     {
-      "id": "volta", "tipo": "volta", "de": "KIX", "para": "GRU",
-      "partida": "2026-10-20T22:10", "chegada": "2026-10-21T18:40",
-      "cia": "Emirates", "voo": "EK 317", "escalas": ["DXB"],
+      "id": "volta",
+      "tipo": "volta",
+      "de": "KIX",
+      "para": "GRU",
+      "partida": "2026-10-20T22:10",
+      "chegada": "2026-10-21T18:40",
+      "cia": "Emirates",
+      "voo": "EK 317",
+      "escalas": [
+        "DXB"
+      ],
       "duracaoTotalMin": 1590,
-      "custo": { "valor": 6200, "moeda": "BRL", "por": "pessoa" },
+      "custo": {
+        "valor": 6200,
+        "moeda": "BRL",
+        "por": "pessoa"
+      },
       "status": "cotado"
     }
   ],
-
   "hospedagens": [
     {
-      "id": "hosp-tokyo", "destinoId": "tokyo", "nome": "Hotel em Shinjuku",
-      "checkin": "2026-10-13", "checkout": "2026-10-17",
-      "lat": 35.6938, "lon": 139.7034,
-      "custo": { "valor": 3200, "moeda": "BRL", "por": "total" },
+      "id": "hosp-tokyo",
+      "destinoId": "tokyo",
+      "nome": "Hotel em Shinjuku",
+      "checkin": "2026-10-13",
+      "checkout": "2026-10-17",
+      "lat": 35.6938,
+      "lon": 139.7034,
+      "custo": {
+        "valor": 3200,
+        "moeda": "BRL",
+        "por": "total"
+      },
       "porque": "Quatro minutos a pé da estação, e o bairro continua vivo depois da meia-noite — resolve o jantar tardio de quem chegou com jet lag.",
       "status": "cotado"
     },
     {
-      "id": "hosp-kyoto", "destinoId": "kyoto", "nome": "Ryokan em Higashiyama",
-      "checkin": "2026-10-17", "checkout": "2026-10-20",
-      "lat": 34.9989, "lon": 135.7823,
-      "custo": { "valor": 2700, "moeda": "BRL", "por": "total" },
+      "id": "hosp-kyoto",
+      "destinoId": "kyoto",
+      "nome": "Ryokan em Higashiyama",
+      "checkin": "2026-10-17",
+      "checkout": "2026-10-20",
+      "lat": 34.9989,
+      "lon": 135.7823,
+      "custo": {
+        "valor": 2700,
+        "moeda": "BRL",
+        "por": "total"
+      },
       "porque": "Dá para sair a pé para os templos antes das oito e pegar tudo vazio.",
       "status": "cotado"
     }
   ],
-
   "transportes": [
     {
-      "id": "shinkansen", "tipo": "trem", "nome": "Shinkansen Tóquio → Kyoto",
-      "custo": { "valor": 14000, "moeda": "JPY", "por": "pessoa" },
-      "cobre": ["tokyo", "kyoto"],
+      "id": "shinkansen",
+      "tipo": "trem",
+      "nome": "Shinkansen Tóquio → Kyoto",
+      "custo": {
+        "valor": 14000,
+        "moeda": "JPY",
+        "por": "pessoa"
+      },
+      "cobre": [
+        "tokyo",
+        "kyoto"
+      ],
       "observacao": "Trecho único sai mais barato que o JR Pass para este roteiro — o passe só compensa com mais idas e voltas."
     },
     {
-      "id": "suica", "tipo": "passe", "nome": "Cartão Suica (metrô e conveniência)",
-      "custo": { "valor": 5000, "moeda": "JPY", "por": "pessoa" },
-      "cobre": ["tokyo", "kyoto"],
+      "id": "suica",
+      "tipo": "passe",
+      "nome": "Cartão Suica (metrô e conveniência)",
+      "custo": {
+        "valor": 5000,
+        "moeda": "JPY",
+        "por": "pessoa"
+      },
+      "cobre": [
+        "tokyo",
+        "kyoto"
+      ],
       "observacao": "Recarregável, serve também para pagar em máquina e loja de conveniência."
     }
   ],
-
   "dias": [
     {
-      "data": "2026-10-13", "destinoId": "tokyo", "titulo": "Chegada e Shibuya devagar",
+      "data": "2026-10-13",
+      "destinoId": "tokyo",
+      "titulo": "Chegada e Shibuya devagar",
       "notas": "Chega no fim da tarde. Nada que exija energia ou horário marcado.",
       "blocos": [
-        { "id": "b1", "hora": "18:30", "duracaoMin": 60, "tipo": "deslocamento",
-          "titulo": "Haneda → Shinjuku de monotrilho", "lat": 35.5494, "lon": 139.7798,
-          "custo": { "valor": 500, "moeda": "JPY", "por": "pessoa" } },
-        { "id": "b2", "hora": "20:30", "duracaoMin": 90, "tipo": "refeicao",
-          "titulo": "Ramen em Omoide Yokocho", "lat": 35.6938, "lon": 139.6995,
-          "custo": { "valor": 1200, "moeda": "JPY", "por": "pessoa" },
-          "notas": "Beco de fumaça e balcão apertado. Leve dinheiro vivo." }
-      ]
+        {
+          "id": "b1",
+          "hora": "18:30",
+          "duracaoMin": 60,
+          "tipo": "deslocamento",
+          "titulo": "Haneda → Shinjuku de monotrilho",
+          "lat": 35.5494,
+          "lon": 139.7798,
+          "custo": {
+            "valor": 500,
+            "moeda": "JPY",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "b2",
+          "hora": "20:30",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Ramen em Omoide Yokocho",
+          "lat": 35.6938,
+          "lon": 139.6995,
+          "custo": {
+            "valor": 1200,
+            "moeda": "JPY",
+            "por": "pessoa"
+          },
+          "notas": "Beco de fumaça e balcão apertado. Leve dinheiro vivo."
+        }
+      ],
+      "cortavel": false
     },
     {
-      "data": "2026-10-14", "destinoId": "tokyo", "titulo": "Shibuya, Harajuku e o pôr do sol lá de cima",
+      "data": "2026-10-14",
+      "destinoId": "tokyo",
+      "titulo": "Shibuya, Harajuku e o pôr do sol lá de cima",
       "blocos": [
-        { "id": "b3", "hora": "10:00", "duracaoMin": 120, "tipo": "atracao",
-          "titulo": "Santuário Meiji Jingu", "lat": 35.6764, "lon": 139.6993,
-          "notas": "Entra cedo: a floresta em volta segura o calor e o barulho." },
-        { "id": "b4", "hora": "13:00", "duracaoMin": 120, "tipo": "compras",
-          "titulo": "Takeshita e Omotesando", "lat": 35.6702, "lon": 139.7027 },
-        { "id": "b5", "hora": "16:30", "duracaoMin": 120, "tipo": "atracao",
-          "titulo": "Shibuya Sky no pôr do sol", "lat": 35.6580, "lon": 139.7016,
-          "custo": { "valor": 2500, "moeda": "JPY", "por": "pessoa" },
+        {
+          "id": "b3",
+          "hora": "10:00",
+          "duracaoMin": 120,
+          "tipo": "atracao",
+          "titulo": "Santuário Meiji Jingu",
+          "lat": 35.6764,
+          "lon": 139.6993,
+          "notas": "Entra cedo: a floresta em volta segura o calor e o barulho."
+        },
+        {
+          "id": "b4",
+          "hora": "13:00",
+          "duracaoMin": 120,
+          "tipo": "compras",
+          "titulo": "Takeshita e Omotesando",
+          "lat": 35.6702,
+          "lon": 139.7027
+        },
+        {
+          "id": "b5",
+          "hora": "16:30",
+          "duracaoMin": 120,
+          "tipo": "atracao",
+          "titulo": "Shibuya Sky no pôr do sol",
+          "lat": 35.658,
+          "lon": 139.7016,
+          "custo": {
+            "valor": 2500,
+            "moeda": "JPY",
+            "por": "pessoa"
+          },
           "reservaNecessaria": true,
           "notas": "Ingresso com data e hora, esgota para o horário do pôr do sol.",
-          "alternativa": "Se chover, o observatório do Metropolitan Government é coberto e gratuito." }
-      ]
+          "alternativa": "Se chover, o observatório do Metropolitan Government é coberto e gratuito."
+        }
+      ],
+      "cortavel": false
     },
     {
-      "data": "2026-10-15", "destinoId": "tokyo", "titulo": "Mercado, Asakusa e rio",
+      "data": "2026-10-15",
+      "destinoId": "tokyo",
+      "titulo": "Mercado, Asakusa e rio",
       "blocos": [
-        { "id": "b6", "hora": "08:00", "duracaoMin": 120, "tipo": "refeicao",
-          "titulo": "Café da manhã no Tsukiji Outer Market", "lat": 35.6654, "lon": 139.7707,
-          "custo": { "valor": 3000, "moeda": "JPY", "por": "pessoa" } },
-        { "id": "b7", "hora": "11:00", "duracaoMin": 150, "tipo": "atracao",
-          "titulo": "Senso-ji e Nakamise", "lat": 35.7148, "lon": 139.7967 },
-        { "id": "b8", "hora": "15:00", "duracaoMin": 60, "tipo": "deslocamento",
-          "titulo": "Barco pelo rio Sumida até Hamarikyu", "lat": 35.7108, "lon": 139.7995,
-          "custo": { "valor": 1040, "moeda": "JPY", "por": "pessoa" },
-          "alternativa": "Com chuva forte o barco não sai — vale o Edo-Tokyo Museum." }
-      ]
+        {
+          "id": "b6",
+          "hora": "08:00",
+          "duracaoMin": 120,
+          "tipo": "refeicao",
+          "titulo": "Café da manhã no Tsukiji Outer Market",
+          "lat": 35.6654,
+          "lon": 139.7707,
+          "custo": {
+            "valor": 3000,
+            "moeda": "JPY",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "b7",
+          "hora": "11:00",
+          "duracaoMin": 150,
+          "tipo": "atracao",
+          "titulo": "Senso-ji e Nakamise",
+          "lat": 35.7148,
+          "lon": 139.7967
+        },
+        {
+          "id": "b8",
+          "hora": "15:00",
+          "duracaoMin": 60,
+          "tipo": "deslocamento",
+          "titulo": "Barco pelo rio Sumida até Hamarikyu",
+          "lat": 35.7108,
+          "lon": 139.7995,
+          "custo": {
+            "valor": 1040,
+            "moeda": "JPY",
+            "por": "pessoa"
+          },
+          "alternativa": "Com chuva forte o barco não sai — vale o Edo-Tokyo Museum."
+        }
+      ],
+      "cortavel": false
     },
     {
-      "data": "2026-10-16", "destinoId": "tokyo", "titulo": "Dia livre",
+      "data": "2026-10-16",
+      "destinoId": "tokyo",
+      "titulo": "Dia livre",
       "notas": "Sem nada marcado de propósito: até aqui a viagem já rendeu, e é o dia que absorve o que sobrar.",
-      "blocos": []
+      "blocos": [],
+      "cortavel": true
     },
     {
-      "data": "2026-10-17", "destinoId": "kyoto", "titulo": "Shinkansen e primeira noite em Kyoto",
+      "data": "2026-10-17",
+      "destinoId": "kyoto",
+      "titulo": "Shinkansen e primeira noite em Kyoto",
       "blocos": [
-        { "id": "b9", "hora": "09:30", "duracaoMin": 140, "tipo": "deslocamento",
-          "titulo": "Shinkansen Tóquio → Kyoto", "lat": 35.6812, "lon": 139.7671,
-          "custo": { "valor": 14000, "moeda": "JPY", "por": "pessoa" },
-          "notas": "Lado direito da cabine pega o Monte Fuji em dia limpo." },
-        { "id": "b10", "hora": "16:00", "duracaoMin": 120, "tipo": "atracao",
-          "titulo": "Caminhada por Gion ao entardecer", "lat": 35.0036, "lon": 135.7788 }
+        {
+          "id": "b9",
+          "hora": "09:30",
+          "duracaoMin": 140,
+          "tipo": "deslocamento",
+          "titulo": "Shinkansen Tóquio → Kyoto",
+          "lat": 35.6812,
+          "lon": 139.7671,
+          "custo": {
+            "valor": 14000,
+            "moeda": "JPY",
+            "por": "pessoa"
+          },
+          "notas": "Lado direito da cabine pega o Monte Fuji em dia limpo."
+        },
+        {
+          "id": "b10",
+          "hora": "16:00",
+          "duracaoMin": 120,
+          "tipo": "atracao",
+          "titulo": "Caminhada por Gion ao entardecer",
+          "lat": 35.0036,
+          "lon": 135.7788
+        }
+      ],
+      "cortavel": false
+    },
+    {
+      "data": "2026-10-18",
+      "destinoId": "kyoto",
+      "titulo": "Fushimi Inari antes do sol",
+      "blocos": [
+        {
+          "id": "b11",
+          "hora": "06:30",
+          "duracaoMin": 180,
+          "tipo": "atracao",
+          "titulo": "Fushimi Inari Taisha",
+          "lat": 34.9671,
+          "lon": 135.7727,
+          "notas": "Às 6h30 os portões estão vazios. Às 9h é fila."
+        },
+        {
+          "id": "b12",
+          "hora": "12:00",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Almoço no Nishiki Market",
+          "lat": 35.005,
+          "lon": 135.7649,
+          "custo": {
+            "valor": 2000,
+            "moeda": "JPY",
+            "por": "pessoa"
+          }
+        }
+      ],
+      "cortavel": false
+    },
+    {
+      "data": "2026-10-19",
+      "destinoId": "kyoto",
+      "titulo": "Arashiyama",
+      "blocos": [
+        {
+          "id": "b13",
+          "hora": "08:30",
+          "duracaoMin": 240,
+          "tipo": "atracao",
+          "titulo": "Bambuzal e Tenryu-ji",
+          "lat": 35.017,
+          "lon": 135.6716,
+          "custo": {
+            "valor": 800,
+            "moeda": "JPY",
+            "por": "pessoa"
+          },
+          "alternativa": "Chovendo, o bambuzal fica ainda melhor — só leve guarda-chuva."
+        }
+      ],
+      "cortavel": false
+    },
+    {
+      "data": "2026-10-20",
+      "destinoId": "kyoto",
+      "titulo": "Volta",
+      "blocos": [
+        {
+          "id": "b14",
+          "hora": "19:00",
+          "duracaoMin": 90,
+          "tipo": "deslocamento",
+          "titulo": "Kyoto → Aeroporto de Kansai (Haruka)",
+          "lat": 34.9858,
+          "lon": 135.7588,
+          "custo": {
+            "valor": 3600,
+            "moeda": "JPY",
+            "por": "pessoa"
+          }
+        }
+      ],
+      "cortavel": false
+    }
+  ],
+  "orcamento": {
+    "teto": {
+      "valor": 32000,
+      "moeda": "BRL"
+    },
+    "cambioReferencia": [
+      {
+        "de": "JPY",
+        "para": "BRL",
+        "taxa": 0.0332,
+        "em": "2026-09-11"
+      }
+    ],
+    "categorias": [
+      {
+        "id": "voos",
+        "nome": "Voos",
+        "previsto": 12400,
+        "real": null,
+        "observacao": "Ida e volta para 2 pessoas, tarifa cotada em set/26.",
+        "economico": 10800
+      },
+      {
+        "id": "hospedagem",
+        "nome": "Hospedagem",
+        "previsto": 5900,
+        "real": null,
+        "observacao": "4 noites em Tóquio + 3 em Kyoto, valores totais.",
+        "economico": 4300
+      },
+      {
+        "id": "taxa-turismo",
+        "nome": "Taxa de turismo",
+        "previsto": 190,
+        "economico": 190,
+        "real": null,
+        "observacao": "¥200 por pessoa por noite, 7 noites, 2 pessoas — cobrada na hospedagem."
+      },
+      {
+        "id": "alimentacao",
+        "nome": "Alimentação",
+        "previsto": 4200,
+        "real": null,
+        "observacao": "R$ 260 por pessoa por dia — dá conta de comida de rua e um jantar melhor a cada 3 dias. Comer bem é o motivo da viagem — não corta aqui.",
+        "economico": 4200,
+        "intocavel": true
+      },
+      {
+        "id": "transporte-local",
+        "nome": "Transporte local",
+        "previsto": 2400,
+        "real": null,
+        "observacao": "Shinkansen, Suica e traslados de aeroporto para 2.",
+        "economico": 2100
+      },
+      {
+        "id": "atracoes",
+        "nome": "Atrações",
+        "previsto": 1100,
+        "real": null,
+        "observacao": "Ingressos dos blocos do roteiro. As atrações são o motivo da viagem — não corta aqui.",
+        "economico": 1100,
+        "intocavel": true
+      },
+      {
+        "id": "documentacao",
+        "nome": "Documentação",
+        "previsto": 600,
+        "real": null,
+        "observacao": "Seguro viagem para 2.",
+        "economico": 600
+      },
+      {
+        "id": "conectividade",
+        "nome": "Conectividade",
+        "previsto": 300,
+        "real": null,
+        "observacao": "eSIM de dados, 2 linhas.",
+        "economico": 300
+      },
+      {
+        "id": "extras",
+        "nome": "Extras e compras",
+        "previsto": 1800,
+        "real": null,
+        "economico": 900
+      }
+    ],
+    "reserva": {
+      "valor": 3300,
+      "moeda": "BRL",
+      "percentual": 10
+    },
+    "tetoPor": "total"
+  },
+  "bagagem": [
+    {
+      "categoria": "Documentos",
+      "itens": [
+        "Passaporte",
+        "Apólice do seguro impressa",
+        "Cartão de embarque offline",
+        "Cópia digital de tudo no celular"
       ]
     },
     {
-      "data": "2026-10-18", "destinoId": "kyoto", "titulo": "Fushimi Inari antes do sol",
-      "blocos": [
-        { "id": "b11", "hora": "06:30", "duracaoMin": 180, "tipo": "atracao",
-          "titulo": "Fushimi Inari Taisha", "lat": 34.9671, "lon": 135.7727,
-          "notas": "Às 6h30 os portões estão vazios. Às 9h é fila." },
-        { "id": "b12", "hora": "12:00", "duracaoMin": 90, "tipo": "refeicao",
-          "titulo": "Almoço no Nishiki Market", "lat": 35.0050, "lon": 135.7649,
-          "custo": { "valor": 2000, "moeda": "JPY", "por": "pessoa" } }
+      "categoria": "Eletrônicos",
+      "itens": [
+        "Adaptador tipo A 100V",
+        "Power bank",
+        "Carregador rápido",
+        "Fone"
       ]
     },
     {
-      "data": "2026-10-19", "destinoId": "kyoto", "titulo": "Arashiyama",
-      "blocos": [
-        { "id": "b13", "hora": "08:30", "duracaoMin": 240, "tipo": "atracao",
-          "titulo": "Bambuzal e Tenryu-ji", "lat": 35.0170, "lon": 135.6716,
-          "custo": { "valor": 800, "moeda": "JPY", "por": "pessoa" },
-          "alternativa": "Chovendo, o bambuzal fica ainda melhor — só leve guarda-chuva." }
+      "categoria": "Roupa (outono, 12–22°C)",
+      "itens": [
+        "Casaco leve",
+        "Camadas para sobrepor",
+        "Tênis confortável de caminhada",
+        "Guarda-chuva dobrável",
+        "Meias extras"
       ]
     },
     {
-      "data": "2026-10-20", "destinoId": "kyoto", "titulo": "Volta",
-      "blocos": [
-        { "id": "b14", "hora": "19:00", "duracaoMin": 90, "tipo": "deslocamento",
-          "titulo": "Kyoto → Aeroporto de Kansai (Haruka)", "lat": 34.9858, "lon": 135.7588,
-          "custo": { "valor": 3600, "moeda": "JPY", "por": "pessoa" } }
+      "categoria": "Saúde",
+      "itens": [
+        "Remédios de uso contínuo com receita",
+        "Analgésico",
+        "Curativo para bolha"
+      ]
+    },
+    {
+      "categoria": "Dinheiro",
+      "itens": [
+        "Cartão sem IOF",
+        "Ienes em espécie para os becos",
+        "Cartão reserva guardado separado"
       ]
     }
   ],
-
-  "orcamento": {
-    "teto": { "valor": 32000, "moeda": "BRL" },
-    "cambioReferencia": [{ "de": "JPY", "para": "BRL", "taxa": 0.0332, "em": "2026-09-11" }],
-    "categorias": [
-      { "id": "voos", "nome": "Voos", "previsto": 12400, "real": null, "observacao": "Ida e volta para 2 pessoas, tarifa cotada em set/26." },
-      { "id": "hospedagem", "nome": "Hospedagem", "previsto": 5900, "real": null, "observacao": "4 noites em Tóquio + 3 em Kyoto, valores totais." },
-      { "id": "alimentacao", "nome": "Alimentação", "previsto": 4200, "real": null, "observacao": "R$ 260 por pessoa por dia — dá conta de comida de rua e um jantar melhor a cada 3 dias." },
-      { "id": "transporte-local", "nome": "Transporte local", "previsto": 2400, "real": null, "observacao": "Shinkansen, Suica e traslados de aeroporto para 2." },
-      { "id": "atracoes", "nome": "Atrações", "previsto": 1100, "real": null, "observacao": "Ingressos dos blocos do roteiro." },
-      { "id": "documentacao", "nome": "Documentação", "previsto": 600, "real": null, "observacao": "Seguro viagem para 2." },
-      { "id": "conectividade", "nome": "Conectividade", "previsto": 300, "real": null, "observacao": "eSIM de dados, 2 linhas." },
-      { "id": "extras", "nome": "Extras e compras", "previsto": 1800, "real": null }
-    ],
-    "reserva": { "valor": 3300, "moeda": "BRL", "percentual": 10 }
-  },
-
-  "bagagem": [
-    { "categoria": "Documentos", "itens": ["Passaporte", "Apólice do seguro impressa", "Cartão de embarque offline", "Cópia digital de tudo no celular"] },
-    { "categoria": "Eletrônicos", "itens": ["Adaptador tipo A 100V", "Power bank", "Carregador rápido", "Fone"] },
-    { "categoria": "Roupa (outono, 12–22°C)", "itens": ["Casaco leve", "Camadas para sobrepor", "Tênis confortável de caminhada", "Guarda-chuva dobrável", "Meias extras"] },
-    { "categoria": "Saúde", "itens": ["Remédios de uso contínuo com receita", "Analgésico", "Curativo para bolha"] },
-    { "categoria": "Dinheiro", "itens": ["Cartão sem IOF", "Ienes em espécie para os becos", "Cartão reserva guardado separado"] }
-  ],
-
   "gastronomia": [
-    { "nome": "Tsukiji Outer Market", "destinoId": "tokyo", "tipo": "mercado", "lat": 35.6654, "lon": 139.7707, "faixaPreco": "$$", "porque": "Café da manhã de peixe a poucos metros de onde ele foi leiloado." },
-    { "nome": "Omoide Yokocho", "destinoId": "tokyo", "tipo": "beco de yakitori", "lat": 35.6938, "lon": 139.6995, "faixaPreco": "$$", "porque": "Sete lugares por balcão, fumaça e nenhum cardápio em inglês." },
-    { "nome": "Nishiki Market", "destinoId": "kyoto", "tipo": "mercado", "lat": 35.0050, "lon": 135.7649, "faixaPreco": "$$", "porque": "Cinco quarteirões cobertos de comida para provar em pé." }
+    {
+      "nome": "Tsukiji Outer Market",
+      "destinoId": "tokyo",
+      "tipo": "mercado",
+      "lat": 35.6654,
+      "lon": 139.7707,
+      "faixaPreco": "$$",
+      "porque": "Café da manhã de peixe a poucos metros de onde ele foi leiloado."
+    },
+    {
+      "nome": "Omoide Yokocho",
+      "destinoId": "tokyo",
+      "tipo": "beco de yakitori",
+      "lat": 35.6938,
+      "lon": 139.6995,
+      "faixaPreco": "$$",
+      "porque": "Sete lugares por balcão, fumaça e nenhum cardápio em inglês."
+    },
+    {
+      "nome": "Nishiki Market",
+      "destinoId": "kyoto",
+      "tipo": "mercado",
+      "lat": 35.005,
+      "lon": 135.7649,
+      "faixaPreco": "$$",
+      "porque": "Cinco quarteirões cobertos de comida para provar em pé."
+    }
   ],
-
   "frases": [
-    { "pt": "Com licença", "local": "すみません", "leitura": "sumimassen" },
-    { "pt": "Obrigado", "local": "ありがとうございます", "leitura": "arigatô gozaimassu" },
-    { "pt": "Quanto custa?", "local": "いくらですか", "leitura": "ikura desu ka" },
-    { "pt": "A conta, por favor", "local": "お会計お願いします", "leitura": "okaikei onegai shimassu" },
-    { "pt": "Onde fica o banheiro?", "local": "トイレはどこですか", "leitura": "toire wa doko desu ka" }
+    {
+      "pt": "Com licença",
+      "local": "すみません",
+      "leitura": "sumimassen"
+    },
+    {
+      "pt": "Obrigado",
+      "local": "ありがとうございます",
+      "leitura": "arigatô gozaimassu"
+    },
+    {
+      "pt": "Quanto custa?",
+      "local": "いくらですか",
+      "leitura": "ikura desu ka"
+    },
+    {
+      "pt": "A conta, por favor",
+      "local": "お会計お願いします",
+      "leitura": "okaikei onegai shimassu"
+    },
+    {
+      "pt": "Onde fica o banheiro?",
+      "local": "トイレはどこですか",
+      "leitura": "toire wa doko desu ka"
+    }
   ],
-
   "links": [
-    { "titulo": "Mapa do metrô de Tóquio", "url": "https://www.tokyometro.jp/en/subwaymap/", "categoria": "transporte" },
-    { "titulo": "Calculadora de rotas Japan Transit", "url": "https://world.jorudan.co.jp/mln/en/", "categoria": "transporte" },
-    { "titulo": "Consulado do Japão no Brasil", "url": "https://www.br.emb-japan.go.jp/", "categoria": "documentos" },
-    { "titulo": "Ingressos Shibuya Sky", "url": "https://www.shibuya-scramble-square.com/sky/", "categoria": "reservas" }
+    {
+      "titulo": "Mapa do metrô de Tóquio",
+      "url": "https://www.tokyometro.jp/en/subwaymap/",
+      "categoria": "transporte"
+    },
+    {
+      "titulo": "Calculadora de rotas Japan Transit",
+      "url": "https://world.jorudan.co.jp/mln/en/",
+      "categoria": "transporte"
+    },
+    {
+      "titulo": "Consulado do Japão no Brasil",
+      "url": "https://www.br.emb-japan.go.jp/",
+      "categoria": "documentos"
+    },
+    {
+      "titulo": "Ingressos Shibuya Sky",
+      "url": "https://www.shibuya-scramble-square.com/sky/",
+      "categoria": "reservas"
+    }
   ],
-
   "avisos": [
-    { "nivel": "atencao", "texto": "Outubro ainda pega cauda de temporada de tufão. Um dia perdido por chuva forte é cenário realista — por isso o dia 16 está livre." },
-    { "nivel": "info", "texto": "Muito estabelecimento pequeno só aceita dinheiro vivo. Ande sempre com alguns milhares de ienes." }
+    {
+      "nivel": "atencao",
+      "texto": "Outubro ainda pega cauda de temporada de tufão. Um dia perdido por chuva forte é cenário realista — por isso o dia 16 está livre."
+    },
+    {
+      "nivel": "info",
+      "texto": "Muito estabelecimento pequeno só aceita dinheiro vivo. Ande sempre com alguns milhares de ienes."
+    }
+  ],
+  "tarifaDupla": {
+    "ativo": false,
+    "rotulo": "Tarifa dos museus",
+    "rotuloResidente": "Residentes",
+    "rotuloVisitante": "Visitantes"
+  },
+  "reservas": [
+    {
+      "id": "res-voos",
+      "oQue": "Emitir passagens Emirates",
+      "urgencia": "imediato",
+      "prazo": "2026-09-25",
+      "onde": "https://www.emirates.com/br/portuguese/",
+      "observacao": "Tarifa cotada em set/26; outubro é alta por causa da folhagem."
+    },
+    {
+      "id": "res-shibuya",
+      "oQue": "Ingresso do Shibuya Sky para o pôr do sol",
+      "urgencia": "data-exata",
+      "prazo": "2026-09-14",
+      "abreVendaEm": {
+        "local": "2026-09-14T10:00",
+        "fuso": "Asia/Tokyo",
+        "noBrasil": "2026-09-13T22:00"
+      },
+      "onde": "https://www.shibuya-scramble-square.com/sky/",
+      "observacao": "O horário do pôr do sol esgota primeiro. Tenha a página aberta antes."
+    },
+    {
+      "id": "res-ryokan",
+      "oQue": "Ryokan em Higashiyama",
+      "urgencia": "imediato",
+      "prazo": "2026-09-30",
+      "observacao": "Casa pequena, poucos quartos, outubro lota."
+    },
+    {
+      "id": "res-shinkansen",
+      "oQue": "Shinkansen Tóquio → Kyoto",
+      "urgencia": "um-mes",
+      "prazo": "2026-10-01",
+      "observacao": "Reserve assento no lado direito para ver o Fuji."
+    },
+    {
+      "id": "res-esim",
+      "oQue": "eSIM de dados",
+      "urgencia": "ultima-semana",
+      "prazo": "2026-10-10"
+    },
+    {
+      "id": "res-seguro",
+      "oQue": "Seguro viagem",
+      "urgencia": "duas-semanas",
+      "prazo": "2026-10-05",
+      "observacao": "Atendimento particular no Japão é caro."
+    }
   ]
 }

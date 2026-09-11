@@ -1,6 +1,6 @@
 ---
 name: site-viagem
-description: Gera ou atualiza o site de 1 página de um destino a partir do trip.json, usando o template React + Vite bundlado — com roteiro dia a dia, mapa Leaflet, clima Open-Meteo, conversor de câmbio ao vivo, orçamento e checklists que ficam salvos no aparelho. Use sempre que o usuário pedir o site, a página ou o "one pager" de uma viagem, quiser ver o roteiro montado, pedir para atualizar um destino que já existe, mudar algo no site de uma viagem, ou quando uma pesquisa de destino acabou de produzir um trip.json e falta transformá-lo em página. Também use quando pedirem para publicar ou fazer deploy do site de uma viagem.
+description: Gera ou atualiza o site de 1 página de um destino a partir do trip.json, mais o roteiro imprimível em markdown, usando o template React + Vite bundlado — com roteiro dia a dia, mapa Leaflet, clima Open-Meteo, botão que converte a página inteira entre moeda local e real, reservas por urgência com prazos, orçamento em duas colunas e checklists salvos no aparelho. Use sempre que o usuário pedir o site, a página ou o "one pager" de uma viagem, quiser ver o roteiro montado, pedir para atualizar um destino que já existe, mudar algo no site de uma viagem, ou quando uma pesquisa de destino acabou de produzir um trip.json e falta transformá-lo em página. Também use quando pedirem para publicar ou fazer deploy do site de uma viagem.
 ---
 
 # Site da viagem
@@ -14,13 +14,17 @@ bons.
 ## Fluxo
 
 ```bash
-# cria ou atualiza destinos/<slug>/site/
+# 1. cria ou atualiza destinos/<slug>/site/
 bash .claude/skills/site-viagem/scripts/criar-site.sh <slug>
 
-cd destinos/<slug>/site
-npm install     # só na primeira vez
-npm run dev     # ver localmente
-npm run build   # gera dist/ para publicar
+# 2. instala (só na primeira vez) e vê localmente
+cd destinos/<slug>/site && npm install && npm run dev
+
+# 3. roteiro imprimível, do mesmo trip.json
+node .claude/skills/site-viagem/scripts/gerar-roteiro.mjs <slug>
+
+# 4. portão de qualidade — tem que passar antes de entregar
+node .claude/skills/site-viagem/scripts/qa-site.mjs <slug>
 ```
 
 O script trata `src/data/trip.json` como link para
@@ -35,9 +39,12 @@ horário de voo antigo.
    (`node -e "require('./destinos/<slug>/trip.json')"`). Se não existe, o passo
    anterior é `pesquisa-destino`, não este.
 2. Rode o script.
-3. `npm install && npm run build` — o build tem que passar antes de você dizer
-   que o site está pronto. Anunciar um site que não compila é o pior desfecho
-   possível aqui.
+3. `npm install`, depois gere o roteiro em markdown, depois rode o QA. **O QA é
+   portão, não sugestão**: ele builda, sobe o preview e checa no browser real
+   que não há erro de JS, que a página não rola de lado no celular, que toda
+   seção do menu existe e abre, e que os links são absolutos. Anunciar um site
+   que não abre é o pior desfecho possível aqui — mais caro que não ter
+   entregado, porque o viajante só descobre no aeroporto.
 4. Diga ao usuário o que a página mostra e o que ficou de fora por falta de
    dado, porque é isso que ele precisa saber para pedir a próxima rodada.
 
@@ -64,13 +71,14 @@ novo, porque quase sempre o que falta é dado, não interface:
 
 | Seção | Componente | Vem de |
 |---|---|---|
-| Cabeçalho, contagem regressiva, tema | `Cabecalho.jsx` | `titulo`, `periodo`, `destinos` |
+| Cabeçalho, contagem, tema, botões de moeda e tarifa | `Cabecalho.jsx` + `lib/precos.jsx` | `titulo`, `periodo`, `destinos`, `tarifaDupla` |
 | Documentos e providências | `Documentacao.jsx` | `documentacao` |
+| Reservas por urgência, com prazo e hora de venda | `Reservas.jsx` | `reservas` |
 | Voos, hospedagem, passes | `Logistica.jsx` | `voos`, `hospedagens`, `transportes` |
 | Roteiro dia a dia, com "feito" | `Roteiro.jsx` | `dias[].blocos[]` |
 | Mapa interativo com filtro por dia | `Mapa.jsx` | qualquer item com `lat`/`lon` |
 | Clima do período | `Clima.jsx` | Open-Meteo, via `destinos[].lat/lon` |
-| Orçamento previsto vs real | `Orcamento.jsx` | `orcamento` |
+| Orçamento: seu plano / econômico / gasto real | `Orcamento.jsx` | `orcamento` |
 | Conversor de moeda ao vivo | `Cambio.jsx` | `destinos[].moeda` |
 | Onde comer, bagagem, frases, links | componentes homônimos | campos homônimos |
 
@@ -78,10 +86,30 @@ novo, porque quase sempre o que falta é dado, não interface:
 "tirar uma seção" é esvaziar o campo no `trip.json`, não mexer no `App.jsx`.
 
 Detalhes de comportamento que já estão resolvidos e vale conhecer antes de
-mexer: viagem daqui a meses mostra média histórica em vez de previsão (e diz
-isso na tela); o câmbio soma IOF e spread por padrão; checklists e blocos
-marcados sobrevivem ao refresh via `localStorage`; a página tem tema claro,
-escuro e automático; e a versão impressa vira roteiro de bolso.
+mexer:
+
+- **Botão de moeda no cabeçalho** converte a página inteira entre a moeda local
+  (o número da etiqueta na vitrine) e o real (o que sai do bolso), já com IOF e
+  spread. É o controle mais usado durante a viagem, por isso fica no topo e não
+  escondido numa seção. Todo preço passa por `usePrecos().fmt(custo)` — se você
+  formatar dinheiro direto num componente novo, ele fica de fora do botão.
+- **Botão de tarifa** aparece só quando `tarifaDupla.ativo`. `custo.valor` é
+  sempre o que o brasileiro paga; `custo.valorResidente` é o extra. Esquecer o
+  campo extra nunca subestima o orçamento.
+- **Ordem das reservas é pelo prazo real**, não pelo rótulo de urgência: uma
+  venda que abre em três dias vence um voo "imediato" com duas semanas.
+- Venda que abre de madrugada no horário de Brasília ganha aviso explícito — é
+  o que decide se a pessoa põe despertador.
+- Viagem daqui a meses mostra média histórica em vez de previsão, e diz isso.
+- Checklists, blocos marcados, moeda e tema sobrevivem ao refresh via
+  `localStorage`.
+- Tema claro, escuro e automático; e a versão impressa vira roteiro de bolso.
+
+Duas coerências que o código não força e você precisa manter no `trip.json`:
+categoria marcada `intocavel` deve ter `economico` igual a `previsto` (o que é
+a razão de ser da viagem não entra na tesoura), e `orcamento.tetoPor` precisa
+dizer se o teto era por pessoa ou do grupo — o site mostra qual leitura está
+usando, e a leitura errada muda o veredito inteiro.
 
 ## Quando mexer no código
 
@@ -105,7 +133,7 @@ como preencher alguma seção.
 
 ## Ao terminar
 
-Mostre o caminho do site, o comando para rodar, e o que ficou vazio por falta
-de dado. Depois acione `perfil-viajante` para registrar o que a sessão revelou
+Mostre o caminho do site, o caminho do `roteiro-<slug>.md`, o comando para
+rodar, o resultado do QA, e o que ficou vazio por falta de dado. Depois acione `perfil-viajante` para registrar o que a sessão revelou
 sobre as preferências dele quanto ao site — quais seções ele usa e quais manda
 tirar é informação que encurta a próxima viagem.

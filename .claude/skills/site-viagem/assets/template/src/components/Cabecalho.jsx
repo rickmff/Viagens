@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { periodo } from '../lib/formato'
 import { contagemRegressiva, resumoViagem } from '../lib/viagem'
+import { ControlesDePreco } from '../lib/precos'
 
 function Tema() {
   const [tema, setTema] = useState(() => {
@@ -60,7 +61,7 @@ export default function Cabecalho({ viagem, secoes }) {
           </a>
           {/* Rolagem horizontal em vez de menu sanfonado: no celular, deslizar
               a régua de seções é mais rápido que abrir e fechar um menu. */}
-          <div className="flex flex-1 gap-1 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex flex-1 gap-1 overflow-x-auto [mask-image:linear-gradient(to_right,#000_0,#000_calc(100%-1.5rem),transparent_100%)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {secoes.map((s) => (
               <a key={s.id} href={`#${s.id}`}
                  className="shrink-0 rounded-lg px-2.5 py-1.5 text-sm text-tinta-2 transition-colors hover:bg-superficie-2 hover:text-tinta">
@@ -68,6 +69,7 @@ export default function Cabecalho({ viagem, secoes }) {
               </a>
             ))}
           </div>
+          <ControlesDePreco />
           <Tema />
         </div>
       </nav>

@@ -125,11 +125,14 @@ export function totaisOrcamento(viagem) {
   const cats = viagem.orcamento?.categorias || []
   const previsto = cats.reduce((s, c) => s + (c.previsto || 0), 0)
   const real = cats.reduce((s, c) => s + (c.real || 0), 0)
+  // Categoria sem versão econômica cai para o previsto: a coluna econômica é
+  // a mesma viagem com algumas trocas, não uma viagem incompleta.
+  const economico = cats.reduce((s, c) => s + (c.economico ?? c.previsto ?? 0), 0)
   const temReal = cats.some((c) => c.real != null)
   const teto = viagem.orcamento?.teto?.valor ?? null
   const reserva = viagem.orcamento?.reserva?.valor ?? 0
   return {
-    previsto, real, temReal, teto, reserva,
+    previsto, real, economico, temReal, teto, reserva,
     comprometido: previsto + reserva,
     folga: teto != null ? teto - previsto - reserva : null,
     estourou: teto != null && previsto + reserva > teto,

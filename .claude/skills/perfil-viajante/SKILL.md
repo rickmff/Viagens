@@ -54,6 +54,12 @@ destino**. Esse é o teste. "Gostou do Museu do Prado" não entra — não ajuda
 planejar Bangkok. "Prioriza museus de arte e aceita gastar meio dia num só"
 entra, porque muda o roteiro de qualquer cidade.
 
+**Interesse mencionado de passagem é ouro.** "A gente é nerd", "ela adora
+cerâmica", "queremos ver fogos" — ditos no meio de outra frase, sem ponto de
+interrogação. São os sinais mais reveladores e os que mais se perdem, porque
+não vieram como pedido. Registre-os como interesse mesmo quando a viagem daquela
+vez não os atendeu.
+
 Traduza sempre o fato específico para o padrão generalizável:
 
 | Ele disse / fez | Não anote isso | Anote isso |
@@ -62,6 +68,8 @@ Traduza sempre o fato específico para o padrão generalizável:
 | escolheu o hotel mais caro, mais central | "escolheu o Hotel X" | Paga mais por localização central e caminhável (provável) |
 | "de novo museu não" | "não quis o museu" | Satura de museu depois de ~1 por viagem (hipótese) |
 | "quero um dia livre no fim" | "pediu dia livre" | Sempre reserva o último dia sem nada marcado (hipótese) |
+| "a gente é nerd" no meio de outra frase | nada | Interesse por cultura pop e tecnologia; merece um bloco por viagem (hipótese) |
+| aceitou o voo com escala de 14h | "pegou o voo X" | Troca conforto por preço em voo longo (hipótese) |
 
 ### Níveis de confiança e como promover
 

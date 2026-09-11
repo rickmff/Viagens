@@ -13,10 +13,11 @@ perfil/
   insights.md        Log append-only de cada sessão e do que ela ensinou.
 destinos/
   <slug>/
-    trip.json        Fonte da verdade do destino (contrato compartilhado).
-    PESQUISA.md      Pesquisa bruta com fontes e datas de consulta.
-    APRENDIZADOS.md  Pós-viagem: o que funcionou, o que não funcionou.
-    site/            App React + Vite gerado a partir do trip.json.
+    trip.json           Fonte da verdade do destino (contrato compartilhado).
+    PESQUISA.md         Pesquisa bruta com fontes e datas de consulta.
+    APRENDIZADOS.md     Pós-viagem: o que funcionou, o que não funcionou.
+    roteiro-<slug>.md   Roteiro imprimível, gerado do trip.json.
+    site/               App React + Vite gerado a partir do trip.json.
 .claude/skills/      As skills que operam tudo isso.
 ```
 
@@ -34,6 +35,20 @@ o próximo prompt volta a ser longo.
 **`trip.json` é a fonte da verdade, o site é derivado.** Para mudar conteúdo
 do site, mude o `trip.json` e regenere. Edite arquivos em `site/src/` apenas
 quando a mudança for de comportamento ou visual, nunca de conteúdo.
+
+**Verifique o que abre antes de fixar a ordem dos dias.** Fechamento semanal,
+janela de venda de ingresso e feriado local mandam mais na ordem do roteiro que
+qualquer preferência — e descobrir isso depois custa caro. Ver
+`.claude/skills/pesquisa-destino/references/verificacoes.md`.
+
+**O QA do site é portão, não sugestão.** `node
+.claude/skills/site-viagem/scripts/qa-site.mjs <slug>` tem que passar antes de
+dizer que o site está pronto. Anunciar um site que não abre é pior que não ter
+entregado, porque o viajante só descobre no aeroporto.
+
+**Uma correção vale mais que uma sugestão.** Quando achar um conflito real,
+destaque-o em vez de resolver em silêncio — é o trabalho mais valioso aqui e o
+mais fácil de tornar invisível.
 
 **Nunca recrie um destino que já existe.** Se `destinos/<slug>/` existe, o
 trabalho é de atualização incremental: preserve customizações, faça merge no

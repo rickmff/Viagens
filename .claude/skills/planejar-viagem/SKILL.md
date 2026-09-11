@@ -30,17 +30,32 @@ responder qualquer coisa. É o que separa este repo de um chat qualquer: o que
 está lá como provável ou confirmado já está respondido e não se pergunta de
 novo. Perguntar o que o perfil sabe é o principal modo de falha aqui.
 
-### 2. Entender o pedido
+### 2. Entender o pedido, sem interrogatório
 
 Extraia do prompt o que der: destino, janela de datas, teto de orçamento,
 desejos explícitos ("museu", "comer bem", "sem acordar cedo"), companhia.
 O que faltar, complete pelo perfil.
 
-Só então decida se ainda falta algo, aplicando o limite de **3 perguntas** e o
-critério de materialidade: pergunte apenas o que muda o roteiro de verdade e o
-perfil não responde. Data e orçamento normalmente valem a pergunta. Ritmo,
-estilo de hospedagem e interesses quase nunca — assuma pelo perfil, marque a
-suposição no resultado e deixe ele corrigir de graça.
+**Não abra com uma bateria de perguntas.** Seis perguntas de uma vez matam a
+conversa e fazem o usuário sentir que está preenchendo formulário em vez de
+planejando viagem. Comece respondendo com substância real ao que ele trouxe —
+um veredito sobre a época, uma faixa de preço, uma observação que ele não
+sabia — e recolha o resto pelo caminho. Informação dada no meio de uma conversa
+que já está rendendo vem mais completa e mais honesta que informação arrancada
+antes de qualquer entrega.
+
+Quando faltar mesmo algo estrutural, aplique o limite de **3 perguntas** e o
+critério de materialidade: só o que muda o roteiro de verdade e o perfil não
+responde. Data e orçamento normalmente valem. Ritmo, estilo de hospedagem e
+interesses quase nunca — assuma pelo perfil, marque a suposição e deixe ele
+corrigir de graça. Pergunta com opções é mais rápida de responder no celular
+que pergunta aberta.
+
+**Interesse mencionado de passagem é pedido.** "A gente é nerd", "ela adora
+cerâmica", "queria ver um festival" — cada um desses merece pelo menos um bloco
+no roteiro final. É o que separa um roteiro feito para estas pessoas de uma
+lista de atrações que qualquer guia dá, e é a informação que o usuário nunca
+percebe que deu.
 
 ### 3. Novo ou atualização?
 
@@ -59,7 +74,8 @@ diga o que mudou em vez de reapresentar a viagem inteira.
 ### 4. Encadear
 
 Chame `pesquisa-destino`, depois `orcamento-viagem`, depois `site-viagem`, nessa
-ordem — cada uma alimenta a seguinte pelo `trip.json`.
+ordem — cada uma alimenta a seguinte pelo `trip.json`. O site sai com o roteiro
+imprimível ao lado e só é entregue depois do QA passar.
 
 Duas coisas valem interromper a cadeia e falar antes de seguir:
 
@@ -73,6 +89,11 @@ Duas coisas valem interromper a cadeia e falar antes de seguir:
 
 Fora esses dois casos, vá até o fim e entregue. Um roteiro entregue e corrigido
 vale mais que um questionário respondido.
+
+**Uma correção vale mais que uma sugestão.** Quando a pesquisa achar um conflito
+real — o museu fecha no único dia livre, a janela de venda já passou, o passe
+não compensa — destaque isso em vez de resolver em silêncio. É o trabalho mais
+valioso que você faz e o mais fácil de tornar invisível.
 
 ### 5. Escrever na memória — sempre por último
 
@@ -104,6 +125,11 @@ puladas:
 - *"tira o museu do dia 3 e põe mais comida"* → editar `trip.json`, rebuildar,
   e registrar o sinal no perfil (esse é justamente o tipo de correção que mais
   ensina).
+
+**Não refaça o plano inteiro a cada ajuste.** Quando ele muda uma coisa, mostre
+o que mudou e o efeito no total — não reapresente a viagem do zero. Reapresentar
+tudo esconde a mudança no meio do texto e obriga ele a reler o que já tinha
+aprovado.
 - *"quanto ficou mesmo?"* → responder do `trip.json`, sem repesquisar nada.
 - *"dá pra fazer Marrocos com 10 mil?"* → pesquisa e orçamento bastam; só monte
   site se ele decidir ir.

@@ -30,6 +30,18 @@ meio inventadas.
     { "id": "rick", "nome": "Rick" }
   ],
 
+  // Alguns destinos cobram preços diferentes de residentes e visitantes
+  // (França desde 2026, entre outros). Quando existir, o site ganha um botão
+  // que alterna as duas colunas. `valor` é SEMPRE o que o brasileiro paga —
+  // o preço de residente é o campo extra — para que esquecer o campo nunca
+  // subestime o orçamento.
+  "tarifaDupla": {
+    "ativo": false,
+    "rotulo": "Tarifa dos museus",
+    "rotuloResidente": "Residentes UE",
+    "rotuloVisitante": "Não residentes"
+  },
+
   // ── Destinos ──────────────────────────────────────────────────────────
   // Cada cidade/base da viagem. lat/lon são obrigatórios: o mapa, o clima e
   // o fuso horário do site dependem deles. Use Nominatim para obtê-los.
@@ -46,7 +58,10 @@ meio inventadas.
       "chegada": "2026-10-12",
       "saida": "2026-10-18",
       "resumo": "Uma ou duas frases sobre o papel desta cidade no roteiro.",
-      "bairroBase": "Shinjuku"
+      "bairroBase": "Shinjuku",
+      // Cobrada na hospedagem, por pessoa por noite. Escapa de quase todo
+      // orçamento e em cidade cara vira centenas de reais.
+      "taxaTurismo": { "valor": 6, "moeda": "EUR", "por": "pessoa-noite" }
     }
   ],
 
@@ -68,6 +83,26 @@ meio inventadas.
       { "id": "doc-passaporte", "texto": "Passaporte válido até abr/2027", "prazo": "2026-09-30" }
     ]
   },
+
+  // ── Reservas com prazo ────────────────────────────────────────────────
+  // O que precisa ser comprado antes, em ordem de urgência. Prazo sem data é
+  // só ansiedade; prazo com data é uma tarefa. Ver a lista de urgências em
+  // pesquisa-destino/references/verificacoes.md.
+  "reservas": [
+    {
+      "id": "res-coliseu",
+      "oQue": "Ingresso do Coliseu",
+      "urgencia": "data-exata",   // imediato | data-exata | sorteio | um-mes | duas-semanas | ultima-semana
+      "prazo": "2027-03-15",      // até quando dá para resolver
+      // Quando o ingresso abre à venda num instante e esgota em minutos.
+      // Grave a hora local do site E o equivalente no Brasil — se cair de
+      // madrugada, é isso que o viajante precisa saber.
+      "abreVendaEm": { "local": "2027-03-15T09:00", "fuso": "Europe/Rome", "noBrasil": "2027-03-15T05:00" },
+      "onde": "https://ecm.coopculture.it/",
+      "nominativo": "Passaporte — o nome do ingresso tem que bater exatamente",
+      "observacao": "Esgota em minutos. Deixe a página aberta antes da hora."
+    }
+  ],
 
   // ── Logística ─────────────────────────────────────────────────────────
   "voos": [
@@ -119,6 +154,9 @@ meio inventadas.
       "destinoId": "tokyo",
       "titulo": "Chegada e Shibuya devagar",
       "notas": "Dia de jet lag: nada que exija acordar cedo.",
+      // Marque os dias mais fáceis de sacrificar. Viagem encurta, e é melhor
+      // a decisão já estar tomada do que ser improvisada na véspera.
+      "cortavel": false,
       "blocos": [
         {
           "id": "b1",
@@ -127,7 +165,9 @@ meio inventadas.
           "tipo": "atracao",          // atracao | refeicao | deslocamento | descanso | compras | evento | livre
           "titulo": "Cruzamento de Shibuya e Shibuya Sky",
           "lat": 35.6595, "lon": 139.7005,
-          "custo": { "valor": 90, "moeda": "BRL", "por": "pessoa" },
+          // `valor` é o que o brasileiro paga. `valorResidente` só existe
+          // onde há tarifa dupla, e alimenta o botão do site.
+          "custo": { "valor": 90, "moeda": "BRL", "por": "pessoa", "valorResidente": 62 },
           "reservaNecessaria": true,
           "link": "https://...",
           "notas": "Comprar ingresso do Sky com antecedência para o pôr do sol.",
@@ -141,12 +181,17 @@ meio inventadas.
   // Preenchido pela skill orcamento-viagem. Ver docs/orcamento.md.
   "orcamento": {
     "teto": { "valor": 25000, "moeda": "BRL" },
+    "tetoPor": "total",          // total | pessoa — diga qual você assumiu
     "cambioReferencia": [{ "de": "JPY", "para": "BRL", "taxa": 0.038, "em": "2026-09-11" }],
     "categorias": [
       {
         "id": "voos", "nome": "Voos",
-        "previsto": 11600, "real": null,
-        "observacao": "Ida e volta para 2 pessoas."
+        "previsto": 11600,       // o plano dele
+        "economico": 9200,       // a mesma viagem, com a troca que dói menos
+        "real": null,            // preenchido durante a viagem
+        "observacao": "Ida e volta para 2 pessoas. Econômico = conexão longa em DOH.",
+        // Gastos que são a razão de ser da viagem não entram na tesoura.
+        "intocavel": false
       }
     ],
     "reserva": { "valor": 2000, "moeda": "BRL", "percentual": 8 }

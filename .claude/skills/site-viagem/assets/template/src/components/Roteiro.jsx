@@ -1,6 +1,7 @@
 import { Secao, Chip } from './Secao'
 import { useMarcados } from '../hooks/usePersistido'
-import { data, diaDaSemana, duracao, moeda } from '../lib/formato'
+import { data, diaDaSemana, duracao } from '../lib/formato'
+import { usePrecos } from '../lib/precos'
 
 const ICONE = {
   atracao: '📍', refeicao: '🍽️', deslocamento: '🚆', descanso: '🛏️',
@@ -8,6 +9,7 @@ const ICONE = {
 }
 
 function Bloco({ bloco, feito, aoMarcar }) {
+  const { fmt } = usePrecos()
   return (
     <li className="relative flex gap-3 py-3.5 first:pt-0 last:pb-0">
       {/* Marcar como feito é para usar durante a viagem, com o celular na mão:
@@ -40,10 +42,7 @@ function Bloco({ bloco, feito, aoMarcar }) {
 
         <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
           {bloco.duracaoMin && <Chip>{duracao(bloco.duracaoMin)}</Chip>}
-          {bloco.custo?.valor != null && (
-            <Chip>{moeda(bloco.custo.valor, bloco.custo.moeda)}
-              {bloco.custo.por === 'pessoa' ? ' / pessoa' : ''}</Chip>
-          )}
+          {bloco.custo?.valor != null && <Chip>{fmt(bloco.custo)}</Chip>}
           {/* Reserva antecipada é o detalhe que mais estraga roteiro bonito,
               então ganha destaque em vez de virar mais uma linha de nota. */}
           {bloco.reservaNecessaria && <Chip tom="critico">⚠ reservar antes</Chip>}
@@ -74,6 +73,7 @@ function Dia({ dia, destino, indice, marcados, alternar, abertoPorPadrao }) {
           <div className="flex flex-wrap items-baseline gap-x-2">
             <span className="font-medium">{dia.titulo || `Dia ${indice + 1}`}</span>
             {destino && <span className="text-sm text-tinta-3">{destino.nome}</span>}
+            {dia.cortavel && <Chip>fácil de cortar</Chip>}
           </div>
           <p className="text-sm text-tinta-2">
             {diaDaSemana(dia.data)}, {data(dia.data, { day: '2-digit', month: 'long' })}

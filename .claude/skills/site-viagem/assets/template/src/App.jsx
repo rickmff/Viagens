@@ -1,6 +1,7 @@
 import viagem from './data/trip.json'
 import Cabecalho from './components/Cabecalho'
 import Documentacao from './components/Documentacao'
+import Reservas from './components/Reservas'
 import Logistica from './components/Logistica'
 import Roteiro from './components/Roteiro'
 import Mapa from './components/Mapa'
@@ -12,6 +13,7 @@ import Gastronomia from './components/Gastronomia'
 import Frases from './components/Frases'
 import Links from './components/Links'
 import { pontosDoMapa } from './lib/viagem'
+import { PreferenciasProvider } from './lib/precos'
 
 // A navegação lista só o que a página realmente tem. Seção vazia não vira
 // item de menu que leva a lugar nenhum — e é isso que permite um trip.json
@@ -23,6 +25,7 @@ function secoesVisiveis(v) {
 
   return [
     { id: 'documentacao', rotulo: 'Documentos', tem: !!(d?.visto || d?.vacinas?.length || d?.seguro || d?.checklist?.length) },
+    { id: 'reservas',     rotulo: 'Reservar',   tem: !!v.reservas?.length },
     { id: 'logistica',    rotulo: 'Logística',  tem: !!(v.voos?.length || v.hospedagens?.length || v.transportes?.length) },
     { id: 'roteiro',      rotulo: 'Roteiro',    tem: !!v.dias?.length },
     { id: 'mapa',         rotulo: 'Mapa',       tem: pontosDoMapa(v).length > 0 },
@@ -38,21 +41,24 @@ function secoesVisiveis(v) {
 
 export default function App() {
   return (
-    <div className="min-h-dvh">
-      <Cabecalho viagem={viagem} secoes={secoesVisiveis(viagem)} />
-      <main className="divide-y divide-linha">
-        <Documentacao viagem={viagem} />
-        <Logistica viagem={viagem} />
-        <Roteiro viagem={viagem} />
-        <Mapa viagem={viagem} />
-        <Clima viagem={viagem} />
-        <Orcamento viagem={viagem} />
-        <Cambio viagem={viagem} />
-        <Gastronomia viagem={viagem} />
-        <Bagagem viagem={viagem} />
-        <Frases viagem={viagem} />
-        <Links viagem={viagem} />
-      </main>
-    </div>
+    <PreferenciasProvider viagem={viagem}>
+      <div className="min-h-dvh">
+        <Cabecalho viagem={viagem} secoes={secoesVisiveis(viagem)} />
+        <main className="divide-y divide-linha">
+          <Documentacao viagem={viagem} />
+          <Reservas viagem={viagem} />
+          <Logistica viagem={viagem} />
+          <Roteiro viagem={viagem} />
+          <Mapa viagem={viagem} />
+          <Clima viagem={viagem} />
+          <Orcamento viagem={viagem} />
+          <Cambio viagem={viagem} />
+          <Gastronomia viagem={viagem} />
+          <Bagagem viagem={viagem} />
+          <Frases viagem={viagem} />
+          <Links viagem={viagem} />
+        </main>
+      </div>
+    </PreferenciasProvider>
   )
 }

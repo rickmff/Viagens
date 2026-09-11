@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Secao, Card, Aguardando, Falhou, Rotulo } from './Secao'
-import { buscarTaxas, converter, MARGEM_PADRAO } from '../lib/cambio'
+import { converter, MARGEM_PADRAO } from '../lib/cambio'
+import { usePrecos } from '../lib/precos'
 import { moeda, numero } from '../lib/formato'
 
 // Valores que a pessoa realmente converte de cabeça na rua, olhando um preço
@@ -8,25 +9,14 @@ import { moeda, numero } from '../lib/formato'
 const REFERENCIAS = [10, 50, 100, 500, 1000]
 
 export default function Cambio({ viagem }) {
-  const base = viagem.moedaBase || 'BRL'
-  const moedas = [...new Set((viagem.destinos || []).map((d) => d.moeda).filter((m) => m && m !== base))]
-  const [estado, setEstado] = useState({ carregando: true })
+  const { base, taxas, erroTaxas, moedasLocais: moedas } = usePrecos()
   const [ativa, setAtiva] = useState(moedas[0])
   const [valor, setValor] = useState(100)
 
-  useEffect(() => {
-    if (!moedas.length) return
-    let cancelado = false
-    buscarTaxas(base)
-      .then((r) => { if (!cancelado) setEstado({ dados: r }) })
-      .catch((e) => { if (!cancelado) setEstado({ erro: e.message }) })
-    return () => { cancelado = true }
-  }, [base])
-
   if (!moedas.length) return null
 
-  const taxa = estado.dados?.taxas?.[ativa]
-  const comMargem = taxa ? taxa / (1 + MARGEM_PADRAO) : null
+  const estado = taxas ? { dados: taxas } : erroTaxas ? { erro: erroTaxas } : { carregando: true }
+  const taxa = taxas?.taxas?.[ativa]
 
   return (
     <Secao

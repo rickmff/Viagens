@@ -16,9 +16,9 @@ quero ir pra Lisboa em maio, uns 8 mil, quero museu e comer bem
 |---|---|
 | **planejar-viagem** | Entrada principal. Lê o pedido, decide se é destino novo ou atualização, e encadeia as outras. |
 | **perfil-viajante** | A memória. Lê `perfil/PERFIL.md` antes de perguntar e escreve nele depois de aprender. |
-| **pesquisa-destino** | Visto, clima, custos, bairros, transporte, segurança → `PESQUISA.md` + `trip.json`. |
-| **orcamento-viagem** | Orçamento de trás para frente a partir do teto, com câmbio, IOF e previsto vs real. |
-| **site-viagem** | Gera ou atualiza o site React + Vite a partir do `trip.json`. |
+| **pesquisa-destino** | Ancora as datas em festivais e sazonalidade, verifica o que abre em cada dia da semana **antes** de fixar a ordem, e pesquisa visto, custos, bairros e voos → `PESQUISA.md` + `trip.json`. |
+| **orcamento-viagem** | Orçamento de trás para frente a partir do teto, em duas colunas (seu plano / econômico), com câmbio, IOF, taxa de turismo e previsto vs real. |
+| **site-viagem** | Gera ou atualiza o site React + Vite e o roteiro imprimível a partir do `trip.json`, com QA automático antes de entregar. |
 
 Na prática você chama só a primeira; ela aciona as outras. Mas cada uma
 funciona sozinha — dá para pedir só um orçamento, ou só atualizar o site.
@@ -68,6 +68,12 @@ rede; e imprime como roteiro de bolso. Nenhuma das APIs usadas pede chave.
 cd destinos/<slug>/site
 npm install && npm run dev     # ver localmente
 npm run build                  # dist/ pronto para o VPS
+
+# roteiro imprimível, do mesmo trip.json
+node .claude/skills/site-viagem/scripts/gerar-roteiro.mjs <slug>
+
+# portão de qualidade: build, erro de JS, rolagem lateral, links, seções
+node .claude/skills/site-viagem/scripts/qa-site.mjs <slug>
 ```
 
 Publicação no VPS (Caddy e nginx): `.claude/skills/site-viagem/references/deploy.md`.

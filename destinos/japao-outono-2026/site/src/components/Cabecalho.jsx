@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { periodo } from '../lib/formato'
 import { contagemRegressiva, resumoViagem } from '../lib/viagem'
+import { ControlesDePreco } from '../lib/precos'
 
 function Tema() {
   const [tema, setTema] = useState(() => {
@@ -68,6 +69,7 @@ export default function Cabecalho({ viagem, secoes }) {
               </a>
             ))}
           </div>
+          <ControlesDePreco />
           <Tema />
         </div>
       </nav>
