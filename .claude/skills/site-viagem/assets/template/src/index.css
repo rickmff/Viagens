@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Tokens. Definidos aqui uma vez, em claro e escuro, e consumidos por nome
+   no resto do app. Trocar a identidade visual do site inteiro é mexer só
+   neste bloco.
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+  --plano:        #f9f9f7;  /* fundo da página */
+  --superficie:   #fcfcfb;  /* fundo de card */
+  --superficie-2: #f2f1ed;  /* fundo rebaixado: trilhos, chips */
+  --tinta:        #0b0b0b;
+  --tinta-2:      #52514e;
+  --tinta-3:      #898781;
+  --linha:        #e1e0d9;
+  --borda:        rgba(11, 11, 11, 0.10);
+
+  --acento:       #2a78d6;
+  --acento-suave: #cde2fb;
+  --bom:          #0ca30c;
+  --atencao:      #fab219;
+  --critico:      #d03b3b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-tema="claro"])) {
+    color-scheme: dark;
+    --plano:        #0d0d0d;
+    --superficie:   #1a1a19;
+    --superficie-2: #232322;
+    --tinta:        #ffffff;
+    --tinta-2:      #c3c2b7;
+    --tinta-3:      #898781;
+    --linha:        #2c2c2a;
+    --borda:        rgba(255, 255, 255, 0.10);
+
+    --acento:       #3987e5;
+    --acento-suave: #184f95;
+    --bom:          #0ca30c;
+    --atencao:      #fab219;
+    --critico:      #d03b3b;
+  }
+}
+
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+  --plano:        #0d0d0d;
+  --superficie:   #1a1a19;
+  --superficie-2: #232322;
+  --tinta:        #ffffff;
+  --tinta-2:      #c3c2b7;
+  --tinta-3:      #898781;
+  --linha:        #2c2c2a;
+  --borda:        rgba(255, 255, 255, 0.10);
+
+  --acento:       #3987e5;
+  --acento-suave: #184f95;
+  --bom:          #0ca30c;
+  --atencao:      #fab219;
+  --critico:      #d03b3b;
+}
+
+/* Expõe os tokens como utilitários Tailwind: bg-superficie, text-tinta-2,
+   border-linha, etc. `inline` faz o valor ser resolvido em tempo de uso,
+   que é o que permite o tema trocar sem recompilar. */
+@theme inline {
+  --color-plano:        var(--plano);
+  --color-superficie:   var(--superficie);
+  --color-superficie-2: var(--superficie-2);
+  --color-tinta:        var(--tinta);
+  --color-tinta-2:      var(--tinta-2);
+  --color-tinta-3:      var(--tinta-3);
+  --color-linha:        var(--linha);
+  --color-borda:        var(--borda);
+  --color-acento:       var(--acento);
+  --color-acento-suave: var(--acento-suave);
+  --color-bom:          var(--bom);
+  --color-atencao:      var(--atencao);
+  --color-critico:      var(--critico);
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--plano);
+  color: var(--tinta);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Rolagem suave ao clicar na navegação, com folga para o cabeçalho fixo. */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+[id] { scroll-margin-top: 5rem; }
+
+/* O Leaflet traz fundo branco por padrão, o que fura o tema escuro. */
+.leaflet-container { background: var(--superficie-2); font-family: var(--font-sans); }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: var(--superficie); color: var(--tinta);
+}
+.leaflet-bar a { background: var(--superficie); color: var(--tinta); border-color: var(--linha); }
+
+/* Na impressão o site vira o roteiro de bolso: sem navegação, sem mapa
+   interativo, tudo aberto e em uma coluna. */
+@media print {
+  :root { color-scheme: light; }
+  .nao-imprimir { display: none !important; }
+  body { background: #fff; color: #000; }
+  details { display: block; }
+  details > summary { display: none; }
+}
