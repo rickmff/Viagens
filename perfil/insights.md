@@ -27,6 +27,36 @@ Formato de cada entrada:
 
 ---
 
+## 2026-09-12 — Pivô: de site para planilha
+
+**Prompt (resumo):** "isso de fazer os website não está sendo tão bom quanto
+eu pensava; pivote o sistema para fazer planilhas de Excel estritamente
+organizadas e úteis para fazer os cálculos precisos e me ajudar a comparar
+orçamentos de viagens para os mesmos destinos" e, em seguida, "no Excel tem
+que ter opções de upgrade e downgrade da maioria dos itens e links para
+reservar e comprar cada item".
+
+**Sinais observados**
+- Rejeitou a entrega (site) depois de vê-la duas vezes, com uma frase — sem
+  pedir ajuste no site. O problema era o formato, não o conteúdo.
+- O que ele quer fazer com a entrega: calcular com precisão, comparar
+  orçamentos, escolher upgrade/downgrade por item, e comprar pelo link.
+
+**Inferido**
+- Decide em planilha, item a item. (confirmado — dito)
+- Compara alternativas antes de comprar; a comparação é a peça central.
+  (provável)
+
+**Aplicado ao PERFIL.md**
+- Nova seção "Formato da entrega" substitui "Preferências sobre o site gerado".
+
+**Aplicado ao repo**
+- Skill `planilha-viagem` (gerador + comparador + recálculo como portão);
+  `site-viagem` marcada opcional; `custo.opcoes` e `link` no contrato; CLAUDE.md,
+  README e mapa de conhecimento repontados.
+
+---
+
 ## 2026-09-12 — Paris no lugar da Itália
 
 **Prompt (resumo):** "me ajude a planejar uma viagem pra França em outubro".

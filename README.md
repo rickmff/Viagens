@@ -1,14 +1,16 @@
 # Viagens
 
-Planejador de viagens pessoal. Um prompt curto vira um site de 1 página para
-aquele destino — e cada rodada deixa o repo mais esperto, para o próximo prompt
-ser ainda mais curto.
+Planejador de viagens pessoal. Um prompt curto vira uma **planilha Excel de
+orçamento** daquele destino — fórmulas vivas, três opções por item (econômico
+/ plano / upgrade), link de compra em cada linha — e, quando há mais de uma
+viagem em jogo, uma planilha de comparação por pessoa por dia. Cada rodada
+deixa o repo mais esperto, para o próximo prompt ser ainda mais curto.
 
 ```
 quero ir pra Lisboa em maio, uns 8 mil, quero museu e comer bem
 ```
 
-→ pesquisa do destino → orçamento → `destinos/lisboa-maio-2027/site/`
+→ pesquisa do destino → orçamento → `destinos/lisboa-maio-2027/orcamento-lisboa-maio-2027.xlsx`
 
 ## As skills
 
@@ -20,10 +22,11 @@ quero ir pra Lisboa em maio, uns 8 mil, quero museu e comer bem
 | **pesquisa-destino** | Ancora as datas em festivais e sazonalidade, verifica o que abre em cada dia da semana **antes** de fixar a ordem, e pesquisa visto, custos, bairros e voos → `PESQUISA.md` + `trip.json`. |
 | **roteiro-viagem** | O ofício de montar dias que se cumprem: ordem pelo que abre, geografia antes de tema, meio dia nas pontas, plano B, dias cortáveis, passagem final. |
 | **orcamento-viagem** | Orçamento de trás para frente a partir do teto, em duas colunas (seu plano / econômico), com câmbio e taxa do cartão fora do euro, taxa de turismo e previsto vs real. |
-| **site-viagem** | O palco imersivo, com identidade derivada do destino, mais o roteiro imprimível e o QA que bloqueia a entrega. |
+| **planilha-viagem** | A entrega: planilha com Resumo, Parâmetros, Itens (opção econômico / plano / upgrade + link), Roteiro, Reservas, Real e Cortes, mais a comparação entre viagens. Recálculo no LibreOffice é portão. |
+| **site-viagem** | Opcional, só quando pedido: o palco imersivo de uma tela, com identidade derivada do destino e QA. |
 
 Na prática você chama só a primeira; ela aciona as outras. Mas cada uma
-funciona sozinha — dá para pedir só um orçamento, ou só atualizar o site.
+funciona sozinha — dá para pedir só um orçamento, ou só regenerar a planilha.
 De onde veio cada regra e em qual skill ela vive: `docs/mapa-de-conhecimento.md`.
 
 ## Como o aprendizado funciona
@@ -47,15 +50,47 @@ inferência errada.
 
 ```
 perfil/            PERFIL.md (memória curada) e insights.md (log)
-destinos/<slug>/   trip.json, PESQUISA.md, APRENDIZADOS.md, site/
-docs/              contrato do trip.json
-.claude/skills/    as cinco skills
+destinos/<slug>/   trip.json, PESQUISA.md, orcamento-<slug>.xlsx, roteiro-<slug>.md, site/ (opcional)
+comparacoes/       <nome>.xlsx — viagens lado a lado
+docs/              contrato do trip.json e mapa de conhecimento
+.claude/skills/    as oito skills
 ```
 
-`trip.json` é a fonte da verdade de cada viagem; o site é derivado dele. Para
-mudar conteúdo, mude o `trip.json` e regenere — ver `docs/trip-schema.md`.
+`trip.json` é a fonte da verdade de cada viagem; planilha e site são derivados
+dele. Para mudar conteúdo, mude o `trip.json` e regenere — ver
+`docs/trip-schema.md`.
 
-## O site gerado
+## A planilha gerada
+
+`destinos/<slug>/orcamento-<slug>.xlsx`, sete abas, nenhum total digitado:
+
+- **Resumo** — por categoria: tudo econômico · plano · **escolhido ★** · tudo
+  upgrade · real; reserva, por pessoa, por dia, folga contra o teto, veredito
+- **Parâmetros** — pessoas, datas, teto, reserva %, margem do cartão, câmbio,
+  categorias com fator econômico e intocável (as células amarelas)
+- **Itens** — uma linha por custo com **Opção ▼** (econômico / plano /
+  upgrade), os três preços, o que é cada opção, e o **link para reservar ou
+  comprar**. É o único lugar que precisa mexer para montar um cenário
+- **Roteiro** — dia a dia com custo da opção escolhida e "feito"
+- **Reservas** — por prazo, dias restantes, status, valor pago, link
+- **Real** — gastos lançados durante a viagem, convertidos para EUR
+- **Cortes** — do maior corte ao menor, com "← aqui" quando já cabe no teto
+
+`comparacoes/<nome>.xlsx` põe duas ou mais viagens lado a lado (mesmo destino
+em épocas diferentes, ou dois destinos na mesma janela), com a linha justa
+para durações diferentes: **por pessoa por dia**.
+
+```bash
+python3 .claude/skills/planilha-viagem/scripts/gerar-planilha.py <slug>
+python3 .claude/skills/planilha-viagem/scripts/comparar-viagens.py <nome> <slug1> <slug2>
+node .claude/skills/site-viagem/scripts/gerar-roteiro.mjs <slug>     # roteiro em markdown
+```
+
+Os dois scripts recalculam no LibreOffice e falham com qualquer fórmula
+quebrada. Estrutura coluna a coluna:
+`.claude/skills/planilha-viagem/references/estrutura.md`.
+
+## O site (opcional)
 
 Um palco de uma tela só, sem rolagem, com a identidade visual derivada do
 destino — paleta, tipografia, silhueta no horizonte e um momento de

@@ -108,11 +108,18 @@ economiza rodadas inteiras de sugestão descartada._
 
 - Viaja sozinho, em casal, com família ou em grupo: _a descobrir_
 
-## Preferências sobre o site gerado
+## Formato da entrega
 
-- Seções que ele efetivamente usa: _a descobrir_
-- Seções que ele ignora ou manda tirar: _a descobrir_
-- Ajustes visuais recorrentes: _a descobrir_
+- **Planilha Excel, não site.** Depois de dois sites (Itália, Paris) disse que
+  "não estava sendo tão bom quanto pensava" e pediu planilhas estritamente
+  organizadas, com cálculos precisos, para comparar orçamentos do mesmo
+  destino. (confirmado — dito com todas as letras, 2026-09-12)
+- Quer **opções de upgrade e downgrade na maioria dos itens** e **link para
+  reservar ou comprar cada um**: decide item a item, não por cenário pronto.
+  (confirmado)
+- Compara viagens entre si antes de comprar (Itália × Paris na mesma janela).
+  (provável)
+- Site imersivo: só se pedir. O que existe fica como opcional.
 
 ## Padrões observados
 

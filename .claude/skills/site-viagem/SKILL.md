@@ -1,11 +1,13 @@
 ---
 name: site-viagem
-description: Gera ou atualiza o site imersivo de um destino a partir do trip.json — um palco de uma tela só, com identidade visual derivada do destino (paleta, tipografia, silhueta no horizonte e um momento de encantamento), bilhetes de dia que abrem em modal, tiles de reservas, logística, mapa, orçamento com câmbio ao vivo, mala e guia — mais o roteiro imprimível em markdown e um QA que bloqueia a entrega. Use sempre que o usuário pedir o site, a página, o "one pager" ou o roteiro montado de uma viagem, quiser mudar o visual ou uma seção do site, pedir para atualizar um destino existente, pedir para publicar no VPS, ou quando pesquisa, roteiro e orçamento já estão no trip.json e falta a entrega.
+description: OPCIONAL — só quando o usuário pedir explicitamente o site, a página ou o "one pager"; a entrega padrão do repo é a planilha (planilha-viagem). Gera ou atualiza o site imersivo de um destino a partir do trip.json — um palco de uma tela só, com identidade visual derivada do destino (paleta, tipografia, silhueta no horizonte e um momento de encantamento), bilhetes de dia que abrem em modal, tiles de reservas, logística, mapa, orçamento com câmbio ao vivo, mala e guia — mais o roteiro imprimível em markdown e um QA que bloqueia a entrega. Use sempre que o usuário pedir o site, a página, o "one pager" ou o roteiro montado de uma viagem, quiser mudar o visual ou uma seção do site, pedir para atualizar um destino existente, pedir para publicar no VPS, ou quando pesquisa, roteiro e orçamento já estão no trip.json e falta a entrega.
 ---
 
 # Site da viagem
 
-O site é a entrega final: uma tela só, que abre no celular no meio da rua e
+**Esta skill é opcional.** A entrega padrão do repo é a planilha
+(`planilha-viagem`); o site só sai quando o usuário pedir explicitamente. Quando
+sair, o site é uma tela só, que abre no celular no meio da rua e
 dá para mandar para quem vai junto. Ele precisa ser duas coisas ao mesmo
 tempo — bonito o bastante para ser guardado, e prático o bastante para ser
 usado às 8h numa estação de metrô. Os sites premiados são justamente os que

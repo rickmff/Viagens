@@ -45,8 +45,8 @@ _Regras verificadas em 12 de setembro de 2026. Reconfirme perto da viagem._
 
 | Trecho | Saída | Chegada | Companhia | Custo |
 |---|---|---|---|---|
-| OPO → ORY | 07 de out. 07:15 | 07 de out. 10:40 | Transavia | € 100 pp |
-| ORY → OPO | 11 de out. 18:30 | 11 de out. 19:55 | Transavia | € 100 pp |
+| OPO → ORY | 07 de out. 07:15 | 07 de out. 10:40 | Transavia | € 50 pp |
+| ORY → OPO | 11 de out. 18:30 | 11 de out. 19:55 | Transavia | € 50 pp |
 
 ### Hospedagem
 
@@ -136,15 +136,15 @@ _Domingo é Orsay porque segunda ele fecha. Mercado de domingo na Aligre, uma vo
 | Hospedagem | € 510 | € 440 |
 | Taxa de turismo | € 23 | € 23 |
 | Alimentação _(intocável)_ | € 380 | € 380 |
-| Transporte local | € 92 | € 92 |
+| Transporte local | € 128 | € 106 |
 | Atrações _(intocável)_ | € 465 | € 417 |
 | Extras e compras | € 80 | € 40 |
-| **Total** | **€ 1.750** | **€ 1.552** |
-| Reserva para imprevistos | € 175 | € 175 |
+| **Total** | **€ 1.786** | **€ 1.566** |
+| Reserva para imprevistos | € 179 | € 179 |
 
-Por pessoa: **€ 875** · econômico **€ 776**.
+Por pessoa: **€ 893** · econômico **€ 783**.
 
-Teto de € 2.000 (lido como total do grupo): sobram € 75.
+Teto de € 2.000 (lido como total do grupo): sobram € 35.
 
 ## Bagagem
 

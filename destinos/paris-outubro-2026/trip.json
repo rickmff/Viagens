@@ -206,11 +206,24 @@
       "escalas": [],
       "duracaoTotalMin": 145,
       "custo": {
-        "valor": 100,
+        "valor": 50,
         "moeda": "EUR",
-        "por": "pessoa"
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 40,
+            "descricao": "Ryanair para Beauvais (≈ €31 o trecho) + ônibus €17,90: mais barato no papel, 1h15 a mais por trecho",
+            "link": "https://www.ryanair.com/pt/pt"
+          },
+          "upgrade": {
+            "valor": 82,
+            "descricao": "TAP para Orly, horário melhor e bagagem despachada (≈ €82 o trecho)",
+            "link": "https://www.flytap.com/pt-pt/"
+          }
+        }
       },
-      "status": "cotado"
+      "status": "cotado",
+      "link": "https://www.transavia.com/pt-PT/"
     },
     {
       "id": "volta",
@@ -224,11 +237,24 @@
       "escalas": [],
       "duracaoTotalMin": 145,
       "custo": {
-        "valor": 100,
+        "valor": 50,
         "moeda": "EUR",
-        "por": "pessoa"
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 40,
+            "descricao": "Ryanair para Beauvais (≈ €31 o trecho) + ônibus €17,90: mais barato no papel, 1h15 a mais por trecho",
+            "link": "https://www.ryanair.com/pt/pt"
+          },
+          "upgrade": {
+            "valor": 82,
+            "descricao": "TAP para Orly, horário melhor e bagagem despachada (≈ €82 o trecho)",
+            "link": "https://www.flytap.com/pt-pt/"
+          }
+        }
       },
-      "status": "cotado"
+      "status": "cotado",
+      "link": "https://www.transavia.com/pt-PT/"
     }
   ],
   "hospedagens": [
@@ -243,10 +269,24 @@
       "custo": {
         "valor": 390,
         "moeda": "EUR",
-        "por": "total"
+        "por": "total",
+        "opcoes": {
+          "economico": {
+            "valor": 315,
+            "descricao": "ibis budget / 2★ no 11º–12º a ≈ €105 a noite (3 noites)",
+            "link": "https://www.booking.com/searchresults.html?ss=Bastille%2C+Paris"
+          },
+          "upgrade": {
+            "valor": 525,
+            "descricao": "Villa Beaumarchais 4★ no Marais a ≈ €175 a noite (3 noites); €94 \"desde\" no eDreams, confira o total no checkout",
+            "link": "https://www.booking.com/hotel/fr/villabeaumarchais_paris.html"
+          }
+        }
       },
       "porque": "Três noites a ≈ €130 (a quinta é na Disney). Bastille a 7 min, RER A na Gare de Lyon direto para Chessy, Marais a pé, bouillons a dez minutos.",
-      "status": "cotado"
+      "status": "cotado",
+      "noites": 3,
+      "link": "https://all.accor.com/hotel/1399/index.en.shtml"
     },
     {
       "id": "hosp-disney",
@@ -259,10 +299,24 @@
       "custo": {
         "valor": 120,
         "moeda": "EUR",
-        "por": "total"
+        "por": "total",
+        "opcoes": {
+          "economico": {
+            "valor": 70,
+            "descricao": "B&B Marne-la-Vallée Val d'Europe (Serris), sem ônibus para o parque: RER 1 estação + a pé",
+            "link": "https://www.kayak.fr/Serris-Hotels-B-B-HOTEL-Marne-la-Vallee-Val-d-Europe.1071455878.ksp"
+          },
+          "upgrade": {
+            "valor": 260,
+            "descricao": "Hotel Disney (Santa Fe / Cheyenne) com Extra Magic Time às 8h30 — pacote exige 2 noites desde 31/3/2026",
+            "link": "https://www.disneylandparis.com/en-int/hotels/"
+          }
+        }
       },
       "porque": "Parceiro oficial: ônibus grátis a cada 20 min, café incluído, metade do preço de um hotel Disney. O que se perde é a Extra Magic Time das 8h30.",
-      "status": "cotado"
+      "status": "cotado",
+      "noites": 1,
+      "link": "https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre"
     }
   ],
   "transportes": [
@@ -273,12 +327,24 @@
       "custo": {
         "valor": 28,
         "moeda": "EUR",
-        "por": "pessoa"
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 28,
+            "descricao": "—"
+          },
+          "upgrade": {
+            "valor": 90,
+            "descricao": "táxi tarifa fixa Orly ⇄ margem direita €44 por trecho, dividido por 2",
+            "link": "https://www.parisaeroport.fr/en/passengers/access/paris-orly/taxis"
+          }
+        }
       },
       "cobre": [
         "paris"
       ],
-      "observacao": "25 min até Châtelet. O bilhete de €2,55 não vale para aeroporto."
+      "observacao": "25 min até Châtelet. O bilhete de €2,55 não vale para aeroporto.",
+      "link": "https://www.bonjour-ratp.fr/en/"
     },
     {
       "id": "rer-disney",
@@ -293,7 +359,8 @@
         "paris",
         "disney"
       ],
-      "observacao": "Bilhete único de €2,55 vale até a Disney desde 2025. 40 min de Nation; a estação sai na porta do parque."
+      "observacao": "Bilhete único de €2,55 vale até a Disney desde 2025. 40 min de Nation; a estação sai na porta do parque.",
+      "link": "https://www.bonjour-ratp.fr/en/"
     },
     {
       "id": "metro",
@@ -302,12 +369,24 @@
       "custo": {
         "valor": 31,
         "moeda": "EUR",
-        "por": "pessoa"
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 20,
+            "descricao": "andar mais e usar 8 bilhetes em vez de 12"
+          },
+          "upgrade": {
+            "valor": 37,
+            "descricao": "Navigo Jour €12,30 nos 3 dias de Paris (só compensa com 5+ viagens no dia)",
+            "link": "https://www.bonjour-ratp.fr/en/titres-tarifs/"
+          }
+        }
       },
       "cobre": [
         "paris"
       ],
-      "observacao": "Navigo Semaine só vale de segunda a domingo — não serve para quarta a domingo. Passe de dia (€12,30) só compensa com 5+ viagens."
+      "observacao": "Navigo Semaine só vale de segunda a domingo — não serve para quarta a domingo. Passe de dia (€12,30) só compensa com 5+ viagens.",
+      "link": "https://www.bonjour-ratp.fr/en/titres-tarifs/"
     }
   ],
   "dias": [
@@ -345,7 +424,8 @@
             "valor": 14,
             "moeda": "EUR",
             "por": "pessoa"
-          }
+          },
+          "link": "https://www.bonjour-ratp.fr/en/"
         },
         {
           "id": "p2",
@@ -358,7 +438,17 @@
           "custo": {
             "valor": 9,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 5.4,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 16.2,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
           }
         },
         {
@@ -372,7 +462,17 @@
           "custo": {
             "valor": 13,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 10,
+                "descricao": "só o exterior + Notre-Dame (grátis)"
+              },
+              "upgrade": {
+                "valor": 20,
+                "descricao": "bilhete combinado Sainte-Chapelle + Conciergerie"
+              }
+            }
           },
           "reservaNecessaria": true,
           "link": "https://www.sainte-chapelle.fr/en/visit/practical-information",
@@ -408,9 +508,20 @@
           "custo": {
             "valor": 19,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 9,
+                "descricao": "fórmula de padaria"
+              },
+              "upgrade": {
+                "valor": 35,
+                "descricao": "bistrô no Marais com vinho"
+              }
+            }
           },
-          "notas": "Sem reserva, fila anda rápido. Sopa de cebola, steak-frites, crème caramel."
+          "notas": "Sem reserva, fila anda rápido. Sopa de cebola, steak-frites, crème caramel.",
+          "link": "https://www.bouillon-chartier.com/en/"
         }
       ]
     },
@@ -462,10 +573,20 @@
           "custo": {
             "valor": 150,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 142,
+                "descricao": "faixa \"eco\" — trocar para 30/9–1/10 se o preço por data for menor"
+              },
+              "upgrade": {
+                "valor": 200,
+                "descricao": "+ Disney Premier Access One (3 atrações) ≈ €45 pp"
+              }
+            }
           },
           "reservaNecessaria": true,
-          "link": "https://www.disneylandparis.com/en-usd/offers",
+          "link": "https://www.disneylandparis.com/en-int/tickets/",
           "notas": "Ingresso de 2 dias, com data. Big Thunder Mountain e Phantom Manor primeiro; Halloween é no Frontierland."
         },
         {
@@ -479,7 +600,17 @@
           "custo": {
             "valor": 25,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 15.0,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 45.0,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
           }
         },
         {
@@ -533,7 +664,8 @@
           "titulo": "Walt Disney Studios Park",
           "lat": 48.8701,
           "lon": 2.7741,
-          "notas": "Aberto até 20h. Ratatouille e Avengers Campus na primeira hora."
+          "notas": "Aberto até 20h. Ratatouille e Avengers Campus na primeira hora.",
+          "link": "https://www.disneylandparis.com/en-int/tickets/"
         },
         {
           "id": "d7",
@@ -546,7 +678,17 @@
           "custo": {
             "valor": 25,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 15.0,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 45.0,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
           }
         },
         {
@@ -556,7 +698,8 @@
           "tipo": "atracao",
           "titulo": "Disneyland Park de novo: o que faltou, e a Main Street ao entardecer",
           "lat": 48.8701,
-          "lon": 2.7741
+          "lon": 2.7741,
+          "link": "https://www.disneylandparis.com/en-int/tickets/"
         },
         {
           "id": "d9",
@@ -583,7 +726,17 @@
           "custo": {
             "valor": 18,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 10.8,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 32.4,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
           }
         }
       ]
@@ -621,7 +774,17 @@
           "custo": {
             "valor": 22,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 22,
+                "descricao": "primeira sexta do mês 18h–21h é grátis (não cai na viagem)"
+              },
+              "upgrade": {
+                "valor": 45,
+                "descricao": "visita guiada oficial 1h30"
+              }
+            }
           },
           "reservaNecessaria": true,
           "link": "https://www.louvre.fr/en/visit/hours-admission",
@@ -639,7 +802,17 @@
           "custo": {
             "valor": 10,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 6.0,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 18.0,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
           }
         },
         {
@@ -653,10 +826,21 @@
           "custo": {
             "valor": 12.5,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 12.5,
+                "descricao": "—"
+              },
+              "upgrade": {
+                "valor": 18,
+                "descricao": "bilhete combinado Orsay + Orangerie"
+              }
+            }
           },
           "reservaNecessaria": true,
-          "notas": "Pequeno; uma hora e meia sobra. Fecha terça, como o Louvre."
+          "notas": "Pequeno; uma hora e meia sobra. Fecha terça, como o Louvre.",
+          "link": "https://www.musee-orangerie.fr/en"
         },
         {
           "id": "p10",
@@ -678,7 +862,17 @@
           "custo": {
             "valor": 14.8,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 0,
+                "descricao": "ver de baixo, do Trocadéro, na hora da cintilação"
+              },
+              "upgrade": {
+                "valor": 36.7,
+                "descricao": "elevador até o topo"
+              }
+            }
           },
           "reservaNecessaria": true,
           "link": "https://www.toureiffel.paris/en",
@@ -696,7 +890,17 @@
           "custo": {
             "valor": 22,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 13.2,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 39.6,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
           }
         }
       ]
@@ -734,10 +938,21 @@
           "custo": {
             "valor": 16,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 16,
+                "descricao": "primeiro domingo do mês grátis (só na janela 30/9–4/10)"
+              },
+              "upgrade": {
+                "valor": 22,
+                "descricao": "bilhete combinado Orsay + Orangerie"
+              }
+            }
           },
           "reservaNecessaria": true,
-          "notas": "Impressionistas no 5º andar; suba direto e desça depois. O relógio da fachada dá a foto."
+          "notas": "Impressionistas no 5º andar; suba direto e desça depois. O relógio da fachada dá a foto.",
+          "link": "https://www.musee-orsay.fr/en"
         },
         {
           "id": "p14",
@@ -750,9 +965,20 @@
           "custo": {
             "valor": 15,
             "moeda": "EUR",
-            "por": "pessoa"
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 10,
+                "descricao": "sanduíche de padaria"
+              },
+              "upgrade": {
+                "valor": 25,
+                "descricao": "ostras e vinho no mercado"
+              }
+            }
           },
-          "notas": "O mercado mais barato de Paris, e é domingo de manhã que ele está inteiro. Fecha às 13h30."
+          "notas": "O mercado mais barato de Paris, e é domingo de manhã que ele está inteiro. Fecha às 13h30.",
+          "link": "https://www.marchedaligre.fr/"
         },
         {
           "id": "p15",
@@ -840,10 +1066,10 @@
       {
         "id": "transporte-local",
         "nome": "Transporte local",
-        "previsto": 92,
-        "economico": 92,
+        "previsto": 128,
+        "economico": 106,
         "real": null,
-        "observacao": "Orly €14 × 2 × 2, RER A Disney €2,55 × 2 × 2, ≈ 12 viagens de metrô para 2."
+        "observacao": "Orly €14 × 2 trechos × 2 = €56, RER A Disney €2,55 × 2 × 2 = €10, ≈ 12 bilhetes de metrô × €2,55 × 2 = €62. Econômico: 8 bilhetes de metrô."
       },
       {
         "id": "atracoes",
@@ -864,7 +1090,7 @@
       }
     ],
     "reserva": {
-      "valor": 175,
+      "valor": 179,
       "moeda": "EUR",
       "percentual": 10
     }

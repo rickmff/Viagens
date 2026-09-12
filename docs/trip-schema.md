@@ -268,8 +268,37 @@ meio inventadas.
 ## Convenções que evitam retrabalho
 
 **Dinheiro sempre com moeda.** Nunca `"custo": 15` — sempre
-`{ "valor": 15, "moeda": "EUR", "por": "pessoa" }`. O site converte e soma
-sozinho, mas só se souber a moeda e se o valor é por pessoa ou total.
+`{ "valor": 15, "moeda": "EUR", "por": "pessoa" }`. Planilha e site convertem
+e somam sozinhos, mas só se souberem a moeda e se o valor é por pessoa ou total.
+
+**Todo item comprável tem três opções e um link.** O `custo` de voo,
+hospedagem, transporte e bloco aceita:
+
+```jsonc
+"custo": {
+  "valor": 130, "moeda": "EUR", "por": "noite",
+  "link": "https://...",                       // onde comprar o plano
+  "opcao": "plano",                            // econômico | plano | upgrade — a escolhida
+  "opcoes": {
+    "economico": { "valor": 105, "descricao": "ibis budget no 12º", "link": "https://..." },
+    "upgrade":   { "valor": 175, "descricao": "4★ no Marais",        "link": "https://..." }
+  }
+}
+```
+
+`link` também pode ficar no próprio voo, hospedagem, transporte ou bloco.
+Sem `opcoes`, a planilha usa o fator da categoria
+(`categorias[].economico / previsto`) como econômico e não oferece upgrade.
+O econômico tem que ser uma alternativa real (outro hotel, outro aeroporto),
+não "o mesmo mais barato".
+
+**Hospedagem com `noites` quando as datas enganam.** `checkin`/`checkout`
+contam noites; se uma noite do intervalo é noutro lugar (a noite da Disney no
+meio de três em Paris), grave `"noites": 3` explicitamente.
+
+**Bloco de deslocamento com custo só conta quando não há `transportes[]`.**
+Se a viagem lista passes e bilhetes em `transportes`, o custo do bloco é
+informativo e a planilha não o soma de novo.
 
 **Datas em ISO.** `YYYY-MM-DD` para datas, `YYYY-MM-DDTHH:mm` para horários
 locais. Sem fuso na string — o fuso vem do destino.
