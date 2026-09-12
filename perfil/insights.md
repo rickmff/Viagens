@@ -27,4 +27,30 @@ Formato de cada entrada:
 
 ---
 
-_Nenhuma sessão registrada ainda._
+## 2026-09-12 — Itália 2027 (briefing) e uma correção de fundação
+
+**Prompt (resumo):** "Quero planejar uma viagem pra Itália"; no briefing,
+corrigiu: mora em Portugal e gasta em euro.
+
+**Sinais observados**
+- Escolheu datas flexíveis com pedido de comparação de épocas; 7 a 9 dias;
+  recorte clássico Roma–Florença–Veneza; em casal.
+- Ao ver valores em R$, interrompeu: "moro em Portugal e gasto em euro".
+
+**Inferido**
+- Mora em Portugal, moeda EUR, fuso Europe/Lisbon — (confirmado).
+- Viaja em casal — (provável).
+- Prefere ver alternativas comparadas antes de fixar data — (hipótese).
+
+**Aplicado ao PERFIL.md**
+- Contexto fixo → **derrubada** a entrada "Mora no Brasil, moeda BRL
+  (confirmado)". Ela nunca foi dita: foi inferida do idioma e marcada como
+  confirmada por engano. Lição para o próprio perfil: *confirmado* só quando
+  ele disse, nunca por inferência de idioma ou de contexto.
+- Contexto fixo → Portugal, EUR, Europe/Lisbon; companhia em casal.
+
+**Perguntas que não precisei fazer**
+- Nenhuma ainda — perfil estava vazio. A partir daqui: companhia, moeda e
+  fuso não se perguntam mais.
+
+---

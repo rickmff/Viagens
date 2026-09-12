@@ -1,6 +1,6 @@
 ---
 name: pesquisa-destino
-description: Pesquisa um destino de viagem na web, com fontes datadas, e grava os fatos em destinos/<slug>/PESQUISA.md e no trip.json — documentação para brasileiros, festivais e sazonalidade com previsão do ano, o que abre e fecha em cada dia da semana, horário de última entrada, custos reais, taxa de turismo, tarifa dupla, voos, bairros, transporte, segurança e a lista de atrações candidatas filtrada pelo perfil. Use sempre que o usuário mencionar querer viajar para algum lugar, pedir sugestões de roteiro, perguntar "vale a pena ir para X em tal mês", perguntar qual a melhor época para visitar um país, quiser saber quanto custa uma viagem, precisar de informação de visto, ou pedir para atualizar a pesquisa de um destino que já existe no repo. É o passo que antecede a geração do site.
+description: Pesquisa um destino de viagem na web, com fontes datadas, e grava os fatos em destinos/<slug>/PESQUISA.md e no trip.json — documentação conforme a nacionalidade e a residência do perfil, festivais e sazonalidade com previsão do ano, o que abre e fecha em cada dia da semana, horário de última entrada, custos reais, taxa de turismo, tarifa dupla, voos, bairros, transporte, segurança e a lista de atrações candidatas filtrada pelo perfil. Use sempre que o usuário mencionar querer viajar para algum lugar, pedir sugestões de roteiro, perguntar "vale a pena ir para X em tal mês", perguntar qual a melhor época para visitar um país, quiser saber quanto custa uma viagem, precisar de informação de visto, ou pedir para atualizar a pesquisa de um destino que já existe no repo. É o passo que antecede a geração do site.
 ---
 
 # Pesquisa de destino
@@ -34,12 +34,20 @@ sobre preço. Fazer preço antes de calendário é o erro mais caro aqui, porque
 pesquisar o custo de um museu que fecha no único dia livre é trabalho jogado
 fora.
 
-### 1. Documentação para brasileiros
+### 1. Documentação
 
-Visto (necessário? e-visa? na chegada?), autorização eletrônica prévia mesmo
-com isenção (ETA, ESTA, K-ETA, ETIAS — "não precisa de visto" não quer dizer
-"não precisa de nada"), validade mínima de passaporte, vacinas, seguro
-obrigatório, prova de saída, comprovante de fundos.
+Depende da **nacionalidade** (que passaporte ele leva) e da **residência**
+(Portugal) — as duas estão no perfil; se a nacionalidade não estiver, é uma
+das raras perguntas que vale fazer, porque decide se existe visto.
+
+Dentro do Schengen, residente em Portugal circula sem fronteira: documentação
+vira só "leve o documento certo" e, se ele não for cidadão da UE, o título de
+residência junto com o passaporte. Fora do Schengen, tudo volta a contar:
+visto (necessário? e-visa? na chegada?), autorização eletrônica mesmo com
+isenção (ETA, ESTA, K-ETA — "não precisa de visto" não quer dizer "não precisa
+de nada"), validade mínima de passaporte, vacinas, seguro obrigatório, prova
+de saída, comprovante de fundos. Se ele tiver dois passaportes, pesquise para
+os dois e diga qual entra melhor.
 
 É o único item da lista que impede o embarque. Fonte oficial, e anote a data da
 consulta em `documentacao.verificadoEm`.
@@ -67,7 +75,7 @@ montar roteiro**. É a informação mais valiosa que você pode dar e a mais fá
 de enterrar num parágrafo no fim.
 
 **Datas flexíveis pedem uma tabela, não uma sugestão.** Compare as épocas
-candidatas numa tabela curta — preço do voo, diária média, clima, multidão, e o
+candidatas numa tabela curta — preço do voo desde Portugal, diária média, clima, multidão, e o
 que cada época faz com a lista de desejos dele — e recomende uma, com o motivo.
 
 Explicite o compromisso em vez de escondê-lo: a época mais barata raramente é a
@@ -87,7 +95,7 @@ que aquilo foi verificado, senão vai reconferir tudo por conta.
 
 ### 4. Custo real
 
-Voo Brasil→destino no período, diária na faixa do perfil, refeição típica,
+Voo de casa (Portugal) ao destino no período, diária na faixa do perfil, refeição típica,
 transporte urbano, ingresso das atrações principais, **taxa de turismo por
 pessoa por noite** onde existir (Roma cobra, Paris cobra — é linha de
 orçamento, não rodapé).
@@ -96,7 +104,9 @@ Números de fontes recentes, com a moeda local explícita e a data da consulta.
 Não estime de cabeça: orçamento sobre preço inventado é pior que nenhum.
 
 Onde houver **tarifa dupla residente/visitante** (França desde 2026, entre
-outros), registre as duas colunas — o site tem um botão que alterna entre elas.
+outros), confira o que residência em Portugal e a nacionalidade dele dão —
+residente na UE costuma pagar a tarifa menor — e grave em `valor` o que ele
+paga de fato. O site tem um botão que alterna entre as duas.
 
 Passe de transporte e city pass merecem a conta explícita: some o avulso do que
 o roteiro realmente visita, espalhado nos dias reais, e compare. Passe semanal

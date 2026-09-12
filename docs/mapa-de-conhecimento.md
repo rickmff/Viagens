@@ -50,7 +50,7 @@ planeador-de-viagens.
 | Fechamento semanal por tipo de lugar; verificar contra o dia da semana, não "está aberto" | TI, PdV, PlV | `verificacoes.md` |
 | Horário de última entrada ≠ horário de fechar | PlV | `verificacoes.md` |
 | Parque temático em dia útil, nunca domingo | PlV | `verificacoes.md` |
-| Janela de venda de ingresso com hora exata, convertida para Brasília | TI, PdV | `verificacoes.md`, `roteiro-viagem`, site (`Reservas.jsx`) |
+| Janela de venda de ingresso com hora exata, convertida para o fuso de casa | TI, PdV | `verificacoes.md`, `roteiro-viagem`, site (`Reservas.jsx`) |
 | Ingresso nominativo exige o nome do documento | TI | `verificacoes.md`, contrato |
 | Reservas por urgência com data-limite | TI, PdV, PlV | `verificacoes.md`, contrato (`reservas[]`) |
 | Riscos: clima, evento adiado, bilhete separado, frio, bagagem em trânsito | PdV | `verificacoes.md` |
@@ -61,7 +61,7 @@ planeador-de-viagens.
 
 | Tema | Origem | Vive em |
 |---|---|---|
-| Documentação para brasileiros primeiro; autorização eletrônica mesmo com isenção | v1 | `pesquisa-destino`, `fontes.md` |
+| Documentação pela nacionalidade e residência (casa = Portugal); autorização eletrônica mesmo com isenção | v1, corrigido | `pesquisa-destino`, `fontes.md` |
 | Transcrever o que o usuário deu antes de pesquisar; seus números viram a coluna "seu plano" | TI | `orcamento-viagem` |
 | Só bilheteria oficial; URL que apareceu em busca, nunca de memória | TI, PdV | `fontes.md`, `roteiro-viagem` |
 | Tarifa dupla residente / visitante | TI | contrato (`tarifaDupla`), site (`precos.jsx`) |
@@ -97,7 +97,7 @@ planeador-de-viagens.
 | Taxa de turismo como linha | TI, PlV | `orcamento-viagem`, contrato (`taxaTurismo`) |
 | Custos que escapam: taxa no check-in, bagagem em low-cost, armário, gorjeta | PlV | `orcamento-viagem` |
 | Passe vs avulso: somar o que o roteiro visita; o relógio de 48h | TI | `orcamento-viagem` |
-| IOF 3,5% + spread; câmbio com margem de 5% e data | v1 | `orcamento-viagem`, site (`cambio.js`) |
+| Custo real do cartão fora do euro (margem vem do perfil); câmbio com data | v1, corrigido | `orcamento-viagem`, site (`cambio.js`) |
 | Onde não cortar: a razão de ser da viagem; cortes ordenados do que menos dói | PdV, PlV | `orcamento-viagem`, contrato (`intocavel`) |
 | Franqueza quando não cabe, na primeira resposta em que ficar claro | PdV, PlV | `orcamento-viagem`, `planejar-viagem` |
 | Cenários A/B/C de hospedagem e o que o prêmio compra | TI | `pesquisa-destino` (geografia prática) |
@@ -133,8 +133,18 @@ planeador-de-viagens.
 - **HTML único**: o modelo imersivo foi portado para React + Vite, o stack
   escolhido. O que importava — a régua de design, o palco, a interação — está
   inteiro; o formato de arquivo era detalhe.
-- **Português europeu**: as duas skills mais fortes eram em pt-PT. Tudo virou
-  pt-BR, porque o CLAUDE.md manda e porque o viajante é brasileiro.
+- **Português europeu**: as duas skills mais fortes eram em pt-PT. O texto
+  ficou em pt-BR por consistência com o que já existia — mas o viajante mora em
+  Portugal, então nada no repo assume Brasil como casa.
+
+## Uma correção de fundação
+
+A primeira versão deste repo assumiu "mora no Brasil, moeda BRL" e marcou como
+*confirmado* — inferido do idioma, nunca dito. O usuário mora em Portugal e
+gasta em euro. Tudo que dependia disso (IOF, "horário de Brasília",
+"documentação para brasileiros", GRU) foi generalizado para um bloco `casa`
+que vem do perfil. A lição foi para o CLAUDE.md: *confirmado* é só o que ele
+disse.
 
 ## Como usar este mapa
 

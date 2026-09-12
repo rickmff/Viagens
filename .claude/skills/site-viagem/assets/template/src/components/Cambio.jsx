@@ -10,6 +10,7 @@ const REFERENCIAS = [10, 50, 100, 500, 1000]
 
 export default function Cambio({ viagem }) {
   const { base, taxas, erroTaxas, moedasLocais: moedas } = usePrecos()
+  const margem = viagem.orcamento?.margemCartao ?? MARGEM_PADRAO
   const [ativa, setAtiva] = useState(moedas[0])
   const [valor, setValor] = useState(100)
 
@@ -22,7 +23,7 @@ export default function Cambio({ viagem }) {
     <Secao
 
       titulo="Câmbio"
-      descricao={`Quanto custa de verdade em ${base}, já contando IOF e spread do cartão.`}
+      descricao={`Quanto custa de verdade em ${base}, já contando a taxa do seu cartão.`}
       acao={moedas.length > 1 && (
         <div className="flex gap-1.5">
           {moedas.map((m) => (
@@ -59,12 +60,12 @@ export default function Cambio({ viagem }) {
                   <span className="text-tinta-2">{ativa}</span>
                   <span className="text-tinta-3">=</span>
                   <strong className="text-2xl font-semibold tabular-nums">
-                    {moeda(converter(valor, taxa), base)}
+                    {moeda(converter(valor, taxa, { margem }), base)}
                   </strong>
                 </div>
                 <p className="mt-1.5 text-xs text-tinta-3">
                   Na taxa comercial limpa daria {moeda(valor / taxa, base)} — a diferença é a
-                  margem de {Math.round(MARGEM_PADRAO * 100)}% de IOF e spread.
+                  margem de {Math.round(margem * 100)}% do seu cartão.
                 </p>
               </div>
 
@@ -74,7 +75,7 @@ export default function Cambio({ viagem }) {
                   {REFERENCIAS.map((n) => (
                     <li key={n} className="flex justify-between gap-4">
                       <span className="text-tinta-2">{numero(n)} {ativa}</span>
-                      <span className="font-medium">{moeda(converter(n, taxa), base)}</span>
+                      <span className="font-medium">{moeda(converter(n, taxa, { margem }), base)}</span>
                     </li>
                   ))}
                 </ul>
@@ -83,7 +84,7 @@ export default function Cambio({ viagem }) {
 
             <p className="mt-4 border-t border-linha pt-3 text-xs text-tinta-3">
               1 {base} = {numero(taxa, 4)} {ativa} · cotação de {estado.dados.em} via {estado.dados.fonte}.
-              Cartão com IOF zero sai mais barato que o mostrado aqui.
+              Cartão sem taxa de câmbio (Revolut, Wise) sai mais barato que o mostrado aqui.
             </p>
           </>
         )}

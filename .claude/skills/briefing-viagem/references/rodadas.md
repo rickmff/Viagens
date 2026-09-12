@@ -21,13 +21,13 @@ header: "Destino"
 question: "Para onde, nesse período?"
 options:
   - label: "Kyoto e Tóquio (pelo perfil)"
-    description: "Folhagem de outono em novembro; alta temporada, voo ~R$ 6 mil pp"
-  - label: "Lisboa e Porto"
-    description: "Outono ameno, baixa temporada, voo ~R$ 4 mil pp, comida barata"
+    description: "Folhagem de outono em novembro; alta temporada, voo ~€900 pp"
+  - label: "Sicília"
+    description: "Outono ameno, voo direto de Lisboa ~€120 pp, comida barata"
   - label: "Cidade do México e Oaxaca"
     description: "Dia dos Mortos no início de novembro; precisa reservar hotel já"
   - label: "Marrocos"
-    description: "Clima ideal, sem visto; deserto exige 2 dias só de deslocamento"
+    description: "Clima ideal, 1h30 de voo; deserto exige 2 dias só de deslocamento"
 ```
 
 Ordene pela aderência ao perfil. Sem perfil, ordene pela época.
@@ -87,12 +87,12 @@ Faixas, não campo aberto. E a pergunta que sempre confunde vai junto:
 
 ```
 header: "Orçamento"
-question: "Quanto dá para gastar, tudo incluído?"
+question: "Quanto dá para gastar, tudo incluído, em euros?"
 options:
-  - label: "Até R$ 8 mil por pessoa"
-  - label: "R$ 8 a 15 mil por pessoa (pelo perfil)"
+  - label: "Até €1.000 por pessoa"
+  - label: "€1.000 a €2.000 por pessoa (pelo perfil)"
     description: "Sua faixa nas últimas viagens"
-  - label: "R$ 15 a 25 mil por pessoa"
+  - label: "€2.000 a €3.500 por pessoa"
   - label: "Acima disso — conforto primeiro"
 ```
 
@@ -101,8 +101,8 @@ leitura mais provável, mostre como assumido, ofereça a outra.
 
 ### Saída `[perfil]`
 
-Aeroporto de origem e se aceita sair de um vizinho. Depois da primeira viagem,
-o perfil responde e a pergunta some.
+Lisboa ou Porto, e se aceita sair do outro quando a diferença de preço paga o
+trem. Depois da primeira viagem, o perfil responde e a pergunta some.
 
 ---
 

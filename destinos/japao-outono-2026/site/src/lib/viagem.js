@@ -15,7 +15,7 @@ export const temConteudo = (...valores) => valores.some((v) => !vazio(v))
  *  de chutar — número errado em orçamento é pior que número ausente. */
 export function paraMoedaBase(custo, viagem, taxasAoVivo = null) {
   if (!custo || custo.valor == null) return null
-  const base = viagem.moedaBase || 'BRL'
+  const base = viagem.moedaBase || viagem.casa?.moeda || 'EUR'
   if (!custo.moeda || custo.moeda === base) return custo.valor
 
   const aoVivo = taxasAoVivo?.[custo.moeda]

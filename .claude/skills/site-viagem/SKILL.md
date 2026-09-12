@@ -49,7 +49,7 @@ Uma tela, sem rolagem, em três faixas:
   quando o dia tem opção B.
 - **Tiles** — Reservar · Logística · Mapa · Orçamento · Mala · Guia. Só existem
   os que têm conteúdo; o texto pequeno de cada um é ao vivo ("3 de 6 feitas",
-  "R$ 28.890 de R$ 32.000").
+  "€4.815 de €5.200").
 
 Atrás de tudo, o céu: gradiente de quatro paradas, a silhueta do destino em
 baixa opacidade, e as partículas do momento — que caem ou piscam por alguns
@@ -105,19 +105,19 @@ novo, porque quase sempre o que falta é dado, não interface:
 | Modal e navegação ←/→/Esc, foco preso | `Modal.jsx` | — |
 | Linha do tempo do dia, plano B, opção B, marcar feito | `DiaModal.jsx` | `dias[].blocos`, `opcaoB` |
 | Tiles e seus textos ao vivo | `Tiles.jsx` | contagens do trip.json |
-| Reservas por prazo real, hora de venda em Brasília | `Reservas.jsx` | `reservas` |
+| Reservas por prazo real, hora de venda no fuso de casa | `Reservas.jsx` | `reservas` |
 | Documentos e providências | `Documentacao.jsx` | `documentacao` |
 | Voos, hospedagem, passes | `Logistica.jsx` | `voos`, `hospedagens`, `transportes` |
 | Mapa escuro, filtrável por dia | `Mapa.jsx` | tudo com `lat`/`lon` |
 | Orçamento: seu plano / econômico / real | `Orcamento.jsx` | `orcamento` |
-| Câmbio ao vivo com IOF e spread | `Cambio.jsx`, `lib/cambio.js` | `destinos[].moeda` |
+| Câmbio ao vivo com a taxa do cartão (só fora do euro) | `Cambio.jsx`, `lib/cambio.js` | `destinos[].moeda` |
 | Clima (previsão perto, média rotulada longe) | `Clima.jsx`, `lib/clima.js` | `destinos[].lat/lon` |
 | Mala, frases, onde comer, avisos e links | homônimos | homônimos |
 | Ícones de traço | `Icones.jsx` | `dias[].icone`, `design.momento.icone` |
 
 Comportamentos que valem conhecer antes de mexer: todo preço passa por
 `usePrecos().fmt(custo)` — dinheiro formatado direto num componente novo fica
-fora do botão de moeda; `custo.valor` é sempre o que o brasileiro paga e
+fora do botão de moeda; `custo.valor` é sempre o que ele paga e
 `valorResidente` é o extra; a ordem das reservas é pelo prazo real, não pelo
 rótulo; e o site é de um tema só, o do destino — não existe modo claro, de
 propósito.

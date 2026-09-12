@@ -5,8 +5,8 @@
 > qualquer coisa. O objetivo é que, com o tempo, um prompt de uma linha seja
 > suficiente para gerar um roteiro que já parece feito sob medida.
 
-Última atualização: _(nunca — perfil recém-criado)_
-Viagens que alimentaram este perfil: _nenhuma ainda_
+Última atualização: 2026-09-12
+Viagens que alimentaram este perfil: Itália 2027 (em planejamento)
 
 ## Como ler as marcações
 
@@ -23,12 +23,15 @@ Cada afirmação carrega o quanto se pode confiar nela:
 
 ## Contexto fixo
 
-- Mora no Brasil, moeda base **BRL**. (confirmado)
+- **Mora em Portugal e gasta em euro.** Moeda base **EUR**, fuso
+  **Europe/Lisbon**. (confirmado — dito com todas as letras em 2026-09-12)
 - Dev fullstack sênior — tem tolerância a ferramenta técnica, self-host em VPS
   próprio, e prefere artefato que ele possa versionar e editar. (confirmado)
-- Aeroporto de origem: _a descobrir_
-- Passaporte / vistos já emitidos: _a descobrir_
-- Idiomas: _a descobrir_
+- Cidade e aeroporto de origem: _a descobrir_ (Lisboa ou Porto, provavelmente)
+- Nacionalidade e passaporte(s): _a descobrir_ — decide visto fora do Schengen;
+  dentro do Schengen, residente em Portugal circula livre
+- Idiomas: português; _outros a descobrir_
+- Viaja em casal. (provável — dito no briefing da Itália)
 
 ## Ritmo de viagem
 

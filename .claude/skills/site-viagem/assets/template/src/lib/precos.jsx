@@ -18,7 +18,8 @@ const Ctx = createContext(null)
 export const usePrecos = () => useContext(Ctx)
 
 export function PreferenciasProvider({ viagem, children }) {
-  const base = viagem.moedaBase || 'BRL'
+  const base = viagem.moedaBase || viagem.casa?.moeda || 'EUR'
+  const margem = viagem.orcamento?.margemCartao ?? MARGEM_PADRAO
   const tarifaDupla = viagem.tarifaDupla?.ativo ? viagem.tarifaDupla : null
 
   const [emBase, setEmBase] = usePersistido(`viagem:${viagem.slug}:moeda-base`, true)
@@ -37,7 +38,7 @@ export function PreferenciasProvider({ viagem, children }) {
   const valor = useMemo(() => (custo) => {
     if (!custo) return null
     // Sem tarifa dupla, ou sem preço de residente cadastrado, `valor` vale.
-    // `valor` é sempre o que o brasileiro paga, então esquecer o campo extra
+    // `valor` é sempre o que ele paga, então esquecer o campo extra
     // nunca subestima o orçamento — no máximo deixa de mostrar um desconto.
     return residente && tarifaDupla && custo.valorResidente != null
       ? custo.valorResidente
@@ -51,11 +52,11 @@ export function PreferenciasProvider({ viagem, children }) {
     if (v == null) return null
     if (!custo.moeda || custo.moeda === base) return v
     const aoVivo = taxas?.taxas?.[custo.moeda]
-    if (aoVivo) return converter(v, aoVivo)
+    if (aoVivo) return converter(v, aoVivo, { margem })
     const ref = (viagem.orcamento?.cambioReferencia || [])
       .find((t) => t.de === custo.moeda && t.para === base)
-    return ref ? v * ref.taxa * (1 + MARGEM_PADRAO) : null
-  }, [valor, taxas, base, viagem])
+    return ref ? v * ref.taxa * (1 + margem) : null
+  }, [valor, taxas, base, viagem, margem])
 
   /** String pronta para a tela, respeitando a moeda escolhida. */
   const fmt = useMemo(() => (custo, { sufixo = true } = {}) => {
@@ -116,7 +117,7 @@ export function ControlesDePreco() {
       {moedasLocais.length > 0 && (
         <div className="seg" role="group" aria-label="Moeda dos preços">
           <button aria-pressed={!emBase} onClick={() => setEmBase(false)} title="Preços na moeda local">{moedasLocais[0]}</button>
-          <button aria-pressed={emBase} onClick={() => setEmBase(true)} title={`Convertido para ${base}, já com IOF e spread`}>{base}</button>
+          <button aria-pressed={emBase} onClick={() => setEmBase(true)} title={`Convertido para ${base}, já com a taxa do cartão`}>{base}</button>
         </div>
       )}
       {tarifaDupla && (

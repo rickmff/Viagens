@@ -6,16 +6,19 @@ copiar a query.
 
 ## Documentação e visto
 
-Para brasileiros, a ordem de confiança é: site do consulado/embaixada do país
-de destino no Brasil > órgão de imigração oficial do país > Itamaraty
-(`gov.br/mre`, portal ConsularBR) > agregadores. Agregador serve para descobrir
-que existe uma regra; a confirmação vem sempre da fonte oficial.
+A regra é da nacionalidade, não da residência. Ordem de confiança: site do
+consulado/embaixada do país de destino em Portugal > órgão de imigração
+oficial do país > portal consular do país do passaporte > agregadores.
+Agregador serve para descobrir que existe uma regra; a confirmação vem sempre
+da fonte oficial. Dentro do Schengen, para residente em Portugal, esta seção
+se resume a "leve passaporte e título de residência".
 
 Padrões de busca que funcionam:
 
 ```
-"visto brasileiros <país> turismo site:gov"
-"<country> visa requirements Brazilian citizens tourist 2026"
+"visto <nacionalidade> <país> turismo site:gov"
+"<country> visa requirements <nationality> citizens tourist 2026"
+"<country> entry requirements EU residence permit non-EU citizen"
 "<country> immigration official visa exemption list"
 "<país> vacina febre amarela certificado internacional exigência"
 ```
@@ -28,8 +31,8 @@ Cheque explicitamente, porque cada um já barrou alguém no portão:
   "não precisa de nada".
 - Validade mínima de passaporte após a data de retorno (6 meses é o padrão).
 - Comprovante de passagem de saída, hospedagem e fundos.
-- Certificado internacional de vacinação, e se o Brasil é considerado área de
-  risco para febre amarela por aquele país.
+- Certificado internacional de vacinação, conforme o país de origem do
+  passaporte e a residência.
 - Seguro-viagem obrigatório (Schengen exige 30 mil euros).
 
 Anote `documentacao.verificadoEm` com a data da consulta. Sem isso a informação
@@ -61,7 +64,7 @@ faz a pessoa chegar uma semana cedo demais no exato motivo da viagem.
 ```
 
 Coliseu abre 30 dias antes às 9h de Roma; Torre Eiffel, 60 dias. Converta para
-o fuso do Brasil e escreva a data e a hora exatas no checklist.
+o fuso de casa (Europe/Lisbon) e escreva a data e a hora exatas no checklist.
 
 Ferramenta de busca de locais devolve horário por dia da semana — use isso e
 confira cada parada contra o dia em que ela vai cair.
@@ -69,7 +72,8 @@ confira cada parada contra o dia em que ela vai cair.
 ## Voos
 
 ```
-"voos <origem> <destino> <mês> <ano> mais barato"
+"voos Lisboa <destino> <mês> <ano> mais barato"
+"voos Porto <destino> <mês> <ano>"
 "<city A> to <city B> multi-city open jaw"
 "<companhia> site oficial"
 "aeroportos próximos de <cidade>"
@@ -77,7 +81,9 @@ confira cada parada contra o dia em que ela vai cair.
 
 Compare no agregador, compre no site da companhia. Cheque sempre se
 multidestino (entra por uma cidade, sai por outra) não sai igual ou mais
-barato — costuma economizar um dia inteiro de trem.
+barato — costuma economizar um dia inteiro de trem. Saindo de Portugal, TAP,
+Ryanair e easyJet cobrem quase toda a Europa em voo direto de 2 a 4 horas; a
+diferença entre Lisboa e Porto às vezes paga o trem entre as duas.
 
 
 ## Clima e sazonalidade
@@ -129,8 +135,10 @@ Inclua a cidade na query — "Central Station" sozinho acha a errada.
 ## Câmbio
 
 ```
-https://open.er-api.com/v6/latest/BRL        → todas as moedas, atualiza diário
-https://api.frankfurter.dev/v1/latest?base=BRL&symbols=JPY,EUR   → BCE, ~30 moedas
+https://open.er-api.com/v6/latest/EUR        → todas as moedas, atualiza diário
+https://api.frankfurter.dev/v1/latest?base=EUR&symbols=JPY,GBP   → BCE, ~30 moedas
+
+Dentro da zona euro não há câmbio nenhum — pule esta seção inteira.
 ```
 
 Use o primeiro como padrão (cobre moedas exóticas como VND, IDR, MAD) e o
@@ -151,7 +159,7 @@ recorte temporal, sempre priorizando relato recente sobre artigo genérico:
 
 Relato de viajante em fórum costuma ser mais preciso que blog de SEO, porque
 blog de viagem recicla número de cinco anos atrás sem atualizar. Prefira
-resultado com data visível e converta para BRL na hora, anotando a taxa usada.
+resultado com data visível e converta para EUR na hora quando não for euro, anotando a taxa usada.
 
 Colete pelo menos: voo ida e volta do Brasil no período, diária de hospedagem
 na faixa do perfil, refeição simples, refeição decente, transporte urbano
@@ -161,7 +169,7 @@ Dois itens que quase sempre escapam e mudam o total:
 
 ```
 "<cidade> taxa de turismo por noite <ano>"     # Roma cobra ~€6 pp/noite
-"<país> tarifa residente não residente museu"  # França desde 2026
+"<país> tarifa residente não residente museu"  # França desde 2026; residente na UE costuma pagar menos
 "<serviço de aeroporto> <ano>"                 # pega serviço extinto
 ```
 

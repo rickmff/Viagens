@@ -47,7 +47,7 @@ ansiedade; prazo com data é uma tarefa.
   ryokan, agroturismo), hospedagem em fim de semana de festival.
 - **Data e hora exatas** — ingressos que abrem à venda num instante específico e
   esgotam em minutos. Coliseu abre 30 dias antes às 9h de Roma; Torre Eiffel,
-  60 dias antes. **Converta para o fuso do Brasil** e, se cair de madrugada,
+  60 dias antes. **Converta para o fuso de casa (Europe/Lisbon)** e, se cair de madrugada,
   diga isso com todas as letras. Esta é uma informação que molda o plano, não
   uma curiosidade.
 - **Sorteio** — algumas atrações sorteiam vagas meses antes. Verifique se ainda

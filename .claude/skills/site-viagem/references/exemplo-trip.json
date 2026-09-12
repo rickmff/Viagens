@@ -9,11 +9,7 @@
     "inicio": "2026-10-12",
     "fim": "2026-10-20"
   },
-  "moedaBase": "BRL",
-  "origem": {
-    "cidade": "São Paulo",
-    "iata": "GRU"
-  },
+  "moedaBase": "EUR",
   "viajantes": [
     {
       "id": "rick",
@@ -68,8 +64,8 @@
     "verificadoEm": "2026-09-11",
     "visto": {
       "necessario": false,
-      "detalhe": "Brasileiros têm isenção de visto para turismo por até 90 dias. Confirme no consulado antes de emitir passagem.",
-      "fonte": "https://www.br.emb-japan.go.jp/"
+      "detalhe": "Isenção para turismo até 90 dias com passaporte português ou brasileiro. Confirme no consulado antes de emitir passagem.",
+      "fonte": "https://www.pt.emb-japan.go.jp/"
     },
     "passaporte": {
       "validadeMinimaMeses": 6,
@@ -77,9 +73,9 @@
     },
     "vacinas": [
       {
-        "nome": "Febre amarela",
+        "nome": "Nenhuma exigida",
         "obrigatoria": false,
-        "observacao": "Não exigida para entrada vindo do Brasil."
+        "observacao": "Vindo de Portugal não há exigência de certificado."
       }
     ],
     "seguro": {
@@ -113,19 +109,19 @@
     {
       "id": "ida",
       "tipo": "ida",
-      "de": "GRU",
+      "de": "LIS",
       "para": "HND",
-      "partida": "2026-10-12T01:30",
-      "chegada": "2026-10-13T16:55",
-      "cia": "Emirates",
-      "voo": "EK 262",
+      "partida": "2026-10-12T11:40",
+      "chegada": "2026-10-13T10:20",
+      "cia": "Turkish Airlines",
+      "voo": "TK 1758 + TK 198",
       "escalas": [
-        "DXB"
+        "IST"
       ],
-      "duracaoTotalMin": 1645,
+      "duracaoTotalMin": 1080,
       "custo": {
-        "valor": 6200,
-        "moeda": "BRL",
+        "valor": 890,
+        "moeda": "EUR",
         "por": "pessoa"
       },
       "status": "cotado"
@@ -134,18 +130,18 @@
       "id": "volta",
       "tipo": "volta",
       "de": "KIX",
-      "para": "GRU",
+      "para": "LIS",
       "partida": "2026-10-20T22:10",
-      "chegada": "2026-10-21T18:40",
-      "cia": "Emirates",
-      "voo": "EK 317",
+      "chegada": "2026-10-21T12:30",
+      "cia": "Turkish Airlines",
+      "voo": "TK 199 + TK 1755",
       "escalas": [
-        "DXB"
+        "IST"
       ],
-      "duracaoTotalMin": 1590,
+      "duracaoTotalMin": 1140,
       "custo": {
-        "valor": 6200,
-        "moeda": "BRL",
+        "valor": 890,
+        "moeda": "EUR",
         "por": "pessoa"
       },
       "status": "cotado"
@@ -161,8 +157,8 @@
       "lat": 35.6938,
       "lon": 139.7034,
       "custo": {
-        "valor": 3200,
-        "moeda": "BRL",
+        "valor": 533,
+        "moeda": "EUR",
         "por": "total"
       },
       "porque": "Quatro minutos a pé da estação, e o bairro continua vivo depois da meia-noite — resolve o jantar tardio de quem chegou com jet lag.",
@@ -177,8 +173,8 @@
       "lat": 34.9989,
       "lon": 135.7823,
       "custo": {
-        "valor": 2700,
-        "moeda": "BRL",
+        "valor": 450,
+        "moeda": "EUR",
         "por": "total"
       },
       "porque": "Dá para sair a pé para os templos antes das oito e pegar tudo vazio.",
@@ -558,14 +554,14 @@
   ],
   "orcamento": {
     "teto": {
-      "valor": 32000,
-      "moeda": "BRL"
+      "valor": 5200,
+      "moeda": "EUR"
     },
     "cambioReferencia": [
       {
         "de": "JPY",
-        "para": "BRL",
-        "taxa": 0.0332,
+        "para": "EUR",
+        "taxa": 0.0059,
         "em": "2026-09-11"
       }
     ],
@@ -573,83 +569,85 @@
       {
         "id": "voos",
         "nome": "Voos",
-        "previsto": 12400,
+        "previsto": 2067,
         "real": null,
-        "observacao": "Ida e volta para 2 pessoas, tarifa cotada em set/26.",
-        "economico": 10800
+        "observacao": "Ida e volta para 2 pessoas, tarifa cotada em set/26, saindo de Lisboa.",
+        "economico": 1800
       },
       {
         "id": "hospedagem",
         "nome": "Hospedagem",
-        "previsto": 5900,
+        "previsto": 983,
         "real": null,
         "observacao": "4 noites em Tóquio + 3 em Kyoto, valores totais.",
-        "economico": 4300
+        "economico": 717
       },
       {
         "id": "taxa-turismo",
         "nome": "Taxa de turismo",
-        "previsto": 190,
-        "economico": 190,
+        "previsto": 32,
+        "economico": 32,
         "real": null,
         "observacao": "¥200 por pessoa por noite, 7 noites, 2 pessoas — cobrada na hospedagem."
       },
       {
         "id": "alimentacao",
         "nome": "Alimentação",
-        "previsto": 4200,
+        "previsto": 700,
         "real": null,
-        "observacao": "R$ 260 por pessoa por dia — dá conta de comida de rua e um jantar melhor a cada 3 dias. Comer bem é o motivo da viagem — não corta aqui.",
-        "economico": 4200,
+        "observacao": "€45 por pessoa por dia — dá conta de comida de rua e um jantar melhor a cada 3 dias. Comer bem é o motivo da viagem — não corta aqui.",
+        "economico": 700,
         "intocavel": true
       },
       {
         "id": "transporte-local",
         "nome": "Transporte local",
-        "previsto": 2400,
+        "previsto": 400,
         "real": null,
         "observacao": "Shinkansen, Suica e traslados de aeroporto para 2.",
-        "economico": 2100
+        "economico": 350
       },
       {
         "id": "atracoes",
         "nome": "Atrações",
-        "previsto": 1100,
+        "previsto": 183,
         "real": null,
         "observacao": "Ingressos dos blocos do roteiro. As atrações são o motivo da viagem — não corta aqui.",
-        "economico": 1100,
+        "economico": 183,
         "intocavel": true
       },
       {
         "id": "documentacao",
         "nome": "Documentação",
-        "previsto": 600,
+        "previsto": 100,
         "real": null,
         "observacao": "Seguro viagem para 2.",
-        "economico": 600
+        "economico": 100
       },
       {
         "id": "conectividade",
         "nome": "Conectividade",
-        "previsto": 300,
+        "previsto": 50,
         "real": null,
         "observacao": "eSIM de dados, 2 linhas.",
-        "economico": 300
+        "economico": 50
       },
       {
         "id": "extras",
         "nome": "Extras e compras",
-        "previsto": 1800,
+        "previsto": 300,
         "real": null,
-        "economico": 900
+        "economico": 150,
+        "observacao": ""
       }
     ],
     "reserva": {
-      "valor": 3300,
-      "moeda": "BRL",
+      "valor": 520,
+      "moeda": "EUR",
       "percentual": 10
     },
-    "tetoPor": "total"
+    "tetoPor": "total",
+    "margemCartao": 0.02
   },
   "bagagem": [
     {
@@ -664,7 +662,7 @@
     {
       "categoria": "Eletrônicos",
       "itens": [
-        "Adaptador tipo A 100V",
+        "Adaptador tipo A/B 100V (Portugal usa C/F)",
         "Power bank",
         "Carregador rápido",
         "Fone"
@@ -691,7 +689,7 @@
     {
       "categoria": "Dinheiro",
       "itens": [
-        "Cartão sem IOF",
+        "Cartão sem taxa de câmbio (Revolut/Wise)",
         "Ienes em espécie para os becos",
         "Cartão reserva guardado separado"
       ]
@@ -783,6 +781,10 @@
     {
       "nivel": "info",
       "texto": "Muito estabelecimento pequeno só aceita dinheiro vivo. Ande sempre com alguns milhares de ienes."
+    },
+    {
+      "nivel": "info",
+      "texto": "Câmbio: o site converte para euro já com 2% de taxa de cartão. Com Revolut ou Wise, é menos."
     }
   ],
   "tarifaDupla": {
@@ -794,10 +796,10 @@
   "reservas": [
     {
       "id": "res-voos",
-      "oQue": "Emitir passagens Emirates",
+      "oQue": "Emitir passagens Turkish Airlines",
       "urgencia": "imediato",
       "prazo": "2026-09-25",
-      "onde": "https://www.emirates.com/br/portuguese/",
+      "onde": "https://www.turkishairlines.com/",
       "observacao": "Tarifa cotada em set/26; outubro é alta por causa da folhagem."
     },
     {
@@ -808,7 +810,7 @@
       "abreVendaEm": {
         "local": "2026-09-14T10:00",
         "fuso": "Asia/Tokyo",
-        "noBrasil": "2026-09-13T22:00"
+        "emCasa": "2026-09-14T02:00"
       },
       "onde": "https://www.shibuya-scramble-square.com/sky/",
       "observacao": "O horário do pôr do sol esgota primeiro. Tenha a página aberta antes."
@@ -867,5 +869,12 @@
       "rotulo": "Ver as folhas de momiji caírem",
       "icone": "leaf"
     }
+  },
+  "casa": {
+    "pais": "PT",
+    "cidade": "Lisboa",
+    "iata": "LIS",
+    "fuso": "Europe/Lisbon",
+    "moeda": "EUR"
   }
 }

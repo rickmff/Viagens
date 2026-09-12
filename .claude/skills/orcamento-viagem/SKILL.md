@@ -1,6 +1,6 @@
 ---
 name: orcamento-viagem
-description: Monta o orçamento de uma viagem a partir de um teto em reais, em duas colunas — o plano que o usuário quer e uma versão econômica — distribuindo entre voos, hospedagem, alimentação, transporte, atrações, taxa de turismo, documentação e reserva, com câmbio, IOF, previsto vs real e alerta de estouro, gravando tudo em orcamento no trip.json. Use sempre que o usuário der um valor disponível para a viagem ("tenho 12 mil", "uns 8k"), perguntar se o dinheiro dá, pedir para cortar custo, perguntar se um passe compensa, quiser dividir despesa entre viajantes, registrar um gasto real durante a viagem, ou perguntar quanto já gastou. Também use quando o roteiro pesquisado precisar ser ajustado para caber no bolso.
+description: Monta o orçamento de uma viagem a partir de um teto em euros, em duas colunas — o plano que o usuário quer e uma versão econômica — distribuindo entre voos, hospedagem, alimentação, transporte, atrações, taxa de turismo, documentação e reserva, com câmbio e taxa do cartão fora do euro, previsto vs real e alerta de estouro, gravando tudo em orcamento no trip.json. Use sempre que o usuário der um valor disponível para a viagem ("tenho 12 mil", "uns 8k"), perguntar se o dinheiro dá, pedir para cortar custo, perguntar se um passe compensa, quiser dividir despesa entre viajantes, registrar um gasto real durante a viagem, ou perguntar quanto já gastou. Também use quando o roteiro pesquisado precisar ser ajustado para caber no bolso.
 ---
 
 # Orçamento de viagem
@@ -109,33 +109,38 @@ nunca serve um roteiro espalhado, e passe semanal com janela fixa de segunda a
 domingo não serve viagem que começa na quinta. Mostre a conta e responda
 direto; o resultado costuma ser "não compensa".
 
-## Câmbio e os custos que ninguém soma
+## Câmbio e o custo real do cartão
 
-Converter pela taxa comercial subestima o gasto em torno de 5%, e essa
-diferença some dentro do erro do orçamento até virar problema na fatura.
+Casa é Portugal e a moeda é o euro. **Dentro da zona euro não há câmbio** — a
+seção inteira some, o site não mostra botão de moeda, e o orçamento é o preço
+da etiqueta.
 
-- **IOF**: 3,5% sobre compras internacionais no cartão de crédito, débito e
-  pré-pago (alíquota unificada, vigente em set/2026). Regra tributária muda —
-  confirme antes de usar e anote a data.
-- **Spread do emissor**: o cartão não usa a taxa comercial. Some 1% a 2%.
-- Cartão com IOF zero muda essa conta; se o perfil disser que ele usa um,
-  aplique só o spread.
+Fora do euro, converter pela taxa comercial subestima o gasto. Quanto, depende
+do cartão dele, e isso mora no perfil (`Orçamento → cartão`):
 
-Converta pela taxa do dia (`open.er-api.com/v6/latest/BRL`) e aplique margem de
-**5%** por padrão. Registre taxa e data em `orcamento.cambioReferencia`: assim,
-meses depois, dá para saber se o orçamento envelheceu por causa do câmbio ou do
-roteiro. No site a taxa é editável, porque ela muda entre o planejamento e o
-embarque.
+- Banco tradicional português: tipicamente 1% a 3% sobre compras em moeda
+  estrangeira, mais uma taxa fixa em alguns.
+- Revolut, Wise, N26 e afins: perto de zero em dia útil; alguns cobram em fim
+  de semana e acima de um teto mensal.
+- Saque em caixa eletrônico fora do euro: taxa própria, geralmente pior.
 
-Para dinheiro vivo, a casa de câmbio tem spread próprio, geralmente pior. Se o
-destino roda a dinheiro (boa parte da Ásia e da América Latina), separe uma
+Se o perfil não diz que cartão ele usa, assuma **2%**, grave em
+`orcamento.margemCartao`, e marque como suposição — é uma das que mais vale
+ele corrigir, porque muda o total inteiro. Converta pela taxa do dia
+(`open.er-api.com/v6/latest/EUR`), registre taxa e data em
+`orcamento.cambioReferencia`: meses depois dá para saber se o orçamento
+envelheceu por causa do câmbio ou do roteiro.
+
+Para dinheiro vivo, a casa de câmbio tem spread próprio. Se o destino roda a
+dinheiro (boa parte da Ásia, norte da África, América Latina), separe uma
 linha.
 
 **Custos que escapam de quase todo orçamento**, e que somados viram centenas de
-reais: taxa turística municipal cobrada no check-in (não vem na diária
+euros: taxa turística municipal cobrada no check-in (não vem na diária
 anunciada), bagagem despachada em companhia de baixo custo (a passagem barata
-deixa de ser barata), armário de bagagem no dia de transição entre
-hospedagens, e gorjeta onde ela é praxe e não opcional.
+deixa de ser barata — e saindo de Portugal quase tudo é low-cost), armário de
+bagagem no dia de transição entre hospedagens, e gorjeta onde ela é praxe.
+
 
 ## Categorias
 

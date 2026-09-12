@@ -1,6 +1,7 @@
 // Câmbio sem chave de API. open.er-api.com cobre moedas exóticas (VND, IDR,
 // MAD) que o BCE não publica; frankfurter entra como rede de segurança se o
-// primeiro estiver fora do ar.
+// primeiro estiver fora do ar. Dentro da zona euro nada disto roda: o site só
+// busca cotação quando algum destino tem moeda diferente da de casa.
 
 const FONTES = [
   {
@@ -15,8 +16,8 @@ const FONTES = [
   },
 ]
 
-/** Taxas a partir da moeda base: taxas['JPY'] = quantos ienes valem 1 real. */
-export async function buscarTaxas(base = 'BRL') {
+/** Taxas a partir da moeda de casa: taxas['JPY'] = quantos ienes vale 1 euro. */
+export async function buscarTaxas(base = 'EUR') {
   let ultimoErro
   for (const fonte of FONTES) {
     try {
@@ -33,13 +34,13 @@ export async function buscarTaxas(base = 'BRL') {
 }
 
 /**
- * Custo real de gastar no exterior com cartão brasileiro. A taxa comercial
- * subestima em torno de 5%: IOF (3,5% sobre compras internacionais em set/2026)
- * mais o spread do emissor. Quem orça pela taxa comercial leva um susto na
- * fatura, então o padrão aqui é a taxa com a margem — e a taxa limpa aparece
- * ao lado, para a conta ficar auditável.
+ * Custo real de gastar fora da zona euro. A taxa comercial subestima: o
+ * cartão cobra uma margem que depende do banco — perto de zero num Revolut ou
+ * Wise, 1% a 3% num banco tradicional. O valor certo mora no perfil e chega
+ * pelo trip.json (`orcamento.margemCartao`); este é só o padrão quando ele
+ * não foi informado.
  */
-export const MARGEM_PADRAO = 0.05
+export const MARGEM_PADRAO = 0.02
 
 export function converter(valor, taxa, { margem = MARGEM_PADRAO } = {}) {
   if (valor == null || !taxa) return null

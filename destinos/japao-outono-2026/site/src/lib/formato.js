@@ -4,7 +4,7 @@
 
 const naoTem = (v) => v === null || v === undefined || v === ''
 
-export function moeda(valor, codigo = 'BRL', { compacto = false } = {}) {
+export function moeda(valor, codigo = 'EUR', { compacto = false } = {}) {
   if (naoTem(valor) || Number.isNaN(Number(valor))) return 'a definir'
   return new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -25,7 +25,7 @@ export function numero(valor, casas = 0) {
 }
 
 // Datas do trip.json são locais ("2026-10-12"), não instantes UTC. Passar
-// direto para new Date() faz o dia voltar um no fuso do Brasil, então
+// direto para new Date() pode fazer o dia voltar um conforme o fuso, então
 // construímos a data em horário local de propósito.
 export function paraData(iso) {
   if (naoTem(iso)) return null

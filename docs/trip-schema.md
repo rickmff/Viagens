@@ -23,8 +23,11 @@ meio inventadas.
   "status": "planejando",             // planejando | confirmado | em-viagem | concluido
 
   "periodo": { "inicio": "2026-10-12", "fim": "2026-10-26" },
-  "moedaBase": "BRL",
-  "origem": { "cidade": "São Paulo", "iata": "GRU" },
+
+  // De onde a viagem parte e para onde os números convergem. Vem do perfil.
+  // Nada no site ou nas skills assume país, moeda ou fuso fora daqui.
+  "casa": { "pais": "PT", "cidade": "Lisboa", "iata": "LIS", "fuso": "Europe/Lisbon", "moeda": "EUR" },
+  "moedaBase": "EUR",       // igual a casa.moeda; mantido por compatibilidade
 
   "viajantes": [
     { "id": "rick", "nome": "Rick" }
@@ -32,9 +35,12 @@ meio inventadas.
 
   // Alguns destinos cobram preços diferentes de residentes e visitantes
   // (França desde 2026, entre outros). Quando existir, o site ganha um botão
-  // que alterna as duas colunas. `valor` é SEMPRE o que o brasileiro paga —
+  // que alterna as duas colunas. `valor` é SEMPRE o que ele paga —
   // o preço de residente é o campo extra — para que esquecer o campo nunca
   // subestime o orçamento.
+  // Residente em Portugal costuma ter direito à tarifa de residente da UE
+  // (França, Itália em alguns museus): confira o que a nacionalidade e a
+  // residência dão, e grave o que ele paga em `valor`.
   "tarifaDupla": {
     "ativo": false,
     "rotulo": "Tarifa dos museus",
@@ -94,13 +100,15 @@ meio inventadas.
   ],
 
   // ── Documentação ──────────────────────────────────────────────────────
-  // Primeira classe para viagem internacional. `verificadoEm` importa: regra
-  // de visto muda, e o site mostra a data para o leitor saber se confia.
+  // Depende da nacionalidade (no perfil), não da residência. Dentro do
+  // Schengen, residente em Portugal circula livre; fora, cada passaporte tem
+  // a sua regra. `verificadoEm` importa: regra de visto muda, e o site mostra
+  // a data para o leitor saber se confia.
   "documentacao": {
     "verificadoEm": "2026-09-11",
     "visto": {
       "necessario": false,
-      "detalhe": "Brasileiros têm isenção para turismo até 90 dias.",
+      "detalhe": "Isenção para turismo até 90 dias com o passaporte X.",
       "fonte": "https://..."
     },
     "passaporte": { "validadeMinimaMeses": 6, "observacao": null },
@@ -123,9 +131,9 @@ meio inventadas.
       "urgencia": "data-exata",   // imediato | data-exata | sorteio | um-mes | duas-semanas | ultima-semana
       "prazo": "2027-03-15",      // até quando dá para resolver
       // Quando o ingresso abre à venda num instante e esgota em minutos.
-      // Grave a hora local do site E o equivalente no Brasil — se cair de
-      // madrugada, é isso que o viajante precisa saber.
-      "abreVendaEm": { "local": "2027-03-15T09:00", "fuso": "Europe/Rome", "noBrasil": "2027-03-15T05:00" },
+      // Grave a hora local do site E o equivalente no fuso de casa — se cair
+      // de madrugada, é isso que o viajante precisa saber.
+      "abreVendaEm": { "local": "2027-03-15T09:00", "fuso": "Europe/Rome", "emCasa": "2027-03-15T08:00" },
       "onde": "https://ecm.coopculture.it/",
       "nominativo": "Passaporte — o nome do ingresso tem que bater exatamente",
       "observacao": "Esgota em minutos. Deixe a página aberta antes da hora."
@@ -137,14 +145,14 @@ meio inventadas.
     {
       "id": "ida",
       "tipo": "ida",                 // ida | volta | interno
-      "de": "GRU", "para": "HND",
+      "de": "LIS", "para": "HND",
       "partida": "2026-10-11T23:55", // hora local do aeroporto de origem
       "chegada": "2026-10-13T05:30", // hora local do aeroporto de destino
       "cia": "Japan Airlines",
       "voo": "JL 8060",
-      "escalas": ["DOH"],
+      "escalas": ["IST"],
       "duracaoTotalMin": 1655,
-      "custo": { "valor": 5800, "moeda": "BRL", "por": "pessoa" },
+      "custo": { "valor": 950, "moeda": "EUR", "por": "pessoa" },
       "localizador": null,
       "status": "cotado"             // cotado | reservado | emitido
     }
@@ -156,7 +164,7 @@ meio inventadas.
       "nome": "Hotel X",
       "checkin": "2026-10-13", "checkout": "2026-10-18",
       "lat": 35.69, "lon": 139.70,
-      "custo": { "valor": 2400, "moeda": "BRL", "por": "total" },
+      "custo": { "valor": 420, "moeda": "EUR", "por": "total" },
       "link": "https://...",
       "porque": "A 4 min do metrô, bairro que fica vivo à noite.",
       "status": "cotado"
@@ -167,7 +175,7 @@ meio inventadas.
       "id": "jr-pass",
       "tipo": "passe",               // passe | trem | onibus | carro | ferry | transfer
       "nome": "JR Pass 7 dias",
-      "custo": { "valor": 1900, "moeda": "BRL", "por": "pessoa" },
+      "custo": { "valor": 320, "moeda": "EUR", "por": "pessoa" },
       "cobre": ["tokyo", "kyoto"],
       "observacao": "Só compensa se fizer Tóquio→Kyoto→Osaka ida e volta."
     }
@@ -200,9 +208,9 @@ meio inventadas.
           "tipo": "atracao",          // atracao | refeicao | deslocamento | descanso | compras | evento | livre
           "titulo": "Cruzamento de Shibuya e Shibuya Sky",
           "lat": 35.6595, "lon": 139.7005,
-          // `valor` é o que o brasileiro paga. `valorResidente` só existe
-          // onde há tarifa dupla, e alimenta o botão do site.
-          "custo": { "valor": 90, "moeda": "BRL", "por": "pessoa", "valorResidente": 62 },
+          // `valor` é o que ele paga. `valorResidente` só existe onde há
+          // tarifa dupla e ele não é residente; alimenta o botão do site.
+          "custo": { "valor": 15, "moeda": "EUR", "por": "pessoa", "valorResidente": 10 },
           "reservaNecessaria": true,
           "link": "https://...",
           "notas": "Comprar ingresso do Sky com antecedência para o pôr do sol.",
@@ -215,21 +223,26 @@ meio inventadas.
   // ── Orçamento ─────────────────────────────────────────────────────────
   // Preenchido pela skill orcamento-viagem. Ver docs/orcamento.md.
   "orcamento": {
-    "teto": { "valor": 25000, "moeda": "BRL" },
+    "teto": { "valor": 4000, "moeda": "EUR" },
     "tetoPor": "total",          // total | pessoa — diga qual você assumiu
-    "cambioReferencia": [{ "de": "JPY", "para": "BRL", "taxa": 0.038, "em": "2026-09-11" }],
+    // Só existe fora da zona euro. Taxa do dia e data, para o orçamento
+    // envelhecer de forma auditável.
+    "cambioReferencia": [{ "de": "JPY", "para": "EUR", "taxa": 0.0059, "em": "2026-09-11" }],
+    // O que o cartão dele cobra acima da taxa comercial fora do euro. Vem do
+    // perfil (banco, Revolut, Wise…). Dentro do euro é 0 e o campo não importa.
+    "margemCartao": 0.02,
     "categorias": [
       {
         "id": "voos", "nome": "Voos",
-        "previsto": 11600,       // o plano dele
-        "economico": 9200,       // a mesma viagem, com a troca que dói menos
+        "previsto": 1900,        // o plano dele
+        "economico": 1500,       // a mesma viagem, com a troca que dói menos
         "real": null,            // preenchido durante a viagem
         "observacao": "Ida e volta para 2 pessoas. Econômico = conexão longa em DOH.",
         // Gastos que são a razão de ser da viagem não entram na tesoura.
         "intocavel": false
       }
     ],
-    "reserva": { "valor": 2000, "moeda": "BRL", "percentual": 8 }
+    "reserva": { "valor": 350, "moeda": "EUR", "percentual": 8 }
   },
 
   // ── Utilidades ────────────────────────────────────────────────────────
@@ -254,8 +267,8 @@ meio inventadas.
 
 ## Convenções que evitam retrabalho
 
-**Dinheiro sempre com moeda.** Nunca `"custo": 90` — sempre
-`{ "valor": 90, "moeda": "BRL", "por": "pessoa" }`. O site converte e soma
+**Dinheiro sempre com moeda.** Nunca `"custo": 15` — sempre
+`{ "valor": 15, "moeda": "EUR", "por": "pessoa" }`. O site converte e soma
 sozinho, mas só se souber a moeda e se o valor é por pessoa ou total.
 
 **Datas em ISO.** `YYYY-MM-DD` para datas, `YYYY-MM-DDTHH:mm` para horários

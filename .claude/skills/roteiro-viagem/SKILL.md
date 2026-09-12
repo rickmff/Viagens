@@ -91,7 +91,7 @@ Não encha dia leve com enchimento. Dia de chegada é dia de chegada; dizer isso
 Ao terminar os dias, percorra-os e liste em `reservas[]` tudo que precisa ser
 comprado antes, com urgência e **data-limite** — prazo sem data é só
 ansiedade. Onde a venda abre num instante específico, grave a hora local e a
-hora em Brasília; se cair de madrugada, é isso que decide se a pessoa põe
+hora em casa (Europe/Lisbon); se cair de madrugada, é isso que decide se a pessoa põe
 despertador. Ingresso nominativo leva o nome do documento exato.
 
 ## Passagem final

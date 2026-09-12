@@ -31,6 +31,11 @@ docs/
 justamente para você não perguntar de novo o que já foi respondido. Perguntar
 algo que está escrito lá é o principal modo de falha deste repo.
 
+**Confirmado é só o que ele disse.** Nunca marque uma preferência como
+*confirmada* por inferência de idioma, de contexto ou de estilo. A primeira
+viagem deste repo começou com "mora no Brasil (confirmado)" inferido do
+português — e ele mora em Portugal.
+
 **Escreva de volta no perfil ao final.** Toda sessão que revelou algo sobre
 preferências, orçamento ou ritmo termina atualizando `perfil/PERFIL.md` e
 registrando a entrada em `perfil/insights.md`. Sem isso o repo não aprende e
@@ -63,9 +68,12 @@ mais fácil de tornar invisível.
 trabalho é de atualização incremental: preserve customizações, faça merge no
 `trip.json`, e diga o que mudou.
 
-**Moeda base é BRL**, origem é o Brasil, e os destinos costumam ser
-internacionais — então documentação, câmbio e fuso horário são de primeira
-classe, não detalhes.
+**Casa é Portugal: moeda base EUR, fuso Europe/Lisbon.** Isso vem de
+`perfil/PERFIL.md` e vai para o bloco `casa` de cada `trip.json` — nada no
+repo assume país, moeda ou fuso fixos fora dele. Dentro da zona euro não há
+câmbio; fora dela, câmbio, documentação e fuso são de primeira classe.
+Nacionalidade (que decide visto fora do Schengen) fica no perfil, não é
+inferida.
 
 ## Idioma
 

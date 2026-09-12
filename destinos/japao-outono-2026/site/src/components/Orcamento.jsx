@@ -74,7 +74,7 @@ export default function Orcamento({ viagem }) {
   const categorias = (orc?.categorias || []).filter((c) => c.previsto || c.real || c.economico)
   const t = totaisOrcamento(viagem)
   const r = resumoViagem(viagem)
-  const base = viagem.moedaBase || 'BRL'
+  const base = viagem.moedaBase || viagem.casa?.moeda || 'EUR'
 
   const temEconomico = categorias.some((c) => c.economico != null)
   const [modo, setModo] = useState(t.temReal ? 'real' : 'previsto')
@@ -195,7 +195,7 @@ export default function Orcamento({ viagem }) {
           Convertido a {orc.cambioReferencia.map((c) =>
             `1 ${c.de} = ${numero(c.taxa, 4)} ${c.para}`).join(' · ')}
           {orc.cambioReferencia[0]?.em && ` (referência de ${orc.cambioReferencia[0].em})`}.
-          Compras no cartão saem acima disso por causa de IOF e spread.
+          Compras no cartão saem acima disso por causa da taxa de câmbio do cartão.
         </p>
       )}
     </Secao>

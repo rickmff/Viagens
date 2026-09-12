@@ -15,7 +15,7 @@ function KReservas({ viagem }) {
 }
 function KOrcamento({ viagem }) {
   const t = totaisOrcamento(viagem)
-  const base = viagem.moedaBase || 'BRL'
+  const base = viagem.moedaBase || viagem.casa?.moeda || 'EUR'
   if (t.temReal) return `${moeda(t.real, base)} gastos`
   return t.teto != null ? `${moeda(t.previsto, base)} de ${moeda(t.teto, base)}` : moeda(t.previsto, base)
 }
@@ -28,7 +28,7 @@ function KMala({ viagem }) {
 export function definirTiles(viagem) {
   const v = viagem
   const d = v.documentacao
-  const moedas = [...new Set((v.destinos || []).map((x) => x.moeda).filter((m) => m && m !== (v.moedaBase || 'BRL')))]
+  const moedas = [...new Set((v.destinos || []).map((x) => x.moeda).filter((m) => m && m !== (v.moedaBase || v.casa?.moeda || 'EUR')))]
   const r = resumoViagem(v)
   return [
     { id: 'reservar', t: 'Reservar', kicker: 'em ordem de urgência, com prazos',
@@ -40,7 +40,7 @@ export function definirTiles(viagem) {
     { id: 'mapa', t: 'Mapa', kicker: 'tudo que tem endereço, filtrável por dia',
       tem: pontosDoMapa(v).length > 0,
       K: () => `${pontosDoMapa(v).length} pinos · ${r.cidades} ${r.cidades === 1 ? 'cidade' : 'cidades'}` },
-    { id: 'orcamento', t: 'Orçamento', kicker: moedas.length ? `com câmbio ao vivo ${moedas.join(', ')} → ${v.moedaBase || 'BRL'}` : 'seu plano, econômico e real',
+    { id: 'orcamento', t: 'Orçamento', kicker: moedas.length ? `com câmbio ao vivo ${moedas.join(', ')} → ${v.moedaBase || 'EUR'}` : 'seu plano, econômico e real',
       tem: !!(v.orcamento?.categorias?.length || v.orcamento?.teto || moedas.length),
       K: KOrcamento },
     { id: 'mala', t: 'Mala', kicker: 'o que levar e o que dizer',
