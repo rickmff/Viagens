@@ -46,7 +46,7 @@ sai baixo.
 
 A referência útil é **15% a 20% do gasto em solo** (o total menos as passagens
 aéreas), não do total da viagem. Para destino europeu com voo barato as duas
-contas dão quase o mesmo; para Ásia ou Oceania saindo do Brasil, a passagem
+contas dão quase o mesmo; para Ásia ou Oceania saindo de Portugal, a passagem
 sozinha come 40% do orçamento e a fração sobre o total cai para perto de 10% —
 aplicar o percentual sobre o total ali faria você inflar a comida sem motivo.
 Confira também contra o custo por pessoa por dia da `PESQUISA.md`, que é o
@@ -156,8 +156,8 @@ que depende só da vontade dele, e chutar aqui erra por muito nos dois sentidos.
 
 Cada uma leva `previsto`, `economico`, `real` (começa `null`) e uma
 `observacao` dizendo de onde veio o número. A observação é o que permite
-revisar depois: "3 noites × R$ 400 (diária média da pesquisa, bairro central)"
-pode ser contestado; "R$ 1.200" não pode.
+revisar depois: "3 noites × €120 (diária média da pesquisa, bairro central)"
+pode ser contestado; "€360" não pode.
 
 Grave em `orcamento` no `trip.json` conforme `docs/trip-schema.md`.
 
@@ -168,7 +168,7 @@ site comparar — ele já mostra barra de previsto contra real e destaca o que
 passou.
 
 Quando uma categoria estourar, não se limite a apontar: diga de onde tirar.
-"Alimentação passou R$ 600; dá para absorver na reserva, ou cortar o passeio de
+"Alimentação passou €150; dá para absorver na reserva, ou cortar o passeio de
 barco que ainda não foi pago" é útil. "Você estourou o orçamento" não é.
 
 ## Viagem em grupo

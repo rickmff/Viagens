@@ -9,7 +9,7 @@ Tóquio e Kyoto em 9 dias, com folgas para o jet lag e para chover.
 ## Reservar antes
 
 1. **Ingresso do Shibuya Sky para o pôr do sol** — Hora marcada · até 14 de set.
-   Abre à venda 14 de setembro de 2026 às 02h00 (Lisboa).
+   Abre à venda 14 de setembro de 2026 às 02h00 (Porto).
    O horário do pôr do sol esgota primeiro. Tenha a página aberta antes.
    https://www.shibuya-scramble-square.com/sky/
 2. **Emitir passagens Turkish Airlines** — Agora · até 25 de set.
@@ -25,12 +25,12 @@ Tóquio e Kyoto em 9 dias, com folgas para o jet lag e para chover.
 
 ## Documentação
 
-- **Visto:** isento — Isenção para turismo até 90 dias com passaporte português ou brasileiro. Confirme no consulado antes de emitir passagem.
+- **Visto:** isento — Isenção para turismo até 90 dias com passaporte português. Com outro passaporte, confira a regra da sua nacionalidade.
 - **Passaporte:** válido por 6 meses após o retorno.
 - **Seguro:** recomendado — Não é exigido, mas atendimento médico particular no Japão é caro.
 - **Nenhuma exigida:** recomendada — Vindo de Portugal não há exigência de certificado.
 - **Alfândega:** Declarar valores acima de 1 milhão de ienes em espécie
-- **Alfândega:** Alguns medicamentos comuns no Brasil são proibidos — confira a lista antes
+- **Alfândega:** Alguns medicamentos comuns em Portugal são proibidos — confira a lista antes
 
 _Regras verificadas em 11 de setembro de 2026. Reconfirme perto da viagem._
 
@@ -40,8 +40,8 @@ _Regras verificadas em 11 de setembro de 2026. Reconfirme perto da viagem._
 
 | Trecho | Saída | Chegada | Companhia | Custo |
 |---|---|---|---|---|
-| LIS → HND | 12 de out. 11:40 | 13 de out. 10:20 | Turkish Airlines (via IST) | € 890 pp |
-| KIX → LIS | 20 de out. 22:10 | 21 de out. 12:30 | Turkish Airlines (via IST) | € 890 pp |
+| OPO → HND | 12 de out. 11:40 | 13 de out. 10:20 | Turkish Airlines (via IST) | € 890 pp |
+| KIX → OPO | 20 de out. 22:10 | 21 de out. 12:30 | Turkish Airlines (via IST) | € 890 pp |
 
 ### Hospedagem
 
@@ -197,7 +197,7 @@ _Câmbio de referência: 1 JPY = 0.0059 EUR (2026-09-11). Compras no cartão sae
 
 - [Mapa do metrô de Tóquio](https://www.tokyometro.jp/en/subwaymap/)
 - [Calculadora de rotas Japan Transit](https://world.jorudan.co.jp/mln/en/)
-- [Consulado do Japão no Brasil](https://www.br.emb-japan.go.jp/)
+- [Embaixada do Japão em Portugal](https://www.pt.emb-japan.go.jp/)
 - [Ingressos Shibuya Sky](https://www.shibuya-scramble-square.com/sky/)
 
 ---

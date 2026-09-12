@@ -64,7 +64,7 @@
     "verificadoEm": "2026-09-11",
     "visto": {
       "necessario": false,
-      "detalhe": "Isenção para turismo até 90 dias com passaporte português ou brasileiro. Confirme no consulado antes de emitir passagem.",
+      "detalhe": "Isenção para turismo até 90 dias com passaporte português. Com outro passaporte, confira a regra da sua nacionalidade.",
       "fonte": "https://www.pt.emb-japan.go.jp/"
     },
     "passaporte": {
@@ -85,7 +85,7 @@
     },
     "alfandega": [
       "Declarar valores acima de 1 milhão de ienes em espécie",
-      "Alguns medicamentos comuns no Brasil são proibidos — confira a lista antes"
+      "Alguns medicamentos comuns em Portugal são proibidos — confira a lista antes"
     ],
     "checklist": [
       {
@@ -109,7 +109,7 @@
     {
       "id": "ida",
       "tipo": "ida",
-      "de": "LIS",
+      "de": "OPO",
       "para": "HND",
       "partida": "2026-10-12T11:40",
       "chegada": "2026-10-13T10:20",
@@ -130,7 +130,7 @@
       "id": "volta",
       "tipo": "volta",
       "de": "KIX",
-      "para": "LIS",
+      "para": "OPO",
       "partida": "2026-10-20T22:10",
       "chegada": "2026-10-21T12:30",
       "cia": "Turkish Airlines",
@@ -763,8 +763,8 @@
       "categoria": "transporte"
     },
     {
-      "titulo": "Consulado do Japão no Brasil",
-      "url": "https://www.br.emb-japan.go.jp/",
+      "titulo": "Embaixada do Japão em Portugal",
+      "url": "https://www.pt.emb-japan.go.jp/",
       "categoria": "documentos"
     },
     {
@@ -872,8 +872,8 @@
   },
   "casa": {
     "pais": "PT",
-    "cidade": "Lisboa",
-    "iata": "LIS",
+    "cidade": "Porto",
+    "iata": "OPO",
     "fuso": "Europe/Lisbon",
     "moeda": "EUR"
   }

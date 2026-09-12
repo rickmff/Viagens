@@ -9,8 +9,8 @@ export function moeda(valor, codigo = 'EUR', { compacto = false } = {}) {
   return new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: codigo,
-    // Centavos só quando existem: uma coluna com "R$ 600,00" ao lado de
-    // "R$ 12.400" fica difícil de comparar de relance.
+    // Centavos só quando existem: uma coluna com "€ 600,00" ao lado de
+    // "€ 12.400" fica difícil de comparar de relance.
     maximumFractionDigits: Number.isInteger(valor) || compacto || Math.abs(valor) >= 1000 ? 0 : 2,
     notation: compacto && Math.abs(valor) >= 10000 ? 'compact' : 'standard',
   }).format(valor)

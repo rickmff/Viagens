@@ -26,7 +26,7 @@ meio inventadas.
 
   // De onde a viagem parte e para onde os números convergem. Vem do perfil.
   // Nada no site ou nas skills assume país, moeda ou fuso fora daqui.
-  "casa": { "pais": "PT", "cidade": "Lisboa", "iata": "LIS", "fuso": "Europe/Lisbon", "moeda": "EUR" },
+  "casa": { "pais": "PT", "cidade": "Porto", "iata": "OPO", "fuso": "Europe/Lisbon", "moeda": "EUR" },
   "moedaBase": "EUR",       // igual a casa.moeda; mantido por compatibilidade
 
   "viajantes": [
@@ -94,7 +94,7 @@ meio inventadas.
       "resumo": "Uma ou duas frases sobre o papel desta cidade no roteiro.",
       "bairroBase": "Shinjuku",
       // Cobrada na hospedagem, por pessoa por noite. Escapa de quase todo
-      // orçamento e em cidade cara vira centenas de reais.
+      // orçamento e em cidade cara vira centenas de euros.
       "taxaTurismo": { "valor": 6, "moeda": "EUR", "por": "pessoa-noite" }
     }
   ],

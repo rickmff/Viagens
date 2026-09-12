@@ -25,9 +25,13 @@ Cada afirmação carrega o quanto se pode confiar nela:
 
 - **Mora em Portugal e gasta em euro.** Moeda base **EUR**, fuso
   **Europe/Lisbon**. (confirmado — dito com todas as letras em 2026-09-12)
+- Bloco `casa` para copiar em todo `trip.json`:
+  `{ "pais": "PT", "cidade": "Porto", "iata": "OPO", "fuso": "Europe/Lisbon", "moeda": "EUR" }`
+- Dentro do Schengen não há visto nem câmbio; fora, tudo depende da
+  nacionalidade, que ainda não está aqui.
 - Dev fullstack sênior — tem tolerância a ferramenta técnica, self-host em VPS
   próprio, e prefere artefato que ele possa versionar e editar. (confirmado)
-- Sai do **Porto (OPO)**. (provável — dito no briefing da Itália)
+- Sai do **Porto (OPO)**; aceita Lisboa se a diferença pagar o trem. (provável — briefing da Itália)
 - Nacionalidade e passaporte(s): _a descobrir_ — decide visto fora do Schengen;
   dentro do Schengen, residente em Portugal circula livre
 - Idiomas: português; _outros a descobrir_

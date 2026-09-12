@@ -161,7 +161,7 @@ Relato de viajante em fórum costuma ser mais preciso que blog de SEO, porque
 blog de viagem recicla número de cinco anos atrás sem atualizar. Prefira
 resultado com data visível e converta para EUR na hora quando não for euro, anotando a taxa usada.
 
-Colete pelo menos: voo ida e volta do Brasil no período, diária de hospedagem
+Colete pelo menos: voo ida e volta de Portugal no período, diária de hospedagem
 na faixa do perfil, refeição simples, refeição decente, transporte urbano
 diário ou passe, e ingresso das três atrações principais.
 

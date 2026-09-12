@@ -7,7 +7,7 @@
   "status": "planejando",
   "periodo": { "inicio": "2026-01-01", "fim": "2026-01-05" },
   "moedaBase": "EUR",
-  "casa": { "pais": "PT", "cidade": "Lisboa", "fuso": "Europe/Lisbon", "moeda": "EUR" },
+  "casa": { "pais": "PT", "cidade": "Porto", "iata": "OPO", "fuso": "Europe/Lisbon", "moeda": "EUR" },
   "viajantes": [{ "id": "eu", "nome": "Eu" }],
   "destinos": [],
   "dias": []

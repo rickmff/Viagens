@@ -5,7 +5,7 @@ import { moeda } from './formato'
 
 // Todo preço da página passa por aqui. Duas preferências mudam o que se lê:
 //
-//  • Moeda — ver em ienes (o número da etiqueta na vitrine) ou em reais (o que
+//  • Moeda — ver em ienes (o número da etiqueta na vitrine) ou em euros (o que
 //    sai do bolso). Alternar isso é o que mais se usa durante a viagem, então
 //    é um botão do cabeçalho e não uma calculadora escondida numa seção.
 //  • Tarifa — onde o destino cobra preços diferentes de residente e visitante.
