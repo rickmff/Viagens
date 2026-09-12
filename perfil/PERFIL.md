@@ -27,7 +27,7 @@ Cada afirmação carrega o quanto se pode confiar nela:
   **Europe/Lisbon**. (confirmado — dito com todas as letras em 2026-09-12)
 - Dev fullstack sênior — tem tolerância a ferramenta técnica, self-host em VPS
   próprio, e prefere artefato que ele possa versionar e editar. (confirmado)
-- Cidade e aeroporto de origem: _a descobrir_ (Lisboa ou Porto, provavelmente)
+- Sai do **Porto (OPO)**. (provável — dito no briefing da Itália)
 - Nacionalidade e passaporte(s): _a descobrir_ — decide visto fora do Schengen;
   dentro do Schengen, residente em Portugal circula livre
 - Idiomas: português; _outros a descobrir_
@@ -35,14 +35,17 @@ Cada afirmação carrega o quanto se pode confiar nela:
 
 ## Ritmo de viagem
 
-- Atividades por dia que o deixam confortável: _a descobrir_
+- Dois ou três blocos por dia, com folga para o que aparece. (provável — briefing Itália)
 - Acorda cedo em viagem? _a descobrir_
 - Tolerância a deslocamento entre atrações: _a descobrir_
 - Prefere base fixa ou trocar de cidade com frequência? _a descobrir_
 
 ## Interesses
 
-_Ainda vazio. Preencher em ordem de prioridade conforme ele for pedindo coisas._
+- História antiga: ruínas, sítios arqueológicos. (provável — briefing Itália)
+- Museus e arte, aceita ingresso com hora marcada. (provável — briefing Itália)
+- Comer bem: trattoria, mercado, vinho — pediu explicitamente. (provável — briefing Itália)
+- Prefere ver épocas comparadas antes de fixar data. (hipótese)
 
 ## Antipreferências
 
@@ -51,7 +54,9 @@ economiza rodadas inteiras de sugestão descartada._
 
 ## Orçamento
 
-- Faixa típica por viagem: _a descobrir_
+- Faixa: escolheu o teto mais baixo oferecido (€2.000 para o casal, 8 dias,
+  Europa). Viaja econômico e prefere mais viagens a viagens caras. (hipótese —
+  uma só escolha)
 - Onde aceita gastar mais: _a descobrir_
 - Onde corta sem dó: _a descobrir_
 - Usa milhas / pontos? _a descobrir_

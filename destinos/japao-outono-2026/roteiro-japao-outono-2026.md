@@ -4,17 +4,17 @@ Tóquio e Kyoto em 9 dias, com folgas para o jet lag e para chover.
 
 **12 de outubro de 2026 a 20 de outubro de 2026 · 2 pessoas · 8 dias de roteiro**
 
-> Preços em BRL salvo indicação. "pp" = por pessoa. Pesquisa de 11 de setembro de 2026; confirme o que for crítico antes de comprar.
+> Preços em EUR salvo indicação. "pp" = por pessoa. Pesquisa de 11 de setembro de 2026; confirme o que for crítico antes de comprar.
 
 ## Reservar antes
 
 1. **Ingresso do Shibuya Sky para o pôr do sol** — Hora marcada · até 14 de set.
-   Abre à venda 13 de setembro de 2026 às 22h00 (Brasília).
+   Abre à venda 14 de setembro de 2026 às 02h00 (Lisboa).
    O horário do pôr do sol esgota primeiro. Tenha a página aberta antes.
    https://www.shibuya-scramble-square.com/sky/
-2. **Emitir passagens Emirates** — Agora · até 25 de set.
+2. **Emitir passagens Turkish Airlines** — Agora · até 25 de set.
    Tarifa cotada em set/26; outubro é alta por causa da folhagem.
-   https://www.emirates.com/br/portuguese/
+   https://www.turkishairlines.com/
 3. **Ryokan em Higashiyama** — Agora · até 30 de set.
    Casa pequena, poucos quartos, outubro lota.
 4. **Shinkansen Tóquio → Kyoto** — Um mês antes · até 01 de out.
@@ -25,10 +25,10 @@ Tóquio e Kyoto em 9 dias, com folgas para o jet lag e para chover.
 
 ## Documentação
 
-- **Visto:** isento — Brasileiros têm isenção de visto para turismo por até 90 dias. Confirme no consulado antes de emitir passagem.
+- **Visto:** isento — Isenção para turismo até 90 dias com passaporte português ou brasileiro. Confirme no consulado antes de emitir passagem.
 - **Passaporte:** válido por 6 meses após o retorno.
 - **Seguro:** recomendado — Não é exigido, mas atendimento médico particular no Japão é caro.
-- **Febre amarela:** recomendada — Não exigida para entrada vindo do Brasil.
+- **Nenhuma exigida:** recomendada — Vindo de Portugal não há exigência de certificado.
 - **Alfândega:** Declarar valores acima de 1 milhão de ienes em espécie
 - **Alfândega:** Alguns medicamentos comuns no Brasil são proibidos — confira a lista antes
 
@@ -40,15 +40,15 @@ _Regras verificadas em 11 de setembro de 2026. Reconfirme perto da viagem._
 
 | Trecho | Saída | Chegada | Companhia | Custo |
 |---|---|---|---|---|
-| GRU → HND | 12 de out. 01:30 | 13 de out. 16:55 | Emirates (via DXB) | R$ 6.200 pp |
-| KIX → GRU | 20 de out. 22:10 | 21 de out. 18:40 | Emirates (via DXB) | R$ 6.200 pp |
+| LIS → HND | 12 de out. 11:40 | 13 de out. 10:20 | Turkish Airlines (via IST) | € 890 pp |
+| KIX → LIS | 20 de out. 22:10 | 21 de out. 12:30 | Turkish Airlines (via IST) | € 890 pp |
 
 ### Hospedagem
 
 | Onde | Entrada | Saída | Custo | Por quê |
 |---|---|---|---|---|
-| Hotel em Shinjuku | 13 de out. | 17 de out. | R$ 3.200 | Quatro minutos a pé da estação, e o bairro continua vivo depois da meia-noite — resolve o jantar tardio de quem chegou com jet lag. |
-| Ryokan em Higashiyama | 17 de out. | 20 de out. | R$ 2.700 | Dá para sair a pé para os templos antes das oito e pegar tudo vazio. |
+| Hotel em Shinjuku | 13 de out. | 17 de out. | € 533 | Quatro minutos a pé da estação, e o bairro continua vivo depois da meia-noite — resolve o jantar tardio de quem chegou com jet lag. |
+| Ryokan em Higashiyama | 17 de out. | 20 de out. | € 450 | Dá para sair a pé para os templos antes das oito e pegar tudo vazio. |
 
 ### Transporte
 
@@ -123,23 +123,23 @@ Dia livre.
 
 | Item | Seu plano | Econômico |
 |---|---:|---:|
-| Voos | R$ 12.400 | R$ 10.800 |
-| Hospedagem | R$ 5.900 | R$ 4.300 |
-| Taxa de turismo | R$ 190 | R$ 190 |
-| Alimentação _(intocável)_ | R$ 4.200 | R$ 4.200 |
-| Transporte local | R$ 2.400 | R$ 2.100 |
-| Atrações _(intocável)_ | R$ 1.100 | R$ 1.100 |
-| Documentação | R$ 600 | R$ 600 |
-| Conectividade | R$ 300 | R$ 300 |
-| Extras e compras | R$ 1.800 | R$ 900 |
-| **Total** | **R$ 28.890** | **R$ 24.490** |
-| Reserva para imprevistos | R$ 3.300 | R$ 3.300 |
+| Voos | € 2.067 | € 1.800 |
+| Hospedagem | € 983 | € 717 |
+| Taxa de turismo | € 32 | € 32 |
+| Alimentação _(intocável)_ | € 700 | € 700 |
+| Transporte local | € 400 | € 350 |
+| Atrações _(intocável)_ | € 183 | € 183 |
+| Documentação | € 100 | € 100 |
+| Conectividade | € 50 | € 50 |
+| Extras e compras | € 300 | € 150 |
+| **Total** | **€ 4.815** | **€ 4.082** |
+| Reserva para imprevistos | € 520 | € 520 |
 
-Por pessoa: **R$ 14.445** · econômico **R$ 12.245**.
+Por pessoa: **€ 2.407,50** · econômico **€ 2.041**.
 
-Teto de R$ 32.000 (lido como total do grupo): **faltam R$ 190**.
+Teto de € 5.200 (lido como total do grupo): **faltam € 135**.
 
-_Câmbio de referência: 1 JPY = 0.0332 BRL (2026-09-11). Compras no cartão saem acima disso por causa de IOF e spread._
+_Câmbio de referência: 1 JPY = 0.0059 EUR (2026-09-11). Compras no cartão saem acima disso por causa da taxa de câmbio._
 
 ## Bagagem
 
@@ -150,7 +150,7 @@ _Câmbio de referência: 1 JPY = 0.0332 BRL (2026-09-11). Compras no cartão sae
 - [ ] Cópia digital de tudo no celular
 
 **Eletrônicos**
-- [ ] Adaptador tipo A 100V
+- [ ] Adaptador tipo A/B 100V (Portugal usa C/F)
 - [ ] Power bank
 - [ ] Carregador rápido
 - [ ] Fone
@@ -168,7 +168,7 @@ _Câmbio de referência: 1 JPY = 0.0332 BRL (2026-09-11). Compras no cartão sae
 - [ ] Curativo para bolha
 
 **Dinheiro**
-- [ ] Cartão sem IOF
+- [ ] Cartão sem taxa de câmbio (Revolut/Wise)
 - [ ] Ienes em espécie para os becos
 - [ ] Cartão reserva guardado separado
 
@@ -191,6 +191,7 @@ _Câmbio de referência: 1 JPY = 0.0332 BRL (2026-09-11). Compras no cartão sae
 
 - **atencao:** Outubro ainda pega cauda de temporada de tufão. Um dia perdido por chuva forte é cenário realista — por isso o dia 16 está livre.
 - **info:** Muito estabelecimento pequeno só aceita dinheiro vivo. Ande sempre com alguns milhares de ienes.
+- **info:** Câmbio: o site converte para euro já com 2% de taxa de cartão. Com Revolut ou Wise, é menos.
 
 ## Links
 
