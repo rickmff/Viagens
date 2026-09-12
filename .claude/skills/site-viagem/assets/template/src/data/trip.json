@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "slug": "exemplo",
+  "titulo": "Viagem de exemplo",
+  "subtitulo": "Substitua este arquivo pelo trip.json do destino.",
+  "atualizadoEm": "2026-01-01",
+  "status": "planejando",
+  "periodo": { "inicio": "2026-01-01", "fim": "2026-01-05" },
+  "moedaBase": "EUR",
+  "casa": { "pais": "PT", "cidade": "Porto", "iata": "OPO", "fuso": "Europe/Lisbon", "moeda": "EUR" },
+  "viajantes": [{ "id": "eu", "nome": "Eu" }],
+  "destinos": [],
+  "dias": []
+}
