@@ -58,6 +58,10 @@ corrigiu: mora em Portugal e gasta em euro.
 - Interesses escolhidos: história antiga, museus e arte, comer bem — os três
   de ingresso/reserva. Ritmo com folga.
 
+**Terceira rodada (mesma sessão)**
+- Nacionalidade dita com todas as letras: passaporte brasileiro, residência
+  em Portugal → confirmado. Fecha a última lacuna do contexto fixo.
+
 **Perguntas que não precisei fazer**
 - Nenhuma ainda — perfil estava vazio. A partir daqui: companhia, moeda,
   fuso, aeroporto, ritmo, interesses e faixa de orçamento não se perguntam

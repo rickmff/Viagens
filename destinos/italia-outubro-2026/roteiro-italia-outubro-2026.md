@@ -41,7 +41,7 @@
 
 ## Documentação
 
-- **Visto:** isento — Itália é Schengen: residente em Portugal viaja sem fronteira e sem visto. Leve passaporte (ou cartão de cidadão, se for da UE) e, se não for cidadão da UE, o título de residência junto.
+- **Visto:** isento — Itália é Schengen: com título de residência em Portugal não há controle de fronteira nem visto. Leve o passaporte brasileiro e o título de residência juntos — o passaporte é o documento para hotel, museu e ingresso nominativo; o título prova o direito de estar.
 - **Seguro:** recomendado — Se tiver direito ao Cartão Europeu de Seguro de Doença, ele cobre o SNS italiano. Seguro privado só para bagagem e cancelamento.
 
 _Regras verificadas em 12 de setembro de 2026. Reconfirme perto da viagem._
@@ -91,7 +91,7 @@ _Domingo é o dia certo: o Vaticano fecha, e o Coliseu na primeira entrada ainda
 
 | Hora | O quê | Custo |
 |---|---|---|
-| 08:30 | Coliseu — entrada 8h30 **(reservar antes)**<br>O ingresso vale 24h e inclui Fórum e Palatino. Chegue 20 min antes; nome no documento tem que bater. | € 18 pp |
+| 08:30 | Coliseu — entrada 8h30 **(reservar antes)**<br>O ingresso vale 24h e inclui Fórum e Palatino. Chegue 20 min antes; o nome no ingresso tem que bater com o passaporte. | € 18 pp |
 | 11:00 | Fórum Romano e Palatino<br>Entre pelo Palatino (Via di San Gregorio): fila menor e a vista de cima antes de descer ao Fórum.<br>_Plano B: Chovendo, Musei Capitolini (€16) cobrem a mesma história, coberto e vazio._ | — |
 | 13:45 | Almoço em Monti: trapizzino ou supplì | € 10 pp |
 | 15:30 | Tarde livre — sesta, ou Bocca della Verità e Circo Máximo a pé | — |

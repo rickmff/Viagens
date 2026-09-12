@@ -101,12 +101,12 @@
     "verificadoEm": "2026-09-12",
     "visto": {
       "necessario": false,
-      "detalhe": "Itália é Schengen: residente em Portugal viaja sem fronteira e sem visto. Leve passaporte (ou cartão de cidadão, se for da UE) e, se não for cidadão da UE, o título de residência junto.",
+      "detalhe": "Itália é Schengen: com título de residência em Portugal não há controle de fronteira nem visto. Leve o passaporte brasileiro e o título de residência juntos — o passaporte é o documento para hotel, museu e ingresso nominativo; o título prova o direito de estar.",
       "fonte": null
     },
     "passaporte": {
       "validadeMinimaMeses": null,
-      "observacao": "Dentro do Schengen basta estar válido durante a viagem."
+      "observacao": "Basta estar válido durante a viagem. Confira também a validade do título de residência."
     },
     "vacinas": [],
     "seguro": {
@@ -117,14 +117,14 @@
     "alfandega": [],
     "checklist": [
       {
-        "id": "doc-cartao-europeu",
-        "texto": "Pedir ou conferir o Cartão Europeu de Seguro de Doença (CESD)",
-        "prazo": "2026-10-05"
+        "id": "doc-residencia",
+        "texto": "Título de residência válido, na carteira junto com o passaporte",
+        "prazo": "2026-10-16"
       },
       {
-        "id": "doc-residencia",
-        "texto": "Título de residência na carteira, se não for cidadão da UE",
-        "prazo": "2026-10-16"
+        "id": "doc-cartao-europeu",
+        "texto": "Cartão Europeu de Seguro de Doença (residente tem direito pelo SNS)",
+        "prazo": "2026-10-05"
       }
     ]
   },
@@ -473,7 +473,7 @@
           },
           "reservaNecessaria": true,
           "link": "https://ticketing.colosseo.it",
-          "notas": "O ingresso vale 24h e inclui Fórum e Palatino. Chegue 20 min antes; nome no documento tem que bater."
+          "notas": "O ingresso vale 24h e inclui Fórum e Palatino. Chegue 20 min antes; o nome no ingresso tem que bater com o passaporte."
         },
         {
           "id": "r7",

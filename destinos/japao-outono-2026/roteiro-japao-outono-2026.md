@@ -25,7 +25,7 @@ Tóquio e Kyoto em 9 dias, com folgas para o jet lag e para chover.
 
 ## Documentação
 
-- **Visto:** isento — Isenção para turismo até 90 dias com passaporte português. Com outro passaporte, confira a regra da sua nacionalidade.
+- **Visto:** isento — Passaporte brasileiro tem isenção de visto para turismo por até 90 dias no Japão. A residência em Portugal não muda a regra — quem decide é o passaporte. Confirme na embaixada antes de emitir passagem.
 - **Passaporte:** válido por 6 meses após o retorno.
 - **Seguro:** recomendado — Não é exigido, mas atendimento médico particular no Japão é caro.
 - **Nenhuma exigida:** recomendada — Vindo de Portugal não há exigência de certificado.
