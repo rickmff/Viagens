@@ -132,7 +132,7 @@ O usuário quer decidir, não ler um relatório. Em prosa curta:
 1. **O veredito da janela** — a época é boa, é aceitável, ou é ruim e por quê.
 2. **O número** — quanto deve custar e como fica contra o teto dele.
 3. **A forma do roteiro** — em duas ou três frases, não a lista dos dias; a
-   lista está no site.
+   lista está na planilha.
 4. **O que exige ação agora** — visto, ingresso que esgota, voo que sobe.
 5. **O arquivo** — caminho da planilha (e da comparação), os três números
    conferidos, e o que ficou sem opção ou sem link por falta de pesquisa.
