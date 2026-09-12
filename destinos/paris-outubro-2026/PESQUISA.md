@@ -51,6 +51,17 @@ cintilando de hora em hora depois de escurecer.
 
 **Hotel em Paris**: [ibis Paris Bastille Opéra 11ème](https://www.momondo.com/hotels/paris/ibis-Paris-Bastille-Opera-11eme.mhd10218.ksp), ≈ €105–140 a noite, 7 min da Bastille, RER A na Gare de Lyon ([Paris Toolkit](https://www.paristoolkit.com/accommodation/republique.html), [Hoteliers Choice](https://hotelierschoice.com/guides/paris/budget/)). Com charme mas fora da linha: Hôtel Jeanne d'Arc Le Marais, €178+ ([Booking](https://www.booking.com/hotel/fr/jeanne-d-39-arc-paris.html)).
 
+**Comparação de hotéis em Paris** (consulta 2026-09-12; o usuário mandou um [link do eDreams](https://www.edreams.pt/hotels/city/fr/paris/) — a página do hotel é app JS e não abriu daqui; o link trazia **17→21/10**, dentro da Toussaint e fora da janela 7→11/10):
+
+| Hotel | ★ | Bairro | Diária (2 adultos) | Metrô / RER A | Nota | Veredito |
+|---|---|---|---|---|---|---|
+| ibis Paris Bastille Opéra 11ème | 3 | 11º, Bastille | ≈ €105–140 | Bastille 7 min; RER A na Gare de Lyon 12 min | 8,1 | **Escolhido**: previsível, cancelamento grátis no site da Accor, mais perto do RER A |
+| Villa Beaumarchais | 4 | 3º, Marais | €94 "desde" no eDreams; €175+ em outros sites ([Booking](https://www.booking.com/hotel/fr/villabeaumarchais_paris.html)) | Chemin Vert 3 min, uma estação da Bastille | 4,3/5 (eDreams), silencioso | Vale **se o total no checkout do eDreams ficar abaixo de €130**: é 4★ no meio do Marais |
+| Hôtel Jeanne d'Arc Le Marais | 2 | 4º, Marais | €178+ | Saint-Paul 3 min | 8,7 | Charme, mas estoura a linha de €130 |
+| Hotel Claude Bernard Saint Germain | 3 | 5º, Quartier Latin | €95 (eDreams) | Cluny 3 min; RER A só em Châtelet | 3,8/5 | Margem errada do rio para a Disney: +20 min por trecho |
+
+Regra que ficou: **lista do eDreams mostra "desde"**; a taxa de serviço entra no último passo. Compare o total do checkout com o site do hotel antes de fechar.
+
 **Hotel na Disney**: [B&B Hôtel près de Disneyland Paris](https://www.disneylandparis.com/en-usd/hotels/hotel-bb), em Magny-le-Hongre — parceiro oficial, ônibus grátis a cada 20 min das 8h à meia-noite, café incluído, ≈ €90–140 a noite ([Tous chez Mickey](https://www.touschezmickey.com/en/hotel/bb-disneyland-paris/): 4,2/5 no Google, 10% mais barato que o Explorers, banheiro pequeno e isolamento acústico fraco). **Não confundir** com o B&B Marne-la-Vallée Val d'Europe em Serris, que fica a 5 km e não tem ônibus para o parque ([Kayak](https://www.kayak.fr/Serris-Hotels-B-B-HOTEL-Marne-la-Vallee-Val-d-Europe.1071455878.ksp)).
 
 **Disney** ([MagicWait](https://magicwaitparis.com/blog/disney-hotels-vs-partner-hotels-val-europe/), [JetMeAway](https://jetmeaway.co.uk/blog/best-hotels-disneyland-paris-2026), [dein-dlrp](https://www.dein-dlrp.de/en/disneyland-resort-paris/more-hotels/disneyland-paris-partner-hotels.html)): hotel Disney desde ≈ £130/noite com ingressos e Extra Magic Time (entrada 8h30); parceiros (Explorers, Grand Magic, B&B Val d'Europe) desde ≈ £75, com ônibus gratuito ao parque. O B&B de Val d'Europe dá para ir a pé.

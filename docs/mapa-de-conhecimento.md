@@ -25,7 +25,7 @@ Contrato entre todas: `docs/trip-schema.md`.
 
 Legenda das origens: **v1** = primeira versão deste repo · **TI** =
 travel-itinerary · **PdV** = planeamento-de-viagem · **PlV** =
-planeador-de-viagens.
+planeador-de-viagens · **usuário** = pedido feito numa sessão de planejamento.
 
 ### Memória e aprendizado
 
@@ -69,6 +69,7 @@ planeador-de-viagens.
 | Voos: comprar na companhia, aeroportos vizinhos, multidestino, bilhete separado, visto de trânsito | PdV, PlV | `pesquisa-destino` |
 | Sobrevivência: pagamento, eSIM, tomada, golpes, etiqueta, emergência | v1, TI | `pesquisa-destino`, `fontes.md` |
 | Apps úteis por destino | TI | `pesquisa-destino` (sobrevivência), `links[]` |
+| Comparador de hospedagem do usuário (eDreams): checar datas da URL, total no checkout, comparar com site do hotel | usuário (Paris 2026) | `fontes.md`, `perfil/PERFIL.md` |
 
 ### Roteiro
 

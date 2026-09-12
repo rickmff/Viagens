@@ -46,8 +46,15 @@ Formato de cada entrada:
 - Parque temático / Disney como interesse real, não só "para acompanhar".
   (provável)
 
+- Mandou um link de hotel do eDreams para comparar com as sugestões, e
+  pediu que o site entrasse nas fontes de pesquisa. O link trazia 17→21/10
+  (Toussaint, fora da janela 7→11/10) — devolvido como pergunta, não
+  corrigido em silêncio.
+
 **Aplicado ao PERFIL.md**
 - Orçamento e Ritmo → as duas hipóteses acima; base fixa em viagem curta.
+- Hospedagem → compara no eDreams (provável). Regras de uso do comparador
+  foram para `pesquisa-destino/references/fontes.md`.
 - Interesses → parque temático / Disney (provável).
 
 **Perguntas que não precisei fazer**

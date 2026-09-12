@@ -85,7 +85,11 @@ economiza rodadas inteiras de sugestão descartada._
 
 ## Hospedagem
 
-- Tipo preferido: _a descobrir_
+- Compara hotéis no **eDreams** (edreams.pt) e manda o link: a pesquisa de
+  hospedagem começa por lá e compara o total do checkout com o site do hotel.
+  (provável — Paris 2026)
+- Tipo preferido: _a descobrir_ (aceitou ibis 3★ como base; a descobrir se
+  prefere charme a rede)
 - Critérios de bairro: _a descobrir_
 - Inegociáveis: _a descobrir_
 

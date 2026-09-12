@@ -21,7 +21,7 @@
    Parceiro oficial em Magny-le-Hongre: ônibus grátis a cada 20 min das 8h à meia-noite, café incluído, ≈ €90–140 a noite. Reserve o quarto avulso (Booking ou site do B&B) — o pacote da Disney exige 2 noites. Cuidado: o "B&B Marne-la-Vallée Val d'Europe" em Serris é outro hotel, sem ônibus para o parque.
    https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre
 5. **ibis Paris Bastille Opéra 11ème, 3 noites (7, 9 e 10/10)** — Agora · até 20 de set.
-   ≈ €105–140 a noite, 7 min a pé da Bastille, RER A na Gare de Lyon. Alternativa com charme: Hôtel Jeanne d'Arc Le Marais, mas a €178+ estoura a linha. Duas reservas (quarta; sexta e sábado) — pergunte se guardam a mala na quinta.
+   ≈ €105–140 a noite, 7 min a pé da Bastille, RER A na Gare de Lyon. Alternativa 4★: Villa Beaumarchais (Marais, Chemin Vert) se o total no checkout do eDreams ficar abaixo de €130 — a lista mostra €94 'desde', mas outros sites cobram €175+. Duas reservas (quarta; sexta e sábado) — pergunte se guardam a mala na quinta.
    https://all.accor.com/
 6. **Louvre, sáb 10/10 às 9h — tarifa residente** — Um mês antes · até 25 de set.
    Escolha o ingresso de €22 (residente EEE) e leve o título de residência: conferem na entrada.
@@ -204,6 +204,7 @@ Teto de € 2.000 (lido como total do grupo): sobram € 75.
 - [Halloween na Disney 2026](https://www.disneylandparis.com/en-int/seasons/halloween)
 - [B&B Hôtel parceiro da Disney](https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre)
 - [ibis Paris Bastille Opéra 11ème](https://all.accor.com/hotel/1399/index.en.shtml)
+- [eDreams — hotéis em Paris (comparar total no checkout)](https://www.edreams.pt/hotels/city/fr/paris/)
 
 ---
 
