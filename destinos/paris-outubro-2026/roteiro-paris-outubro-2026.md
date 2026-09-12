@@ -9,17 +9,20 @@
 ## Reservar antes
 
 1. **Voos Porto ⇄ Paris Orly (TAP / Transavia / easyJet), 7 e 11/10** — Agora · até 16 de set.
-   Orly, não Beauvais: o ônibus de Beauvais custa €72 para os dois e três horas. Só bagagem de mão.
+   Compare no Kayak ou Google Flights e compre no site da companhia. Transavia é a mais barata para Orly (ida e volta desde ≈ €66–90 pp; 49 voos/semana); TAP desde ≈ €92. Ryanair para Beauvais sai ≈ €125 de média e o ônibus custa €72 para os dois: não compensa. Só bagagem de mão.
+   https://www.transavia.com/pt-PT/
 2. **Torre Eiffel pela escada, sáb 10/10 ao entardecer** — Agora · até 18 de set.
    Escada vende 40 dias antes — para 10/10 abriu em 31/8. Se esgotou, a bilheteria da escada no local costuma ter vaga fora do pôr do sol.
    https://www.toureiffel.paris/en
 3. **Ingressos Disney 2 dias / 2 parques, qui 8 e sex 9/10** — Agora · até 20 de set.
-   Preço por data: dia útil antes da Toussaint é o mais barato. Compre com data, não "undated".
+   Preço por data: dia útil antes da Toussaint fica na faixa "low" (≈ €154 pp o de 2 dias/2 parques). Compre com data no site oficial. Não compre pacote hotel + ingresso: desde 31/3/2026 os pacotes exigem 2 noites.
    https://www.disneylandparis.com/en-usd/offers
-4. **Hotel parceiro em Val d'Europe, 1 noite (8 → 9/10)** — Agora · até 20 de set.
-   B&B Val d'Europe (a pé do parque) ou Explorers (ônibus grátis). Hotel Disney custa o dobro e dá Extra Magic Time às 8h30 — cenário B.
-5. **Hotel 2★ / B&B no Marais ou Bastille, 3 noites (7, 9 e 10/10)** — Agora · até 20 de set.
-   Duas reservas separadas (quarta; sexta e sábado) ou uma com a quinta fora — pergunte se guardam a mala.
+4. **B&B Hôtel près de Disneyland Paris, 1 noite (8 → 9/10)** — Agora · até 20 de set.
+   Parceiro oficial em Magny-le-Hongre: ônibus grátis a cada 20 min das 8h à meia-noite, café incluído, ≈ €90–140 a noite. Reserve o quarto avulso (Booking ou site do B&B) — o pacote da Disney exige 2 noites. Cuidado: o "B&B Marne-la-Vallée Val d'Europe" em Serris é outro hotel, sem ônibus para o parque.
+   https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre
+5. **ibis Paris Bastille Opéra 11ème, 3 noites (7, 9 e 10/10)** — Agora · até 20 de set.
+   ≈ €105–140 a noite, 7 min a pé da Bastille, RER A na Gare de Lyon. Alternativa com charme: Hôtel Jeanne d'Arc Le Marais, mas a €178+ estoura a linha. Duas reservas (quarta; sexta e sábado) — pergunte se guardam a mala na quinta.
+   https://all.accor.com/
 6. **Louvre, sáb 10/10 às 9h — tarifa residente** — Um mês antes · até 25 de set.
    Escolha o ingresso de €22 (residente EEE) e leve o título de residência: conferem na entrada.
    https://www.louvre.fr/en/visit/hours-admission
@@ -42,15 +45,15 @@ _Regras verificadas em 12 de setembro de 2026. Reconfirme perto da viagem._
 
 | Trecho | Saída | Chegada | Companhia | Custo |
 |---|---|---|---|---|
-| OPO → ORY | 07 de out. 07:15 | 07 de out. 10:40 | TAP / Transavia | € 120 pp |
-| ORY → OPO | 11 de out. 18:30 | 11 de out. 19:55 | TAP / Transavia | € 120 pp |
+| OPO → ORY | 07 de out. 07:15 | 07 de out. 10:40 | Transavia | € 100 pp |
+| ORY → OPO | 11 de out. 18:30 | 11 de out. 19:55 | Transavia | € 100 pp |
 
 ### Hospedagem
 
 | Onde | Entrada | Saída | Custo | Por quê |
 |---|---|---|---|---|
-| Hotel 2★ / B&B no Marais–Bastille (a escolher) | 07 de out. | 11 de out. | € 420 | Três noites (a quinta é na Disney). Marais a pé, bouillons a dez minutos, e a Bastille tem o RER A direto para Chessy. |
-| Hotel parceiro em Val d'Europe (B&B ou Explorers) | 08 de out. | 09 de out. | € 140 | Metade do preço de um hotel Disney; a pé ou de ônibus grátis até a entrada. O que se perde é a Extra Magic Time das 8h30. |
+| ibis Paris Bastille Opéra 11ème | 07 de out. | 11 de out. | € 390 | Três noites a ≈ €130 (a quinta é na Disney). Bastille a 7 min, RER A na Gare de Lyon direto para Chessy, Marais a pé, bouillons a dez minutos. |
+| B&B Hôtel près de Disneyland Paris (Magny-le-Hongre) | 08 de out. | 09 de out. | € 120 | Parceiro oficial: ônibus grátis a cada 20 min, café incluído, metade do preço de um hotel Disney. O que se perde é a Extra Magic Time das 8h30. |
 
 ### Transporte
 
@@ -84,7 +87,7 @@ _Quinta-feira, antes da Toussaint: o parque abre às 9h30 e fecha às 22h, com o
 | 08:00 | RER A Nation → Marne-la-Vallée–Chessy<br>Bilhete de €2,55 no app ou na máquina. Sente na frente do trem: a saída em Chessy é do lado do parque. | € 2,55 pp |
 | 09:30 | Disneyland Park — abertura às 9h30 **(reservar antes)**<br>Ingresso de 2 dias, com data. Big Thunder Mountain e Phantom Manor primeiro; Halloween é no Frontierland. | € 150 pp |
 | 13:00 | Almoço no parque | € 25 pp |
-| 17:00 | Check-in no hotel parceiro e um banho | — |
+| 17:00 | Check-in no B&B parceiro (ônibus grátis) e um banho | — |
 | 19:00 | Volta ao parque: desfile e show de Halloween<br>Os shows noturnos são o motivo de dormir aqui. Jantar leve no parque. | — |
 
 ### Dia 3 · Sexta-feira, 09 de outubro — Disney, dia 2
@@ -129,19 +132,19 @@ _Domingo é Orsay porque segunda ele fecha. Mercado de domingo na Aligre, uma vo
 
 | Item | Seu plano | Econômico |
 |---|---:|---:|
-| Voos | € 240 | € 200 |
-| Hospedagem | € 560 | € 470 |
+| Voos | € 200 | € 160 |
+| Hospedagem | € 510 | € 440 |
 | Taxa de turismo | € 23 | € 23 |
 | Alimentação _(intocável)_ | € 380 | € 380 |
 | Transporte local | € 92 | € 92 |
-| Atrações _(intocável)_ | € 457 | € 417 |
+| Atrações _(intocável)_ | € 465 | € 417 |
 | Extras e compras | € 80 | € 40 |
-| **Total** | **€ 1.832** | **€ 1.622** |
-| Reserva para imprevistos | € 180 | € 180 |
+| **Total** | **€ 1.750** | **€ 1.552** |
+| Reserva para imprevistos | € 175 | € 175 |
 
-Por pessoa: **€ 916** · econômico **€ 811**.
+Por pessoa: **€ 875** · econômico **€ 776**.
 
-Teto de € 2.000 (lido como total do grupo): **faltam € 12**.
+Teto de € 2.000 (lido como total do grupo): sobram € 75.
 
 ## Bagagem
 
@@ -199,6 +202,8 @@ Teto de € 2.000 (lido como total do grupo): **faltam € 12**.
 - [Bonjour RATP — bilhetes e passes](https://www.bonjour-ratp.fr/en/titres-tarifs/forfait-navigo-semaine/)
 - [RER A até a Disney](https://parisbytrain.com/rer-train-paris-to-euro-disney/)
 - [Halloween na Disney 2026](https://www.disneylandparis.com/en-int/seasons/halloween)
+- [B&B Hôtel parceiro da Disney](https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre)
+- [ibis Paris Bastille Opéra 11ème](https://all.accor.com/hotel/1399/index.en.shtml)
 
 ---
 

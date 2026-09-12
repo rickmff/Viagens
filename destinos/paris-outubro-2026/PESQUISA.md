@@ -29,13 +29,15 @@ nominativo de residência válido" ([France 24](https://www.france24.com/fr/info
 | Orangerie | **terça** | ≈ €12,50 | site oficial |
 | Sainte-Chapelle | sem dia fixo | ≈ €13 | [sainte-chapelle.fr](https://www.sainte-chapelle.fr/en/visit/practical-information) |
 | Torre Eiffel | — | escada ao 2º andar €14,80 · elevador ao topo €36,70 | [toureiffel.paris](https://www.toureiffel.paris/en): elevador **60 dias** antes, escada **40 dias** antes; cume ao pôr do sol esgota primeiro |
-| Disneyland Paris | — | por data; 1 dia desde ≈ €56, 2 dias 2 parques ≈ €150 pp em dia útil de outubro (a confirmar na compra) | [disneylandparis.com](https://www.disneylandparis.com/en-usd/offers) |
+| Disneyland Paris | — | por data; 2 dias/2 parques em faixas: eco €142 · low €154 · medium €174 · regular €206 · peak €224 pp ([The Better Vacation](https://thebettervacation.com/paris/disneyland-paris-two-day-ticket/)); dia útil de início de outubro cai em low/medium | [disneylandparis.com](https://www.disneylandparis.com/en-usd/offers) |
 
 Consequência: **sábado e domingo são os dias de museu em Paris; quinta e
 sexta são a Disney**. Eiffel de escada no sábado ao entardecer, com a torre
 cintilando de hora em hora depois de escurecer.
 
 ## 4. Voos e transporte
+
+**Onde comprar o voo** (consulta 2026-09-12): comparar no [Kayak](https://www.kayak.com/flight-routes/Porto-OPO/Paris-PAR) ou Google Flights e **comprar no site da companhia**. Transavia é a mais barata para Orly (média ≈ €101 ida e volta, ofertas desde €66; [49 voos/semana no verão até 31/10](https://kiosquedaaviacao.pt/transavia-anuncia-operacao-para-o-verao-de-2026-24-rotas-em-portugal-e-20-novas-rotas-europeias/)), easyJet empata, TAP ≈ €163. Quinta é o dia mais barato; o Kayak diz que o preço mínimo é a 8 semanas — já passou, então **comprar agora**, não esperar. Ryanair para Beauvais tem média ≈ €125 ida e volta: com o ônibus (€72 para dois) fica mais caro que Orly.
 
 **Porto → Paris** ([momondo](https://www.momondo.pt/voos/porto/aeroporto-de-paris-orly-ory), [Kayak](https://www.kayak.com/flight-routes/Porto-OPO/Paris-PAR)): Transavia, TAP e easyJet para **Orly**, média ≈ €114 em outubro, com ofertas desde €60 ida e volta; Ryanair 17 voos/semana para **Beauvais**, mais barato — mas Beauvais fica a 1h15 e €17,90 de ônibus por trecho ([francetravel.wiki](https://www.francetravel.wiki/guides/beauvais-airport-to-paris)): dois trechos para dois somam €72 e três horas. Só compensa se a diferença do voo passar de €40 por pessoa.
 
@@ -44,6 +46,12 @@ cintilando de hora em hora depois de escurecer.
 ## 5. Hospedagem e taxas
 
 **Paris**: taxa de turismo 2026 de €3,25 (2★) a €15,93 (palácio) por pessoa por noite, já com o adicional regional ([service-public](https://entreprendre.service-public.gouv.fr/actualites/A17929?lang=en), [Paris je t'aime](https://parisjetaime.com/professionnels/article/hebergements-taxe-de-sejour-a-paris-a1192)). Diária 2★/B&B central em outubro ≈ €120–160.
+
+**Regra nova**: desde 31/3/2026 os **pacotes hotel + ingresso da Disney exigem mínimo de 2 noites**, inclusive nos hotéis parceiros ([disneylandparis.com](https://www.disneylandparis.com/en-int/partner-hotels)). Para 1 noite + 2 dias, comprar separado: ingresso datado no site oficial e quarto avulso no hotel.
+
+**Hotel em Paris**: [ibis Paris Bastille Opéra 11ème](https://www.momondo.com/hotels/paris/ibis-Paris-Bastille-Opera-11eme.mhd10218.ksp), ≈ €105–140 a noite, 7 min da Bastille, RER A na Gare de Lyon ([Paris Toolkit](https://www.paristoolkit.com/accommodation/republique.html), [Hoteliers Choice](https://hotelierschoice.com/guides/paris/budget/)). Com charme mas fora da linha: Hôtel Jeanne d'Arc Le Marais, €178+ ([Booking](https://www.booking.com/hotel/fr/jeanne-d-39-arc-paris.html)).
+
+**Hotel na Disney**: [B&B Hôtel près de Disneyland Paris](https://www.disneylandparis.com/en-usd/hotels/hotel-bb), em Magny-le-Hongre — parceiro oficial, ônibus grátis a cada 20 min das 8h à meia-noite, café incluído, ≈ €90–140 a noite ([Tous chez Mickey](https://www.touschezmickey.com/en/hotel/bb-disneyland-paris/): 4,2/5 no Google, 10% mais barato que o Explorers, banheiro pequeno e isolamento acústico fraco). **Não confundir** com o B&B Marne-la-Vallée Val d'Europe em Serris, que fica a 5 km e não tem ônibus para o parque ([Kayak](https://www.kayak.fr/Serris-Hotels-B-B-HOTEL-Marne-la-Vallee-Val-d-Europe.1071455878.ksp)).
 
 **Disney** ([MagicWait](https://magicwaitparis.com/blog/disney-hotels-vs-partner-hotels-val-europe/), [JetMeAway](https://jetmeaway.co.uk/blog/best-hotels-disneyland-paris-2026), [dein-dlrp](https://www.dein-dlrp.de/en/disneyland-resort-paris/more-hotels/disneyland-paris-partner-hotels.html)): hotel Disney desde ≈ £130/noite com ingressos e Extra Magic Time (entrada 8h30); parceiros (Explorers, Grand Magic, B&B Val d'Europe) desde ≈ £75, com ônibus gratuito ao parque. O B&B de Val d'Europe dá para ir a pé.
 
@@ -56,5 +64,5 @@ refeição sai ≈ €20–30. Dia de Paris ≈ €35 pp; dia de Disney ≈ €4
 ## 7. Pendente
 
 - Preço exato do ingresso Disney de 2 dias para 8–9/10 (por data, só no site).
-- Nome do hotel em Paris e do parceiro da Disney, quando for reservar.
+- Preço exato do voo na Transavia para 7 e 11/10 — só na busca com data.
 - Eiffel escada para 10/10: venda abriu em 31/8 — conferir disponibilidade.

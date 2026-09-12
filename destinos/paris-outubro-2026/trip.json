@@ -88,7 +88,7 @@
       "fuso": "Europe/Paris",
       "chegada": "2026-10-08",
       "saida": "2026-10-09",
-      "bairroBase": "Val d'Europe",
+      "bairroBase": "Magny-le-Hongre",
       "resumo": "Uma noite num hotel parceiro, dois dias de Halloween em dias úteis, antes da Toussaint.",
       "taxaTurismo": {
         "valor": 1.5,
@@ -134,7 +134,8 @@
       "oQue": "Voos Porto ⇄ Paris Orly (TAP / Transavia / easyJet), 7 e 11/10",
       "urgencia": "imediato",
       "prazo": "2026-09-16",
-      "observacao": "Orly, não Beauvais: o ônibus de Beauvais custa €72 para os dois e três horas. Só bagagem de mão."
+      "observacao": "Compare no Kayak ou Google Flights e compre no site da companhia. Transavia é a mais barata para Orly (ida e volta desde ≈ €66–90 pp; 49 voos/semana); TAP desde ≈ €92. Ryanair para Beauvais sai ≈ €125 de média e o ônibus custa €72 para os dois: não compensa. Só bagagem de mão.",
+      "onde": "https://www.transavia.com/pt-PT/"
     },
     {
       "id": "res-disney-ingressos",
@@ -142,21 +143,23 @@
       "urgencia": "imediato",
       "prazo": "2026-09-20",
       "onde": "https://www.disneylandparis.com/en-usd/offers",
-      "observacao": "Preço por data: dia útil antes da Toussaint é o mais barato. Compre com data, não \"undated\"."
+      "observacao": "Preço por data: dia útil antes da Toussaint fica na faixa \"low\" (≈ €154 pp o de 2 dias/2 parques). Compre com data no site oficial. Não compre pacote hotel + ingresso: desde 31/3/2026 os pacotes exigem 2 noites."
     },
     {
       "id": "res-hotel-disney",
-      "oQue": "Hotel parceiro em Val d'Europe, 1 noite (8 → 9/10)",
+      "oQue": "B&B Hôtel près de Disneyland Paris, 1 noite (8 → 9/10)",
       "urgencia": "imediato",
       "prazo": "2026-09-20",
-      "observacao": "B&B Val d'Europe (a pé do parque) ou Explorers (ônibus grátis). Hotel Disney custa o dobro e dá Extra Magic Time às 8h30 — cenário B."
+      "observacao": "Parceiro oficial em Magny-le-Hongre: ônibus grátis a cada 20 min das 8h à meia-noite, café incluído, ≈ €90–140 a noite. Reserve o quarto avulso (Booking ou site do B&B) — o pacote da Disney exige 2 noites. Cuidado: o \"B&B Marne-la-Vallée Val d'Europe\" em Serris é outro hotel, sem ônibus para o parque.",
+      "onde": "https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre"
     },
     {
       "id": "res-hotel-paris",
-      "oQue": "Hotel 2★ / B&B no Marais ou Bastille, 3 noites (7, 9 e 10/10)",
+      "oQue": "ibis Paris Bastille Opéra 11ème, 3 noites (7, 9 e 10/10)",
       "urgencia": "imediato",
       "prazo": "2026-09-20",
-      "observacao": "Duas reservas separadas (quarta; sexta e sábado) ou uma com a quinta fora — pergunte se guardam a mala."
+      "observacao": "≈ €105–140 a noite, 7 min a pé da Bastille, RER A na Gare de Lyon. Alternativa com charme: Hôtel Jeanne d'Arc Le Marais, mas a €178+ estoura a linha. Duas reservas (quarta; sexta e sábado) — pergunte se guardam a mala na quinta.",
+      "onde": "https://all.accor.com/"
     },
     {
       "id": "res-louvre",
@@ -198,12 +201,12 @@
       "para": "ORY",
       "partida": "2026-10-07T07:15",
       "chegada": "2026-10-07T10:40",
-      "cia": "TAP / Transavia",
+      "cia": "Transavia",
       "voo": null,
       "escalas": [],
       "duracaoTotalMin": 145,
       "custo": {
-        "valor": 120,
+        "valor": 100,
         "moeda": "EUR",
         "por": "pessoa"
       },
@@ -216,12 +219,12 @@
       "para": "OPO",
       "partida": "2026-10-11T18:30",
       "chegada": "2026-10-11T19:55",
-      "cia": "TAP / Transavia",
+      "cia": "Transavia",
       "voo": null,
       "escalas": [],
       "duracaoTotalMin": 145,
       "custo": {
-        "valor": 120,
+        "valor": 100,
         "moeda": "EUR",
         "por": "pessoa"
       },
@@ -232,33 +235,33 @@
     {
       "id": "hosp-paris",
       "destinoId": "paris",
-      "nome": "Hotel 2★ / B&B no Marais–Bastille (a escolher)",
+      "nome": "ibis Paris Bastille Opéra 11ème",
       "checkin": "2026-10-07",
       "checkout": "2026-10-11",
-      "lat": 48.8566,
-      "lon": 2.3622,
+      "lat": 48.8568,
+      "lon": 2.3716,
       "custo": {
-        "valor": 420,
+        "valor": 390,
         "moeda": "EUR",
         "por": "total"
       },
-      "porque": "Três noites (a quinta é na Disney). Marais a pé, bouillons a dez minutos, e a Bastille tem o RER A direto para Chessy.",
+      "porque": "Três noites a ≈ €130 (a quinta é na Disney). Bastille a 7 min, RER A na Gare de Lyon direto para Chessy, Marais a pé, bouillons a dez minutos.",
       "status": "cotado"
     },
     {
       "id": "hosp-disney",
       "destinoId": "disney",
-      "nome": "Hotel parceiro em Val d'Europe (B&B ou Explorers)",
+      "nome": "B&B Hôtel près de Disneyland Paris (Magny-le-Hongre)",
       "checkin": "2026-10-08",
       "checkout": "2026-10-09",
-      "lat": 48.8549,
-      "lon": 2.7726,
+      "lat": 48.8712,
+      "lon": 2.8039,
       "custo": {
-        "valor": 140,
+        "valor": 120,
         "moeda": "EUR",
         "por": "total"
       },
-      "porque": "Metade do preço de um hotel Disney; a pé ou de ônibus grátis até a entrada. O que se perde é a Extra Magic Time das 8h30.",
+      "porque": "Parceiro oficial: ônibus grátis a cada 20 min, café incluído, metade do preço de um hotel Disney. O que se perde é a Extra Magic Time das 8h30.",
       "status": "cotado"
     }
   ],
@@ -484,7 +487,7 @@
           "hora": "17:00",
           "duracaoMin": 60,
           "tipo": "deslocamento",
-          "titulo": "Check-in no hotel parceiro e um banho",
+          "titulo": "Check-in no B&B parceiro (ônibus grátis) e um banho",
           "lat": 48.8549,
           "lon": 2.7726
         },
@@ -804,18 +807,18 @@
       {
         "id": "voos",
         "nome": "Voos",
-        "previsto": 240,
-        "economico": 200,
+        "previsto": 200,
+        "economico": 160,
         "real": null,
-        "observacao": "Porto ⇄ Orly para 2, só bagagem de mão. Econômico: Ryanair para Beauvais — €70 mais barato, três horas mais longo."
+        "observacao": "Porto ⇄ Orly na Transavia para 2, só bagagem de mão (≈ €100 pp comprando agora; média de outubro €114). Econômico: promoção a €80 pp. Beauvais não entra: o ônibus come a diferença."
       },
       {
         "id": "hospedagem",
         "nome": "Hospedagem",
-        "previsto": 560,
-        "economico": 470,
+        "previsto": 510,
+        "economico": 440,
         "real": null,
-        "observacao": "3 noites 2★/B&B no Marais (≈ €140) + 1 noite em hotel parceiro da Disney (≈ €140). Econômico: quarto em apartamento a €110 e B&B Val d'Europe a €120."
+        "observacao": "3 noites no ibis Bastille Opéra (≈ €130) + 1 noite no B&B parceiro da Disney (≈ €120). Econômico: ibis a €110 e B&B a €90."
       },
       {
         "id": "taxa-turismo",
@@ -823,7 +826,7 @@
         "previsto": 23,
         "economico": 23,
         "real": null,
-        "observacao": "Paris €3,25 pp/noite × 3 + Val d'Europe ≈ €1,50 × 1, para 2."
+        "observacao": "Paris €3,25 pp/noite × 3 + Magny-le-Hongre ≈ €1,50 × 1, para 2."
       },
       {
         "id": "alimentacao",
@@ -845,11 +848,11 @@
       {
         "id": "atracoes",
         "nome": "Atrações",
-        "previsto": 457,
+        "previsto": 465,
         "economico": 417,
         "real": null,
         "intocavel": true,
-        "observacao": "Disney 2 dias/2 parques ≈ €150 pp (por data, a confirmar), Louvre €22 (residente), Orsay €16, Orangerie €12,50, Sainte-Chapelle €13, Eiffel escada €14,80 — para 2. Econômico: Disney 2 dias/1 parque."
+        "observacao": "Disney 2 dias/2 parques ≈ €154 pp (faixa \"low\", por data), Louvre €22 (residente), Orsay €16, Orangerie €12,50, Sainte-Chapelle €13, Eiffel escada €14,80 — para 2. Econômico: Disney 1 dia/2 parques + 1 dia/1 parque."
       },
       {
         "id": "extras",
@@ -861,7 +864,7 @@
       }
     ],
     "reserva": {
-      "valor": 180,
+      "valor": 175,
       "moeda": "EUR",
       "percentual": 10
     }
@@ -1009,6 +1012,14 @@
       "titulo": "Halloween na Disney 2026",
       "url": "https://www.disneylandparis.com/en-int/seasons/halloween",
       "categoria": "guia"
+    },
+    {
+      "titulo": "B&B Hôtel parceiro da Disney",
+      "url": "https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre"
+    },
+    {
+      "titulo": "ibis Paris Bastille Opéra 11ème",
+      "url": "https://all.accor.com/hotel/1399/index.en.shtml"
     }
   ],
   "avisos": [
