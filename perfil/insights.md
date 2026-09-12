@@ -27,6 +27,34 @@ Formato de cada entrada:
 
 ---
 
+## 2026-09-12 — Paris no lugar da Itália
+
+**Prompt (resumo):** "me ajude a planejar uma viagem pra França em outubro".
+
+**Sinais observados**
+- Uma rodada de perguntas bastou (o perfil respondeu companhia, saída,
+  ritmo, interesses e faixa) — o briefing encurtou de quatro rodadas para uma.
+- Escolheu Paris só, 4–5 dias, outubro de 2026 **no lugar** da Itália.
+- Acrescentou "com estadia na Disney de 1 noite e 2 dias" numa frase solta,
+  depois do pedido principal — o sinal mais revelador da sessão: parque
+  temático entra nos interesses, e com peso (≈ €450 dos €2.000).
+
+**Inferido**
+- Troca destino sem apego antes de comprar; compromisso é com janela e teto.
+  (hipótese)
+- Viagem curta para cidade única. (hipótese)
+- Parque temático / Disney como interesse real, não só "para acompanhar".
+  (provável)
+
+**Aplicado ao PERFIL.md**
+- Orçamento e Ritmo → as duas hipóteses acima; base fixa em viagem curta.
+- Interesses → parque temático / Disney (provável).
+
+**Perguntas que não precisei fazer**
+- Companhia, saída, ritmo, interesses, teto, nacionalidade, moeda, fuso.
+
+---
+
 ## 2026-09-12 — Itália 2027 (briefing) e uma correção de fundação
 
 **Prompt (resumo):** "Quero planejar uma viagem pra Itália"; no briefing,

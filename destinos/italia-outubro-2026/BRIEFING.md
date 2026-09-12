@@ -40,3 +40,9 @@ mercado, vinho). Ritmo de dois ou três blocos por dia, com folga.
 - **Pompeia entra como opção B** de um dia em Roma; decide na semana.
 - Teto continua **€2.000**. Outubro é meia temporada: fecha só com B&B/2★,
   segunda quinzena e sem Pompeia — a conta está no orçamento.
+
+## 2026-09-12 — arquivada
+
+Trocada por Paris na mesma janela de outubro, antes de qualquer compra. A
+pasta fica: pesquisa, roteiro e site continuam válidos para uma retomada
+(basta mudar `status` de volta para `planejando` e refazer as datas).

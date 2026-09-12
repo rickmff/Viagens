@@ -51,10 +51,13 @@ Cada afirmação carrega o quanto se pode confiar nela:
 - Dois ou três blocos por dia, com folga para o que aparece. (provável — briefing Itália)
 - Acorda cedo em viagem? _a descobrir_
 - Tolerância a deslocamento entre atrações: _a descobrir_
-- Prefere base fixa ou trocar de cidade com frequência? _a descobrir_
+- Uma base só quando a viagem é curta (Paris, 4–5 dias). (hipótese)
 
 ## Interesses
 
+- Parque temático / Disney: pediu "uma noite e dois dias na Disneyland" de
+  passagem, no meio do pedido de Paris. Interesse dito de passagem é pedido.
+  (provável — briefing Paris)
 - História antiga: ruínas, sítios arqueológicos. (provável — briefing Itália)
 - Museus e arte, aceita ingresso com hora marcada. (provável — briefing Itália)
 - Comer bem: trattoria, mercado, vinho — pediu explicitamente. (provável — briefing Itália)
@@ -73,6 +76,9 @@ economiza rodadas inteiras de sugestão descartada._
   viagens a viagens caras. (provável)
 - Aceita cortar cidade (Veneza) para caber no teto, e prefere deixar o extra
   caro (Pompeia) como opção decidida na hora. (provável)
+- Troca de destino sem apego antes de comprar (Itália → Paris na mesma
+  janela); o compromisso é com a janela e o teto, não com o lugar. (hipótese)
+- Para uma cidade só, prefere viagem curta (4–5 dias) a esticar. (hipótese)
 - Onde aceita gastar mais: _a descobrir_
 - Onde corta sem dó: _a descobrir_
 - Usa milhas / pontos? _a descobrir_
