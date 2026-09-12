@@ -90,6 +90,13 @@ Duas coisas valem interromper a cadeia e falar antes de seguir:
 Fora esses dois casos, vá até o fim e entregue. Um roteiro entregue e corrigido
 vale mais que um questionário respondido.
 
+**Quando o plano ainda não assentou, entregue primeiro o roteiro em prosa e só
+depois construa o site.** Destino indefinido, datas flexíveis, teto que ainda
+vai mudar — nesses casos o texto na conversa é o formato que ele corrige mais
+rápido, e vale ter o plano aprovado antes de investir em arquivo. Com o pedido
+já concreto, vá direto ao site: o `roteiro-<slug>.md` sai junto e serve para a
+mesma leitura rápida.
+
 **Uma correção vale mais que uma sugestão.** Quando a pesquisa achar um conflito
 real — o museu fecha no único dia livre, a janela de venda já passou, o passe
 não compensa — destaque isso em vez de resolver em silêncio. É o trabalho mais

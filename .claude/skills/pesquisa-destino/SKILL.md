@@ -64,8 +64,16 @@ Ache primeiro o que **não** se move, e construa o resto em volta:
 
 Se a janela que ele quer não entrega o que ele quer, **diga isso antes de
 montar roteiro**. É a informação mais valiosa que você pode dar e a mais fácil
-de enterrar num parágrafo no fim. Mostre as alternativas com o que se ganha e o
-que se perde em cada uma.
+de enterrar num parágrafo no fim.
+
+**Datas flexíveis pedem uma tabela, não uma sugestão.** Compare as épocas
+candidatas numa tabela curta — preço do voo, diária média, clima, multidão, e o
+que cada época faz com a lista de desejos dele — e recomende uma, com o motivo.
+
+Explicite o compromisso em vez de escondê-lo: a época mais barata raramente é a
+melhor para a lista de desejos, e a mais bonita é quase sempre a mais cara.
+Quem escolhe é ele, mas só consegue escolher se o custo da escolha estiver na
+mesa.
 
 ### 3. Verificar o que abre
 
@@ -141,8 +149,18 @@ Dentro de cada dia, agrupe por proximidade a pé. Quatro atrações em quatro
 bairros não é um dia cheio, é um dia impossível — conte o deslocamento como
 tempo real.
 
-Reserve o primeiro dia para chegada e fuso. Em viagem longa, deixe pelo menos
-uma tarde livre. E **marque os dias mais fáceis de cortar** (`cortavel: true`),
+**Dia de chegada e dia de partida não são dias inteiros** — conte meio dia em
+cada. Um voo que pousa às 16h não rende uma tarde de museu depois da imigração,
+da bagagem e do trajeto até o hotel. Em viagem de mais de dez dias, deixe
+também um dia inteiro sem plano.
+
+**Um dia, uma zona.** Atravessar a cidade três vezes gasta o dia em transporte.
+E cuidado com o excesso de ambição geográfica: quatro cidades em cinco dias é
+uma viagem de rodoviária com paradas turísticas.
+
+**A hora do dia muda a experiência.** Mirante e lugar muito fotografado de
+manhã cedo, mercado na hora do café, bairro de luzes ao anoitecer. Escolher a
+hora certa costuma valer mais que escolher o lugar certo. E **marque os dias mais fáceis de cortar** (`cortavel: true`),
 porque viagem encurta e é melhor a decisão já estar tomada.
 
 Coloque `alternativa` nos blocos ao ar livre quando o clima do período for

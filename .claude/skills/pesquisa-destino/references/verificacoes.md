@@ -21,6 +21,15 @@ aqui vale mais para o viajante que três sugestões de restaurante.
 | Lojas especializadas | Rua de pedestres só em certos dias; algumas fecham na terça |
 | Igrejas e catedrais | Fecham para missa em horários fixos, inclusive as gratuitas |
 
+**Horário de última entrada não é o horário de fechar.** Boa parte dos lugares
+fecha a bilheteria 30 a 60 minutos antes de fechar a porta. Um roteiro que
+manda chegar às 17h num museu que fecha às 17h30 não entra — e essa é a
+diferença entre um roteiro que se lê bem e um que se cumpre.
+
+**Parque temático em dia útil**, e nunca no domingo se houver alternativa. Fora
+de alta temporada muitos fecham dias úteis inteiros, então confira as duas
+coisas: qual dia útil está aberto, e qual está vazio.
+
 A regra que muda tudo: confirme cada parada contra **o dia da semana em que ela
 vai cair**, não contra "está aberto". "Aberto de terça a domingo" não responde
 nada até você saber que aquele dia é uma segunda.

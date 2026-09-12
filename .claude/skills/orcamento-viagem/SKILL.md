@@ -39,6 +39,24 @@ alimentação, transporte urbano, entradas, imprevisto pequeno. Use os números
 reais da `PESQUISA.md`, não estimativa de cabeça. Este é o passo que as pessoas
 pulam e é onde a viagem vaza.
 
+**Comida é o item mais esquecido do orçamento.** Orce as três refeições
+separadamente — café, almoço, jantar — mais os extras (o cafezinho, a água, o
+sorvete, a cerveja no fim do dia), porque um número único "alimentação" sempre
+sai baixo.
+
+A referência útil é **15% a 20% do gasto em solo** (o total menos as passagens
+aéreas), não do total da viagem. Para destino europeu com voo barato as duas
+contas dão quase o mesmo; para Ásia ou Oceania saindo do Brasil, a passagem
+sozinha come 40% do orçamento e a fração sobre o total cai para perto de 10% —
+aplicar o percentual sobre o total ali faria você inflar a comida sem motivo.
+Confira também contra o custo por pessoa por dia da `PESQUISA.md`, que é o
+número de verdade; o percentual é só o alarme de que algo ficou de fora.
+
+Dois outros que somem com frequência: a **ligação ao aeroporto** nos dois
+sentidos (costuma ser o trecho mais caro de transporte da viagem inteira, e não
+é "transporte urbano"), e a **hospedagem noite a noite** em vez de um bloco só
+— diária de fim de semana e de véspera de feriado não é a mesma da segunda.
+
 **4. O que sobrar é o que dá para gastar com extras.** Passeios caros, compras,
 aquele jantar. Se sobrou pouco, diga agora e proponha cortes concretos.
 
@@ -66,11 +84,19 @@ viagem: se ele vai ao Japão pelo sushi ou à Itália pelos museus, cortar
 justamente isso para caber no teto entrega uma viagem barata que ele não queria
 fazer. Nomeie esses itens como intocáveis e corte em outro lugar.
 
-Se o teto não fecha nem com a coluna econômica, **seja franco**. Não empurre
-números para baixo até caber — apresente as saídas reais, que são poucas e
-conhecidas: menos dias, época mais barata, hospedagem mais simples, destino
-mais perto, ou mais orçamento. Um orçamento maquiado para caber é a forma mais
-cara de mentir.
+Se o teto não fecha nem com a coluna econômica, **seja franco, e na primeira
+resposta em que isso ficar claro**. Não empurre números para baixo até caber, e
+nunca apresente um total que só fecha porque as refeições ou os transportes
+ficaram de fora — um orçamento maquiado para caber é a forma mais cara de
+mentir.
+
+Apresente as saídas **ordenadas do corte que menos dói para o que mais dói**:
+baixar a categoria da hospedagem, cortar uma experiência cara, trocar de época,
+tirar dias, mudar de destino. Ordenar é o que transforma "não cabe" numa
+decisão que ele consegue tomar; uma lista solta de cortes só transfere o
+problema.
+
+E diga qual corte **não** fazer: a experiência que é a razão da viagem inteira.
 
 ## Passe compensa?
 
@@ -105,6 +131,12 @@ Para dinheiro vivo, a casa de câmbio tem spread próprio, geralmente pior. Se o
 destino roda a dinheiro (boa parte da Ásia e da América Latina), separe uma
 linha.
 
+**Custos que escapam de quase todo orçamento**, e que somados viram centenas de
+reais: taxa turística municipal cobrada no check-in (não vem na diária
+anunciada), bagagem despachada em companhia de baixo custo (a passagem barata
+deixa de ser barata), armário de bagagem no dia de transição entre
+hospedagens, e gorjeta onde ela é praxe e não opcional.
+
 ## Categorias
 
 Use estas, nesta ordem. Mais categorias não dá mais controle, dá mais campo
@@ -113,6 +145,9 @@ vazio:
 `voos` · `hospedagem` · `taxa-turismo` · `alimentacao` · `transporte-local` ·
 `atracoes` · `documentacao` (visto, seguro, vacina) · `conectividade` ·
 `compras` · `extras`
+
+Em `compras`, peça um teto ao usuário em vez de estimar. É a única categoria
+que depende só da vontade dele, e chutar aqui erra por muito nos dois sentidos.
 
 Cada uma leva `previsto`, `economico`, `real` (começa `null`) e uma
 `observacao` dizendo de onde veio o número. A observação é o que permite
