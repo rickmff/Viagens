@@ -7,7 +7,7 @@ skills, e três skills enviadas que já tinham planejado viagem de verdade
 classifica cada tema por origem e diz **em qual skill ele vive agora** — para
 ninguém procurar no lugar errado, e para o próximo aprendizado ter onde entrar.
 
-## As sete skills e o que cada uma é dona de
+## As oito skills e o que cada uma é dona de
 
 | Skill | Dona de | Produz |
 |---|---|---|
@@ -17,7 +17,8 @@ ninguém procurar no lugar errado, e para o próximo aprendizado ter onde entrar
 | `pesquisa-destino` | fatos verificados e datados | `PESQUISA.md` + destinos, documentação, candidatos |
 | `roteiro-viagem` | o ofício de montar dias que se cumprem | `dias[]`, `reservas[]` |
 | `orcamento-viagem` | dinheiro em duas colunas, com franqueza | `orcamento` |
-| `site-viagem` | o palco imersivo e a identidade do destino | site + `roteiro-<slug>.md` + QA |
+| `planilha-viagem` | a entrega: planilha com fórmulas vivas, opções por item, comparação entre viagens | `orcamento-<slug>.xlsx` + `comparacoes/<nome>.xlsx` |
+| `site-viagem` | opcional, só sob pedido: o palco imersivo e a identidade do destino | site + `roteiro-<slug>.md` + QA |
 
 Contrato entre todas: `docs/trip-schema.md`.
 
@@ -25,7 +26,7 @@ Contrato entre todas: `docs/trip-schema.md`.
 
 Legenda das origens: **v1** = primeira versão deste repo · **TI** =
 travel-itinerary · **PdV** = planeamento-de-viagem · **PlV** =
-planeador-de-viagens.
+planeador-de-viagens · **usuário** = pedido feito numa sessão de planejamento.
 
 ### Memória e aprendizado
 
@@ -69,6 +70,7 @@ planeador-de-viagens.
 | Voos: comprar na companhia, aeroportos vizinhos, multidestino, bilhete separado, visto de trânsito | PdV, PlV | `pesquisa-destino` |
 | Sobrevivência: pagamento, eSIM, tomada, golpes, etiqueta, emergência | v1, TI | `pesquisa-destino`, `fontes.md` |
 | Apps úteis por destino | TI | `pesquisa-destino` (sobrevivência), `links[]` |
+| Comparador de hospedagem do usuário (eDreams): checar datas da URL, total no checkout, comparar com site do hotel | usuário (Paris 2026) | `fontes.md`, `perfil/PERFIL.md` |
 
 ### Roteiro
 
@@ -101,7 +103,8 @@ planeador-de-viagens.
 | Onde não cortar: a razão de ser da viagem; cortes ordenados do que menos dói | PdV, PlV | `orcamento-viagem`, contrato (`intocavel`) |
 | Franqueza quando não cabe, na primeira resposta em que ficar claro | PdV, PlV | `orcamento-viagem`, `planejar-viagem` |
 | Cenários A/B/C de hospedagem e o que o prêmio compra | TI | `pesquisa-destino` (geografia prática) |
-| Planilha xlsx com fórmulas vivas e upgrades ligáveis | PdV, PlV | **não adotado** — o orçamento do site cobre o caso sem `openpyxl` |
+| Planilha xlsx com fórmulas vivas e upgrades ligáveis | PdV, PlV, usuário (pivô 2026-09) | `planilha-viagem` — três opções por item (econômico / plano / upgrade), link de compra, Cortes, Real, comparação por pessoa por dia |
+| Comparar orçamentos do mesmo destino em épocas diferentes, ou dois destinos na mesma janela | usuário | `comparar-viagens.py` |
 
 ### Site
 
@@ -126,16 +129,25 @@ planeador-de-viagens.
 
 ## O que ficou de fora, e por quê
 
-- **Planilha xlsx** (`criar_planilha.py`, 436 linhas): forte, mas o orçamento
-  do site já compara cenários, e uma dependência de `openpyxl` num repo com
-  três dependências de propósito é uma decisão. Se o usuário orça no Excel,
-  vale portar como script à parte.
+- **Planilha xlsx**: ficou de fora na primeira versão e voltou como a entrega
+  principal quando o usuário disse que o site não decidia nada — ver "O pivô".
 - **HTML único**: o modelo imersivo foi portado para React + Vite, o stack
   escolhido. O que importava — a régua de design, o palco, a interação — está
   inteiro; o formato de arquivo era detalhe.
 - **Português europeu**: as duas skills mais fortes eram em pt-PT. O texto
   ficou em pt-BR por consistência com o que já existia — mas o viajante mora em
   Portugal, então nada no repo assume Brasil como casa.
+
+## O pivô: de site para planilha
+
+Depois de duas viagens com site (Itália, Paris), o usuário disse que o site
+"não estava sendo tão bom quanto pensava" e pediu planilhas estritamente
+organizadas, com cálculos precisos, para **comparar orçamentos de viagens para
+os mesmos destinos**, com **opções de upgrade e downgrade** na maioria dos
+itens e **links para reservar e comprar** cada um. A lição: a entrega tem que
+ser o formato em que ele decide, e ele decide em planilha. O site ficou como
+opcional; o `trip.json` continuou a fonte da verdade e ganhou `custo.opcoes`
+e `link`.
 
 ## Uma correção de fundação
 

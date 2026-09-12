@@ -51,10 +51,13 @@ Cada afirmação carrega o quanto se pode confiar nela:
 - Dois ou três blocos por dia, com folga para o que aparece. (provável — briefing Itália)
 - Acorda cedo em viagem? _a descobrir_
 - Tolerância a deslocamento entre atrações: _a descobrir_
-- Prefere base fixa ou trocar de cidade com frequência? _a descobrir_
+- Uma base só quando a viagem é curta (Paris, 4–5 dias). (hipótese)
 
 ## Interesses
 
+- Parque temático / Disney: pediu "uma noite e dois dias na Disneyland" de
+  passagem, no meio do pedido de Paris. Interesse dito de passagem é pedido.
+  (provável — briefing Paris)
 - História antiga: ruínas, sítios arqueológicos. (provável — briefing Itália)
 - Museus e arte, aceita ingresso com hora marcada. (provável — briefing Itália)
 - Comer bem: trattoria, mercado, vinho — pediu explicitamente. (provável — briefing Itália)
@@ -73,13 +76,20 @@ economiza rodadas inteiras de sugestão descartada._
   viagens a viagens caras. (provável)
 - Aceita cortar cidade (Veneza) para caber no teto, e prefere deixar o extra
   caro (Pompeia) como opção decidida na hora. (provável)
+- Troca de destino sem apego antes de comprar (Itália → Paris na mesma
+  janela); o compromisso é com a janela e o teto, não com o lugar. (hipótese)
+- Para uma cidade só, prefere viagem curta (4–5 dias) a esticar. (hipótese)
 - Onde aceita gastar mais: _a descobrir_
 - Onde corta sem dó: _a descobrir_
 - Usa milhas / pontos? _a descobrir_
 
 ## Hospedagem
 
-- Tipo preferido: _a descobrir_
+- Compara hotéis no **eDreams** (edreams.pt) e manda o link: a pesquisa de
+  hospedagem começa por lá e compara o total do checkout com o site do hotel.
+  (provável — Paris 2026)
+- Tipo preferido: _a descobrir_ (aceitou ibis 3★ como base; a descobrir se
+  prefere charme a rede)
 - Critérios de bairro: _a descobrir_
 - Inegociáveis: _a descobrir_
 
@@ -98,11 +108,18 @@ economiza rodadas inteiras de sugestão descartada._
 
 - Viaja sozinho, em casal, com família ou em grupo: _a descobrir_
 
-## Preferências sobre o site gerado
+## Formato da entrega
 
-- Seções que ele efetivamente usa: _a descobrir_
-- Seções que ele ignora ou manda tirar: _a descobrir_
-- Ajustes visuais recorrentes: _a descobrir_
+- **Planilha Excel, não site.** Depois de dois sites (Itália, Paris) disse que
+  "não estava sendo tão bom quanto pensava" e pediu planilhas estritamente
+  organizadas, com cálculos precisos, para comparar orçamentos do mesmo
+  destino. (confirmado — dito com todas as letras, 2026-09-12)
+- Quer **opções de upgrade e downgrade na maioria dos itens** e **link para
+  reservar ou comprar cada um**: decide item a item, não por cenário pronto.
+  (confirmado)
+- Compara viagens entre si antes de comprar (Itália × Paris na mesma janela).
+  (provável)
+- Site imersivo: só se pedir. O que existe fica como opcional.
 
 ## Padrões observados
 

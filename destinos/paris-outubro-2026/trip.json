@@ -1,0 +1,1277 @@
+{
+  "schemaVersion": 1,
+  "slug": "paris-outubro-2026",
+  "titulo": "Paris & Disneyland — Outubro 2026",
+  "subtitulo": "7 → 11 de outubro · casal · Louvre, Orsay, bouillons, e dois dias de Halloween na Disney.",
+  "atualizadoEm": "2026-09-12",
+  "status": "planejando",
+  "periodo": {
+    "inicio": "2026-10-07",
+    "fim": "2026-10-11"
+  },
+  "casa": {
+    "pais": "PT",
+    "cidade": "Porto",
+    "iata": "OPO",
+    "fuso": "Europe/Lisbon",
+    "moeda": "EUR"
+  },
+  "moedaBase": "EUR",
+  "viajantes": [
+    {
+      "id": "rick",
+      "nome": "Rick"
+    },
+    {
+      "id": "par",
+      "nome": "Companhia"
+    }
+  ],
+  "tarifaDupla": {
+    "ativo": false
+  },
+  "design": {
+    "paleta": {
+      "noite": "#17163A",
+      "cair": "#25234F",
+      "cair2": "#312E66",
+      "ouro": "#F2B84B",
+      "ouro2": "#FFD98A",
+      "tinta": "#B9A4FF",
+      "creme": "#F6EFDD",
+      "ceuAlto": "#0E0D28",
+      "ceuMeio": "#1B1A40",
+      "ceuBaixo": "#2A2560",
+      "horizonte": "#4B3B75",
+      "silhueta": "#1C1A44"
+    },
+    "fontes": {
+      "display": "\"Bodoni Moda\", \"Fraunces\", Georgia, serif",
+      "ui": "\"Instrument Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "google": "family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Instrument+Sans:wght@400;500;600"
+    },
+    "horizonte": "M0 120V96h40V84h16v12h30V80h16v16h40V86h20v10h40V78h20v18h50V84h30v12h50l30-40 8-46 8 46 30 40h50V88h40v8h50V80h20v16h40V70q30-36 60 0v26h40V84h20v12h40V76h16v20h40V88h30v32z",
+    "momento": {
+      "tipo": "estrelas",
+      "rotulo": "Fazer a torre cintilar",
+      "icone": "eiffel"
+    }
+  },
+  "destinos": [
+    {
+      "id": "paris",
+      "nome": "Paris",
+      "pais": "França",
+      "paisISO": "FR",
+      "moeda": "EUR",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "fuso": "Europe/Paris",
+      "chegada": "2026-10-07",
+      "saida": "2026-10-11",
+      "bairroBase": "Marais / Bastille",
+      "resumo": "Três noites. Marais a pé, metrô 1 e RER A na porta — a linha da Disney.",
+      "taxaTurismo": {
+        "valor": 3.25,
+        "moeda": "EUR",
+        "por": "pessoa-noite"
+      }
+    },
+    {
+      "id": "disney",
+      "nome": "Disneyland Paris",
+      "pais": "França",
+      "paisISO": "FR",
+      "moeda": "EUR",
+      "lat": 48.8701,
+      "lon": 2.7741,
+      "fuso": "Europe/Paris",
+      "chegada": "2026-10-08",
+      "saida": "2026-10-09",
+      "bairroBase": "Magny-le-Hongre",
+      "resumo": "Uma noite num hotel parceiro, dois dias de Halloween em dias úteis, antes da Toussaint.",
+      "taxaTurismo": {
+        "valor": 1.5,
+        "moeda": "EUR",
+        "por": "pessoa-noite"
+      }
+    }
+  ],
+  "documentacao": {
+    "verificadoEm": "2026-09-12",
+    "visto": {
+      "necessario": false,
+      "detalhe": "Schengen: passaporte brasileiro + título de residência, sem visto. O título vale dinheiro: com ele o Louvre cobra €22 em vez de €32 por pessoa.",
+      "fonte": "https://www.louvre.fr/en/visit/hours-admission"
+    },
+    "passaporte": {
+      "validadeMinimaMeses": null,
+      "observacao": "Válido durante a viagem; título de residência também."
+    },
+    "vacinas": [],
+    "alfandega": [],
+    "seguro": {
+      "obrigatorio": false,
+      "coberturaMinima": null,
+      "observacao": "Cartão Europeu de Seguro de Doença cobre o SNS francês."
+    },
+    "checklist": [
+      {
+        "id": "doc-residencia",
+        "texto": "Título de residência na carteira — é o que dá a tarifa de €22 no Louvre",
+        "prazo": "2026-10-06"
+      },
+      {
+        "id": "doc-cesd",
+        "texto": "Cartão Europeu de Seguro de Doença",
+        "prazo": "2026-10-01"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "id": "res-voos",
+      "oQue": "Voos Porto ⇄ Paris Orly (TAP / Transavia / easyJet), 7 e 11/10",
+      "urgencia": "imediato",
+      "prazo": "2026-09-16",
+      "observacao": "Compare no Kayak ou Google Flights e compre no site da companhia. Transavia é a mais barata para Orly (ida e volta desde ≈ €66–90 pp; 49 voos/semana); TAP desde ≈ €92. Ryanair para Beauvais sai ≈ €125 de média e o ônibus custa €72 para os dois: não compensa. Só bagagem de mão.",
+      "onde": "https://www.transavia.com/pt-PT/"
+    },
+    {
+      "id": "res-disney-ingressos",
+      "oQue": "Ingressos Disney 2 dias / 2 parques, qui 8 e sex 9/10",
+      "urgencia": "imediato",
+      "prazo": "2026-09-20",
+      "onde": "https://www.disneylandparis.com/en-usd/offers",
+      "observacao": "Preço por data: dia útil antes da Toussaint fica na faixa \"low\" (≈ €154 pp o de 2 dias/2 parques). Compre com data no site oficial. Não compre pacote hotel + ingresso: desde 31/3/2026 os pacotes exigem 2 noites."
+    },
+    {
+      "id": "res-hotel-disney",
+      "oQue": "B&B Hôtel près de Disneyland Paris, 1 noite (8 → 9/10)",
+      "urgencia": "imediato",
+      "prazo": "2026-09-20",
+      "observacao": "Parceiro oficial em Magny-le-Hongre: ônibus grátis a cada 20 min das 8h à meia-noite, café incluído, ≈ €90–140 a noite. Reserve o quarto avulso (Booking ou site do B&B) — o pacote da Disney exige 2 noites. Cuidado: o \"B&B Marne-la-Vallée Val d'Europe\" em Serris é outro hotel, sem ônibus para o parque.",
+      "onde": "https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre"
+    },
+    {
+      "id": "res-hotel-paris",
+      "oQue": "ibis Paris Bastille Opéra 11ème, 3 noites (7, 9 e 10/10)",
+      "urgencia": "imediato",
+      "prazo": "2026-09-20",
+      "observacao": "≈ €105–140 a noite, 7 min a pé da Bastille, RER A na Gare de Lyon. Alternativa 4★: Villa Beaumarchais (Marais, Chemin Vert) se o total no checkout do eDreams ficar abaixo de €130 — a lista mostra €94 'desde', mas outros sites cobram €175+. Duas reservas (quarta; sexta e sábado) — pergunte se guardam a mala na quinta.",
+      "onde": "https://all.accor.com/"
+    },
+    {
+      "id": "res-louvre",
+      "oQue": "Louvre, sáb 10/10 às 9h — tarifa residente",
+      "urgencia": "um-mes",
+      "prazo": "2026-09-25",
+      "onde": "https://www.louvre.fr/en/visit/hours-admission",
+      "observacao": "Escolha o ingresso de €22 (residente EEE) e leve o título de residência: conferem na entrada."
+    },
+    {
+      "id": "res-eiffel",
+      "oQue": "Torre Eiffel pela escada, sáb 10/10 ao entardecer",
+      "urgencia": "imediato",
+      "prazo": "2026-09-18",
+      "onde": "https://www.toureiffel.paris/en",
+      "observacao": "Escada vende 40 dias antes — para 10/10 abriu em 31/8. Se esgotou, a bilheteria da escada no local costuma ter vaga fora do pôr do sol."
+    },
+    {
+      "id": "res-orsay",
+      "oQue": "Orsay, dom 11/10 às 9h30",
+      "urgencia": "um-mes",
+      "prazo": "2026-09-25",
+      "observacao": "Fecha segunda — por isso é domingo. Primeira entrada evita a fila do meio-dia."
+    },
+    {
+      "id": "res-saintechapelle",
+      "oQue": "Sainte-Chapelle, qua 7/10 à tarde",
+      "urgencia": "duas-semanas",
+      "prazo": "2026-09-30",
+      "onde": "https://www.sainte-chapelle.fr/en/visit/practical-information",
+      "observacao": "Com hora marcada a fila cai de 40 min para 5."
+    }
+  ],
+  "voos": [
+    {
+      "id": "ida",
+      "tipo": "ida",
+      "de": "OPO",
+      "para": "ORY",
+      "partida": "2026-10-07T07:15",
+      "chegada": "2026-10-07T10:40",
+      "cia": "Transavia",
+      "voo": null,
+      "escalas": [],
+      "duracaoTotalMin": 145,
+      "custo": {
+        "valor": 50,
+        "moeda": "EUR",
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 40,
+            "descricao": "Ryanair para Beauvais (≈ €31 o trecho) + ônibus €17,90: mais barato no papel, 1h15 a mais por trecho",
+            "link": "https://www.ryanair.com/pt/pt"
+          },
+          "upgrade": {
+            "valor": 82,
+            "descricao": "TAP para Orly, horário melhor e bagagem despachada (≈ €82 o trecho)",
+            "link": "https://www.flytap.com/pt-pt/"
+          }
+        }
+      },
+      "status": "cotado",
+      "link": "https://www.transavia.com/pt-PT/"
+    },
+    {
+      "id": "volta",
+      "tipo": "volta",
+      "de": "ORY",
+      "para": "OPO",
+      "partida": "2026-10-11T18:30",
+      "chegada": "2026-10-11T19:55",
+      "cia": "Transavia",
+      "voo": null,
+      "escalas": [],
+      "duracaoTotalMin": 145,
+      "custo": {
+        "valor": 50,
+        "moeda": "EUR",
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 40,
+            "descricao": "Ryanair para Beauvais (≈ €31 o trecho) + ônibus €17,90: mais barato no papel, 1h15 a mais por trecho",
+            "link": "https://www.ryanair.com/pt/pt"
+          },
+          "upgrade": {
+            "valor": 82,
+            "descricao": "TAP para Orly, horário melhor e bagagem despachada (≈ €82 o trecho)",
+            "link": "https://www.flytap.com/pt-pt/"
+          }
+        }
+      },
+      "status": "cotado",
+      "link": "https://www.transavia.com/pt-PT/"
+    }
+  ],
+  "hospedagens": [
+    {
+      "id": "hosp-paris",
+      "destinoId": "paris",
+      "nome": "ibis Paris Bastille Opéra 11ème",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-11",
+      "lat": 48.8568,
+      "lon": 2.3716,
+      "custo": {
+        "valor": 390,
+        "moeda": "EUR",
+        "por": "total",
+        "opcoes": {
+          "economico": {
+            "valor": 315,
+            "descricao": "ibis budget / 2★ no 11º–12º a ≈ €105 a noite (3 noites)",
+            "link": "https://www.booking.com/searchresults.html?ss=Bastille%2C+Paris"
+          },
+          "upgrade": {
+            "valor": 525,
+            "descricao": "Villa Beaumarchais 4★ no Marais a ≈ €175 a noite (3 noites); €94 \"desde\" no eDreams, confira o total no checkout",
+            "link": "https://www.booking.com/hotel/fr/villabeaumarchais_paris.html"
+          }
+        }
+      },
+      "porque": "Três noites a ≈ €130 (a quinta é na Disney). Bastille a 7 min, RER A na Gare de Lyon direto para Chessy, Marais a pé, bouillons a dez minutos.",
+      "status": "cotado",
+      "noites": 3,
+      "link": "https://all.accor.com/hotel/1399/index.en.shtml"
+    },
+    {
+      "id": "hosp-disney",
+      "destinoId": "disney",
+      "nome": "B&B Hôtel près de Disneyland Paris (Magny-le-Hongre)",
+      "checkin": "2026-10-08",
+      "checkout": "2026-10-09",
+      "lat": 48.8712,
+      "lon": 2.8039,
+      "custo": {
+        "valor": 120,
+        "moeda": "EUR",
+        "por": "total",
+        "opcoes": {
+          "economico": {
+            "valor": 70,
+            "descricao": "B&B Marne-la-Vallée Val d'Europe (Serris), sem ônibus para o parque: RER 1 estação + a pé",
+            "link": "https://www.kayak.fr/Serris-Hotels-B-B-HOTEL-Marne-la-Vallee-Val-d-Europe.1071455878.ksp"
+          },
+          "upgrade": {
+            "valor": 260,
+            "descricao": "Hotel Disney (Santa Fe / Cheyenne) com Extra Magic Time às 8h30 — pacote exige 2 noites desde 31/3/2026",
+            "link": "https://www.disneylandparis.com/en-int/hotels/"
+          }
+        }
+      },
+      "porque": "Parceiro oficial: ônibus grátis a cada 20 min, café incluído, metade do preço de um hotel Disney. O que se perde é a Extra Magic Time das 8h30.",
+      "status": "cotado",
+      "noites": 1,
+      "link": "https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre"
+    }
+  ],
+  "transportes": [
+    {
+      "id": "orly",
+      "tipo": "trem",
+      "nome": "Orly ⇄ Paris pelo metrô 14 (bilhete aeroporto €14)",
+      "custo": {
+        "valor": 28,
+        "moeda": "EUR",
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 28,
+            "descricao": "—"
+          },
+          "upgrade": {
+            "valor": 90,
+            "descricao": "táxi tarifa fixa Orly ⇄ margem direita €44 por trecho, dividido por 2",
+            "link": "https://www.parisaeroport.fr/en/passengers/access/paris-orly/taxis"
+          }
+        }
+      },
+      "cobre": [
+        "paris"
+      ],
+      "observacao": "25 min até Châtelet. O bilhete de €2,55 não vale para aeroporto.",
+      "link": "https://www.bonjour-ratp.fr/en/"
+    },
+    {
+      "id": "rer-disney",
+      "tipo": "trem",
+      "nome": "RER A Paris ⇄ Marne-la-Vallée–Chessy",
+      "custo": {
+        "valor": 5,
+        "moeda": "EUR",
+        "por": "pessoa"
+      },
+      "cobre": [
+        "paris",
+        "disney"
+      ],
+      "observacao": "Bilhete único de €2,55 vale até a Disney desde 2025. 40 min de Nation; a estação sai na porta do parque.",
+      "link": "https://www.bonjour-ratp.fr/en/"
+    },
+    {
+      "id": "metro",
+      "tipo": "passe",
+      "nome": "Bilhetes de metrô, ≈ 12 viagens",
+      "custo": {
+        "valor": 31,
+        "moeda": "EUR",
+        "por": "pessoa",
+        "opcoes": {
+          "economico": {
+            "valor": 20,
+            "descricao": "andar mais e usar 8 bilhetes em vez de 12"
+          },
+          "upgrade": {
+            "valor": 37,
+            "descricao": "Navigo Jour €12,30 nos 3 dias de Paris (só compensa com 5+ viagens no dia)",
+            "link": "https://www.bonjour-ratp.fr/en/titres-tarifs/"
+          }
+        }
+      },
+      "cobre": [
+        "paris"
+      ],
+      "observacao": "Navigo Semaine só vale de segunda a domingo — não serve para quarta a domingo. Passe de dia (€12,30) só compensa com 5+ viagens.",
+      "link": "https://www.bonjour-ratp.fr/en/titres-tarifs/"
+    }
+  ],
+  "dias": [
+    {
+      "data": "2026-10-07",
+      "destinoId": "paris",
+      "titulo": "Chegada e a Île de la Cité",
+      "resumo": "Sainte-Chapelle · Notre-Dame · bouillon",
+      "icone": "plane",
+      "momentos": [
+        [
+          "10h40",
+          "pouso em Orly"
+        ],
+        [
+          "15h",
+          "Sainte-Chapelle"
+        ],
+        [
+          "19h30",
+          "Bouillon Chartier"
+        ]
+      ],
+      "notas": "Meio dia. Nada com hora antes das 15h; a ilha e o Marais a pé, e o primeiro bouillon.",
+      "blocos": [
+        {
+          "id": "p1",
+          "hora": "10:40",
+          "duracaoMin": 60,
+          "tipo": "deslocamento",
+          "titulo": "Orly → Châtelet pelo metrô 14",
+          "lat": 48.7301,
+          "lon": 2.3678,
+          "custo": {
+            "valor": 14,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "link": "https://www.bonjour-ratp.fr/en/"
+        },
+        {
+          "id": "p2",
+          "hora": "12:30",
+          "duracaoMin": 60,
+          "tipo": "refeicao",
+          "titulo": "Almoço de padaria no Marais: fórmula sanduíche + doce",
+          "lat": 48.8566,
+          "lon": 2.3622,
+          "custo": {
+            "valor": 9,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 5.4,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 16.2,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
+          }
+        },
+        {
+          "id": "p3",
+          "hora": "15:00",
+          "duracaoMin": 60,
+          "tipo": "atracao",
+          "titulo": "Sainte-Chapelle — com hora marcada",
+          "lat": 48.8554,
+          "lon": 2.345,
+          "custo": {
+            "valor": 13,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 10,
+                "descricao": "só o exterior + Notre-Dame (grátis)"
+              },
+              "upgrade": {
+                "valor": 20,
+                "descricao": "bilhete combinado Sainte-Chapelle + Conciergerie"
+              }
+            }
+          },
+          "reservaNecessaria": true,
+          "link": "https://www.sainte-chapelle.fr/en/visit/practical-information",
+          "notas": "Os vitrais pedem sol: se a tarde estiver cinza, troque pela manhã de domingo."
+        },
+        {
+          "id": "p4",
+          "hora": "16:30",
+          "duracaoMin": 60,
+          "tipo": "atracao",
+          "titulo": "Notre-Dame por dentro (grátis) e a Île Saint-Louis",
+          "lat": 48.8529,
+          "lon": 2.3501,
+          "notas": "Fila sem reserva anda em 20 min fora do fim de semana."
+        },
+        {
+          "id": "p5",
+          "hora": "18:00",
+          "duracaoMin": 60,
+          "tipo": "livre",
+          "titulo": "Place des Vosges e o Marais ao anoitecer",
+          "lat": 48.8556,
+          "lon": 2.3655
+        },
+        {
+          "id": "p6",
+          "hora": "19:30",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Bouillon Chartier: menu completo por menos de €20",
+          "lat": 48.8719,
+          "lon": 2.343,
+          "custo": {
+            "valor": 19,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 9,
+                "descricao": "fórmula de padaria"
+              },
+              "upgrade": {
+                "valor": 35,
+                "descricao": "bistrô no Marais com vinho"
+              }
+            }
+          },
+          "notas": "Sem reserva, fila anda rápido. Sopa de cebola, steak-frites, crème caramel.",
+          "link": "https://www.bouillon-chartier.com/en/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-08",
+      "destinoId": "disney",
+      "titulo": "Disney, dia 1",
+      "resumo": "RER A cedo · Disneyland Park · Halloween à noite",
+      "icone": "castle",
+      "momentos": [
+        [
+          "8h",
+          "RER A de Nation"
+        ],
+        [
+          "9h30",
+          "abertura do parque"
+        ],
+        [
+          "21h",
+          "desfile de Halloween"
+        ]
+      ],
+      "notas": "Quinta-feira, antes da Toussaint: o parque abre às 9h30 e fecha às 22h, com o Halloween Festival incluído. Chegue na abertura e abra a fila virtual das atrações grandes no app assim que entrar.",
+      "blocos": [
+        {
+          "id": "d1",
+          "hora": "08:00",
+          "duracaoMin": 45,
+          "tipo": "deslocamento",
+          "titulo": "RER A Nation → Marne-la-Vallée–Chessy",
+          "lat": 48.8483,
+          "lon": 2.3958,
+          "custo": {
+            "valor": 2.55,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Bilhete de €2,55 no app ou na máquina. Sente na frente do trem: a saída em Chessy é do lado do parque."
+        },
+        {
+          "id": "d2",
+          "hora": "09:30",
+          "duracaoMin": 480,
+          "tipo": "atracao",
+          "titulo": "Disneyland Park — abertura às 9h30",
+          "lat": 48.8701,
+          "lon": 2.7741,
+          "custo": {
+            "valor": 150,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 142,
+                "descricao": "faixa \"eco\" — trocar para 30/9–1/10 se o preço por data for menor"
+              },
+              "upgrade": {
+                "valor": 200,
+                "descricao": "+ Disney Premier Access One (3 atrações) ≈ €45 pp"
+              }
+            }
+          },
+          "reservaNecessaria": true,
+          "link": "https://www.disneylandparis.com/en-int/tickets/",
+          "notas": "Ingresso de 2 dias, com data. Big Thunder Mountain e Phantom Manor primeiro; Halloween é no Frontierland."
+        },
+        {
+          "id": "d3",
+          "hora": "13:00",
+          "duracaoMin": 60,
+          "tipo": "refeicao",
+          "titulo": "Almoço no parque",
+          "lat": 48.8701,
+          "lon": 2.7741,
+          "custo": {
+            "valor": 25,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 15.0,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 45.0,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
+          }
+        },
+        {
+          "id": "d4",
+          "hora": "17:00",
+          "duracaoMin": 60,
+          "tipo": "deslocamento",
+          "titulo": "Check-in no B&B parceiro (ônibus grátis) e um banho",
+          "lat": 48.8549,
+          "lon": 2.7726
+        },
+        {
+          "id": "d5",
+          "hora": "19:00",
+          "duracaoMin": 180,
+          "tipo": "evento",
+          "titulo": "Volta ao parque: desfile e show de Halloween",
+          "lat": 48.8701,
+          "lon": 2.7741,
+          "notas": "Os shows noturnos são o motivo de dormir aqui. Jantar leve no parque."
+        }
+      ]
+    },
+    {
+      "data": "2026-10-09",
+      "destinoId": "disney",
+      "titulo": "Disney, dia 2",
+      "resumo": "Walt Disney Studios · volta a Paris ao entardecer",
+      "icone": "ticket",
+      "momentos": [
+        [
+          "9h30",
+          "Walt Disney Studios"
+        ],
+        [
+          "16h",
+          "de volta ao Disneyland Park"
+        ],
+        [
+          "19h",
+          "RER A para Paris"
+        ]
+      ],
+      "notas": "O segundo parque é menor: meio dia basta. Volte ao primeiro para o que ficou de fora, e pegue o RER antes do jantar.",
+      "blocos": [
+        {
+          "id": "d6",
+          "hora": "09:30",
+          "duracaoMin": 300,
+          "tipo": "atracao",
+          "titulo": "Walt Disney Studios Park",
+          "lat": 48.8701,
+          "lon": 2.7741,
+          "notas": "Aberto até 20h. Ratatouille e Avengers Campus na primeira hora.",
+          "link": "https://www.disneylandparis.com/en-int/tickets/"
+        },
+        {
+          "id": "d7",
+          "hora": "13:00",
+          "duracaoMin": 60,
+          "tipo": "refeicao",
+          "titulo": "Almoço no parque",
+          "lat": 48.8701,
+          "lon": 2.7741,
+          "custo": {
+            "valor": 25,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 15.0,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 45.0,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
+          }
+        },
+        {
+          "id": "d8",
+          "hora": "16:00",
+          "duracaoMin": 150,
+          "tipo": "atracao",
+          "titulo": "Disneyland Park de novo: o que faltou, e a Main Street ao entardecer",
+          "lat": 48.8701,
+          "lon": 2.7741,
+          "link": "https://www.disneylandparis.com/en-int/tickets/"
+        },
+        {
+          "id": "d9",
+          "hora": "19:00",
+          "duracaoMin": 60,
+          "tipo": "deslocamento",
+          "titulo": "RER A Chessy → Nation",
+          "lat": 48.8483,
+          "lon": 2.3958,
+          "custo": {
+            "valor": 2.55,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "d10",
+          "hora": "20:30",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Jantar leve perto do hotel",
+          "lat": 48.8566,
+          "lon": 2.3622,
+          "custo": {
+            "valor": 18,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 10.8,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 32.4,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": "2026-10-10",
+      "destinoId": "paris",
+      "titulo": "Louvre e a torre cintilando",
+      "resumo": "Louvre 9h · Orangerie · Eiffel de escada ao entardecer",
+      "icone": "eiffel",
+      "momentos": [
+        [
+          "9h",
+          "Louvre, tarifa residente"
+        ],
+        [
+          "15h",
+          "Orangerie"
+        ],
+        [
+          "19h",
+          "Eiffel pela escada"
+        ]
+      ],
+      "notas": "Sábado é dia de Louvre porque terça ele fecha. Três horas com hora marcada, o Jardim das Tulherias no meio, e a torre no fim do dia.",
+      "blocos": [
+        {
+          "id": "p7",
+          "hora": "09:00",
+          "duracaoMin": 180,
+          "tipo": "atracao",
+          "titulo": "Louvre — entrada 9h, tarifa residente EEE",
+          "lat": 48.8611,
+          "lon": 2.338,
+          "custo": {
+            "valor": 22,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 22,
+                "descricao": "primeira sexta do mês 18h–21h é grátis (não cai na viagem)"
+              },
+              "upgrade": {
+                "valor": 45,
+                "descricao": "visita guiada oficial 1h30"
+              }
+            }
+          },
+          "reservaNecessaria": true,
+          "link": "https://www.louvre.fr/en/visit/hours-admission",
+          "notas": "Entre pela Porte des Lions se estiver aberta: fila menor. Ala Denon primeiro (Vitória de Samotrácia, Gioconda), depois Sully.",
+          "alternativa": "Chovendo, o Louvre é o melhor lugar de Paris — o plano B é ficar mais."
+        },
+        {
+          "id": "p8",
+          "hora": "12:30",
+          "duracaoMin": 60,
+          "tipo": "refeicao",
+          "titulo": "Piquenique nas Tulherias ou padaria da Rue de Rivoli",
+          "lat": 48.8638,
+          "lon": 2.3227,
+          "custo": {
+            "valor": 10,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 6.0,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 18.0,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
+          }
+        },
+        {
+          "id": "p9",
+          "hora": "15:00",
+          "duracaoMin": 75,
+          "tipo": "atracao",
+          "titulo": "Orangerie: as Ninfeias de Monet",
+          "lat": 48.8638,
+          "lon": 2.3227,
+          "custo": {
+            "valor": 12.5,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 12.5,
+                "descricao": "—"
+              },
+              "upgrade": {
+                "valor": 18,
+                "descricao": "bilhete combinado Orsay + Orangerie"
+              }
+            }
+          },
+          "reservaNecessaria": true,
+          "notas": "Pequeno; uma hora e meia sobra. Fecha terça, como o Louvre.",
+          "link": "https://www.musee-orangerie.fr/en"
+        },
+        {
+          "id": "p10",
+          "hora": "17:00",
+          "duracaoMin": 90,
+          "tipo": "livre",
+          "titulo": "Champ de Mars e o Trocadéro ao entardecer",
+          "lat": 48.8583,
+          "lon": 2.2945
+        },
+        {
+          "id": "p11",
+          "hora": "19:00",
+          "duracaoMin": 90,
+          "tipo": "atracao",
+          "titulo": "Torre Eiffel pela escada, até o 2º andar",
+          "lat": 48.8583,
+          "lon": 2.2945,
+          "custo": {
+            "valor": 14.8,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 0,
+                "descricao": "ver de baixo, do Trocadéro, na hora da cintilação"
+              },
+              "upgrade": {
+                "valor": 36.7,
+                "descricao": "elevador até o topo"
+              }
+            }
+          },
+          "reservaNecessaria": true,
+          "link": "https://www.toureiffel.paris/en",
+          "notas": "674 degraus, 20 minutos. Pôr do sol ≈ 19h15. Depois de escurecer a torre cintila 5 minutos a cada hora cheia — do Trocadéro é a melhor vista.",
+          "alternativa": "Sem ingresso, o Trocadéro às 20h e às 21h dá a cintilação de graça."
+        },
+        {
+          "id": "p12",
+          "hora": "21:00",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Jantar em bistrô do 7e ou Bouillon Pigalle",
+          "lat": 48.8826,
+          "lon": 2.3374,
+          "custo": {
+            "valor": 22,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 13.2,
+                "descricao": "padaria / mercado"
+              },
+              "upgrade": {
+                "valor": 39.6,
+                "descricao": "restaurante com reserva e vinho"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": "2026-10-11",
+      "destinoId": "paris",
+      "titulo": "Orsay, mercado e volta",
+      "resumo": "Orsay 9h30 · Marché d'Aligre · voo 18h30",
+      "icone": "museum",
+      "momentos": [
+        [
+          "9h30",
+          "Orsay, primeira entrada"
+        ],
+        [
+          "12h30",
+          "Marché d'Aligre"
+        ],
+        [
+          "18h30",
+          "voo para o Porto"
+        ]
+      ],
+      "notas": "Domingo é Orsay porque segunda ele fecha. Mercado de domingo na Aligre, uma volta no Luxembourg, e Orly com folga.",
+      "blocos": [
+        {
+          "id": "p13",
+          "hora": "09:30",
+          "duracaoMin": 150,
+          "tipo": "atracao",
+          "titulo": "Musée d'Orsay — entrada 9h30",
+          "lat": 48.8599,
+          "lon": 2.3266,
+          "custo": {
+            "valor": 16,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 16,
+                "descricao": "primeiro domingo do mês grátis (só na janela 30/9–4/10)"
+              },
+              "upgrade": {
+                "valor": 22,
+                "descricao": "bilhete combinado Orsay + Orangerie"
+              }
+            }
+          },
+          "reservaNecessaria": true,
+          "notas": "Impressionistas no 5º andar; suba direto e desça depois. O relógio da fachada dá a foto.",
+          "link": "https://www.musee-orsay.fr/en"
+        },
+        {
+          "id": "p14",
+          "hora": "12:30",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Marché d'Aligre: queijo, ostras e um copo no balcão",
+          "lat": 48.8489,
+          "lon": 2.378,
+          "custo": {
+            "valor": 15,
+            "moeda": "EUR",
+            "por": "pessoa",
+            "opcoes": {
+              "economico": {
+                "valor": 10,
+                "descricao": "sanduíche de padaria"
+              },
+              "upgrade": {
+                "valor": 25,
+                "descricao": "ostras e vinho no mercado"
+              }
+            }
+          },
+          "notas": "O mercado mais barato de Paris, e é domingo de manhã que ele está inteiro. Fecha às 13h30.",
+          "link": "https://www.marchedaligre.fr/"
+        },
+        {
+          "id": "p15",
+          "hora": "14:30",
+          "duracaoMin": 60,
+          "tipo": "livre",
+          "titulo": "Jardin du Luxembourg ou Rue Mouffetard, conforme a energia",
+          "lat": 48.8467,
+          "lon": 2.3364
+        },
+        {
+          "id": "p16",
+          "hora": "15:45",
+          "duracaoMin": 60,
+          "tipo": "deslocamento",
+          "titulo": "Hotel → Orly pelo metrô 14",
+          "lat": 48.7301,
+          "lon": 2.3678,
+          "custo": {
+            "valor": 14,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Sair 2h45 antes do voo; a 14 leva 25 min de Châtelet."
+        },
+        {
+          "id": "p17",
+          "hora": "18:30",
+          "duracaoMin": 145,
+          "tipo": "deslocamento",
+          "titulo": "Voo Orly → Porto",
+          "lat": 48.7301,
+          "lon": 2.3678,
+          "custo": {
+            "valor": 120,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        }
+      ]
+    }
+  ],
+  "orcamento": {
+    "teto": {
+      "valor": 2000,
+      "moeda": "EUR"
+    },
+    "tetoPor": "total",
+    "margemCartao": 0,
+    "cambioReferencia": [],
+    "categorias": [
+      {
+        "id": "voos",
+        "nome": "Voos",
+        "previsto": 200,
+        "economico": 160,
+        "real": null,
+        "observacao": "Porto ⇄ Orly na Transavia para 2, só bagagem de mão (≈ €100 pp comprando agora; média de outubro €114). Econômico: promoção a €80 pp. Beauvais não entra: o ônibus come a diferença."
+      },
+      {
+        "id": "hospedagem",
+        "nome": "Hospedagem",
+        "previsto": 510,
+        "economico": 440,
+        "real": null,
+        "observacao": "3 noites no ibis Bastille Opéra (≈ €130) + 1 noite no B&B parceiro da Disney (≈ €120). Econômico: ibis a €110 e B&B a €90."
+      },
+      {
+        "id": "taxa-turismo",
+        "nome": "Taxa de turismo",
+        "previsto": 23,
+        "economico": 23,
+        "real": null,
+        "observacao": "Paris €3,25 pp/noite × 3 + Magny-le-Hongre ≈ €1,50 × 1, para 2."
+      },
+      {
+        "id": "alimentacao",
+        "nome": "Alimentação",
+        "previsto": 380,
+        "economico": 380,
+        "real": null,
+        "intocavel": true,
+        "observacao": "€35 pp nos dias de Paris (bouillon, padaria, mercado), €45 pp nos dias de Disney. Comer bem é o motivo — não corta."
+      },
+      {
+        "id": "transporte-local",
+        "nome": "Transporte local",
+        "previsto": 128,
+        "economico": 106,
+        "real": null,
+        "observacao": "Orly €14 × 2 trechos × 2 = €56, RER A Disney €2,55 × 2 × 2 = €10, ≈ 12 bilhetes de metrô × €2,55 × 2 = €62. Econômico: 8 bilhetes de metrô."
+      },
+      {
+        "id": "atracoes",
+        "nome": "Atrações",
+        "previsto": 465,
+        "economico": 417,
+        "real": null,
+        "intocavel": true,
+        "observacao": "Disney 2 dias/2 parques ≈ €154 pp (faixa \"low\", por data), Louvre €22 (residente), Orsay €16, Orangerie €12,50, Sainte-Chapelle €13, Eiffel escada €14,80 — para 2. Econômico: Disney 1 dia/2 parques + 1 dia/1 parque."
+      },
+      {
+        "id": "extras",
+        "nome": "Extras e compras",
+        "previsto": 80,
+        "economico": 40,
+        "real": null,
+        "observacao": "Teto assumido — a Disney puxa. Diga o seu."
+      }
+    ],
+    "reserva": {
+      "valor": 179,
+      "moeda": "EUR",
+      "percentual": 10
+    }
+  },
+  "bagagem": [
+    {
+      "categoria": "Documentos",
+      "itens": [
+        "Passaporte",
+        "Título de residência — dá a tarifa de €22 no Louvre",
+        "Cartão Europeu de Seguro de Doença",
+        "Ingressos da Disney, Louvre, Eiffel e Orsay no celular"
+      ]
+    },
+    {
+      "categoria": "Roupa (10–17 °C)",
+      "itens": [
+        "Casaco de meia-estação",
+        "Capa ou guarda-chuva dobrável",
+        "Tênis de caminhada — a Disney são 15 km por dia",
+        "Camadas: manhã fria, tarde amena"
+      ]
+    },
+    {
+      "categoria": "Eletrônicos",
+      "itens": [
+        "Power bank — o app da Disney come bateria",
+        "Carregador (tomada igual à de Portugal)"
+      ]
+    },
+    {
+      "categoria": "Dinheiro",
+      "itens": [
+        "Cartão por aproximação — metrô e Disney são sem dinheiro",
+        "€50 em notas para mercado e padaria"
+      ]
+    }
+  ],
+  "gastronomia": [
+    {
+      "nome": "Bouillon Chartier (Grands Boulevards)",
+      "destinoId": "paris",
+      "tipo": "bouillon",
+      "lat": 48.8719,
+      "lon": 2.343,
+      "faixaPreco": "$",
+      "porque": "Refeição completa por menos de €20 num salão de 1896. Sem reserva."
+    },
+    {
+      "nome": "Bouillon Pigalle",
+      "destinoId": "paris",
+      "tipo": "bouillon",
+      "lat": 48.8826,
+      "lon": 2.3374,
+      "faixaPreco": "$",
+      "porque": "O mesmo modelo, cozinha melhor, fila que anda."
+    },
+    {
+      "nome": "Marché d'Aligre",
+      "destinoId": "paris",
+      "tipo": "mercado",
+      "lat": 48.8489,
+      "lon": 2.378,
+      "faixaPreco": "$",
+      "porque": "O mais barato de Paris; ostras e vinho no balcão no domingo de manhã."
+    },
+    {
+      "nome": "Marché des Enfants Rouges",
+      "destinoId": "paris",
+      "tipo": "mercado coberto",
+      "lat": 48.8628,
+      "lon": 2.362,
+      "faixaPreco": "$$",
+      "porque": "O mais antigo da cidade, no Marais; almoço em pé de dez cozinhas."
+    },
+    {
+      "nome": "Rue Mouffetard",
+      "destinoId": "paris",
+      "tipo": "rua de comida",
+      "lat": 48.8448,
+      "lon": 2.3492,
+      "faixaPreco": "$",
+      "porque": "Queijaria, padaria e crepe na mesma ladeira."
+    }
+  ],
+  "frases": [
+    {
+      "pt": "Bom dia / boa noite",
+      "local": "Bonjour / Bonsoir",
+      "leitura": "diga sempre ao entrar — muda o atendimento"
+    },
+    {
+      "pt": "Uma mesa para dois, por favor",
+      "local": "Une table pour deux, s'il vous plaît",
+      "leitura": null
+    },
+    {
+      "pt": "A conta, por favor",
+      "local": "L'addition, s'il vous plaît",
+      "leitura": null
+    },
+    {
+      "pt": "Sou residente na UE (no Louvre)",
+      "local": "Je suis résident de l'Union européenne",
+      "leitura": "e mostre o título"
+    },
+    {
+      "pt": "Água da torneira",
+      "local": "Une carafe d'eau",
+      "leitura": "grátis, por lei"
+    }
+  ],
+  "links": [
+    {
+      "titulo": "Louvre — horários e tarifas",
+      "url": "https://www.louvre.fr/en/visit/hours-admission",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Torre Eiffel — site oficial",
+      "url": "https://www.toureiffel.paris/en",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Disneyland Paris — ingressos e pacotes",
+      "url": "https://www.disneylandparis.com/en-usd/offers",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Sainte-Chapelle — informações",
+      "url": "https://www.sainte-chapelle.fr/en/visit/practical-information",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Bonjour RATP — bilhetes e passes",
+      "url": "https://www.bonjour-ratp.fr/en/titres-tarifs/forfait-navigo-semaine/",
+      "categoria": "transporte"
+    },
+    {
+      "titulo": "RER A até a Disney",
+      "url": "https://parisbytrain.com/rer-train-paris-to-euro-disney/",
+      "categoria": "transporte"
+    },
+    {
+      "titulo": "Halloween na Disney 2026",
+      "url": "https://www.disneylandparis.com/en-int/seasons/halloween",
+      "categoria": "guia"
+    },
+    {
+      "titulo": "B&B Hôtel parceiro da Disney",
+      "url": "https://www.hotel-bb.com/fr/hotel/marne-la-vallee-magny-le-hongre"
+    },
+    {
+      "titulo": "ibis Paris Bastille Opéra 11ème",
+      "url": "https://all.accor.com/hotel/1399/index.en.shtml"
+    },
+    {
+      "titulo": "eDreams — hotéis em Paris (comparar total no checkout)",
+      "url": "https://www.edreams.pt/hotels/city/fr/paris/"
+    }
+  ],
+  "avisos": [
+    {
+      "nivel": "critico",
+      "texto": "Ingresso da Disney é por data: quinta e sexta antes da Toussaint (17/10) são os dias baratos e vazios. Comprar esta semana."
+    },
+    {
+      "nivel": "atencao",
+      "texto": "Louvre fecha terça, Orsay fecha segunda. A ordem dos dias já respeita isso."
+    },
+    {
+      "nivel": "atencao",
+      "texto": "Leve o título de residência: é o que dá €22 em vez de €32 no Louvre, para cada um."
+    },
+    {
+      "nivel": "info",
+      "texto": "Bilhete de €2,55 vale até a Disney pelo RER A. Aeroporto é à parte: €14."
+    },
+    {
+      "nivel": "info",
+      "texto": "Navigo Semaine só de segunda a domingo — não compensa para quarta a domingo."
+    }
+  ]
+}

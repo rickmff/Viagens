@@ -1,23 +1,24 @@
 ---
 name: planejar-viagem
-description: Entrada principal do repo de viagens — pega um prompt solto com destino, orçamento e o que a pessoa quer fazer, e devolve o site imersivo daquele destino, criando do zero ou atualizando um que já existe. Encadeia perfil-viajante, briefing-viagem (quando faltar muita coisa), pesquisa-destino, roteiro-viagem, orcamento-viagem e site-viagem, e fecha gravando na memória o que aprendeu. Use SEMPRE que o usuário disser que quer viajar para algum lugar, jogar um pedido no formato "quero ir pra X em tal mês com tanto de orçamento", pedir um roteiro, pedir o site de uma viagem, pedir para mudar ou incrementar uma viagem já planejada, ou perguntar se dá para fazer tal destino com tal dinheiro. É a skill que orquestra as outras — na dúvida entre ela e uma das específicas, comece por ela.
+description: Entrada principal do repo de viagens — pega um prompt solto com destino, orçamento e o que a pessoa quer fazer, e devolve a planilha Excel de orçamento daquele destino (e a comparação, quando há mais de uma viagem), criando do zero ou atualizando um que já existe. Encadeia perfil-viajante, briefing-viagem (quando faltar muita coisa), pesquisa-destino, roteiro-viagem, orcamento-viagem e planilha-viagem (site-viagem só sob pedido), e fecha gravando na memória o que aprendeu. Use SEMPRE que o usuário disser que quer viajar para algum lugar, jogar um pedido no formato "quero ir pra X em tal mês com tanto de orçamento", pedir um roteiro, pedir a planilha ou o Excel de uma viagem, pedir para comparar viagens, pedir para mudar ou incrementar uma viagem já planejada, ou perguntar se dá para fazer tal destino com tal dinheiro. É a skill que orquestra as outras — na dúvida entre ela e uma das específicas, comece por ela.
 ---
 
 # Planejar viagem
 
-Esta skill existe para que um prompt de uma linha vire um site. O usuário
-escreve algo como:
+Esta skill existe para que um prompt de uma linha vire uma planilha de
+orçamento que decide a viagem. O usuário escreve algo como:
 
 > quero ir pra Lisboa em maio, uns 8 mil, quero museu e comer bem
 
-e o resultado esperado é uma página pronta — não uma conversa de vinte
+e o resultado esperado é um `.xlsx` pronto — não uma conversa de vinte
 perguntas. Cada rodada também deixa o repo mais esperto, de modo que o prompt
 da próxima viagem possa ser ainda mais curto.
 
 ## O ciclo
 
 ```
-perfil (ler) → [briefing] → pesquisa → roteiro → orçamento → site → perfil (escrever)
+perfil (ler) → [briefing] → pesquisa → roteiro → orçamento → planilha → perfil (escrever)
+                                                                  └→ site, só se pedir
 ```
 
 As skills do meio fazem o trabalho; esta decide a ordem, o que pular e quando
@@ -77,10 +78,11 @@ diga o que mudou em vez de reapresentar a viagem inteira.
 
 `pesquisa-destino` (fatos verificados e datados) → `roteiro-viagem` (os dias,
 ordenados pelo que abre e construídos por geografia) → `orcamento-viagem` (os
-números, em duas colunas) → `site-viagem` (o palco, com a identidade do
-destino). Cada uma alimenta a seguinte pelo `trip.json`. O site sai com o
-roteiro imprimível ao lado e só é entregue depois do QA passar e das capturas
-serem olhadas.
+números, com as três opções de cada item e o link de compra) →
+`planilha-viagem` (o `.xlsx` com fórmulas vivas, e a comparação quando há mais
+de uma viagem). Cada uma alimenta a seguinte pelo `trip.json`. A planilha sai
+com o roteiro imprimível ao lado e só é entregue depois do recálculo passar e
+de três números serem conferidos. `site-viagem` só entra se ele pedir o site.
 
 Pesquisa e roteiro são skills separadas de propósito: uma coleta fatos, a
 outra exerce um ofício. Misturar as duas é o que faz roteiro sair com preço
@@ -100,11 +102,14 @@ Fora esses dois casos, vá até o fim e entregue. Um roteiro entregue e corrigid
 vale mais que um questionário respondido.
 
 **Quando o plano ainda não assentou, entregue primeiro o roteiro em prosa e só
-depois construa o site.** Destino indefinido, datas flexíveis, teto que ainda
+depois gere a planilha.** Destino indefinido, datas flexíveis, teto que ainda
 vai mudar — nesses casos o texto na conversa é o formato que ele corrige mais
-rápido, e vale ter o plano aprovado antes de investir em arquivo. Com o pedido
-já concreto, vá direto ao site: o `roteiro-<slug>.md` sai junto e serve para a
-mesma leitura rápida.
+rápido. Com o pedido já concreto, vá direto à planilha: o `roteiro-<slug>.md`
+sai junto e serve para a mesma leitura rápida.
+
+**Duas viagens em jogo pedem a comparação.** "Itália ou Paris em outubro?",
+"Paris em outubro ou em março?" — gere as duas e rode `comparar-viagens.py`.
+A linha que decide é por pessoa por dia, não o total.
 
 **Uma correção vale mais que uma sugestão.** Quando a pesquisa achar um conflito
 real — o museu fecha no único dia livre, a janela de venda já passou, o passe
@@ -127,10 +132,10 @@ O usuário quer decidir, não ler um relatório. Em prosa curta:
 1. **O veredito da janela** — a época é boa, é aceitável, ou é ruim e por quê.
 2. **O número** — quanto deve custar e como fica contra o teto dele.
 3. **A forma do roteiro** — em duas ou três frases, não a lista dos dias; a
-   lista está no site.
+   lista está na planilha.
 4. **O que exige ação agora** — visto, ingresso que esgota, voo que sobe.
-5. **O link local** — caminho do site, uma linha sobre a paleta escolhida e por
-   quê, e o comando para abrir.
+5. **O arquivo** — caminho da planilha (e da comparação), os três números
+   conferidos, e o que ficou sem opção ou sem link por falta de pesquisa.
 6. **O que você assumiu** — as suposições que vieram do perfil, para ele
    corrigir com uma frase se estiverem erradas.
 
@@ -139,7 +144,7 @@ O usuário quer decidir, não ler um relatório. Em prosa curta:
 O mesmo ciclo atende variações menores, com as etapas que não fazem sentido
 puladas:
 
-- *"tira o museu do dia 3 e põe mais comida"* → editar `trip.json`, rebuildar,
+- *"tira o museu do dia 3 e põe mais comida"* → editar `trip.json`, regenerar a planilha,
   e registrar o sinal no perfil (esse é justamente o tipo de correção que mais
   ensina).
 
@@ -148,8 +153,9 @@ o que mudou e o efeito no total — não reapresente a viagem do zero. Reapresen
 tudo esconde a mudança no meio do texto e obriga ele a reler o que já tinha
 aprovado.
 - *"quanto ficou mesmo?"* → responder do `trip.json`, sem repesquisar nada.
-- *"dá pra fazer Marrocos com 10 mil?"* → pesquisa e orçamento bastam; só monte
-  site se ele decidir ir.
+- *"dá pra fazer Marrocos com 10 mil?"* → pesquisa e orçamento bastam; a
+  planilha sai se ele decidir ir.
+- *"quero o site"* → `site-viagem`, a partir do mesmo `trip.json`.
 - *"o que você já sabe sobre como eu viajo?"* → só `perfil-viajante`.
 - *"me ajuda a escolher pra onde ir"* / *"não sei por onde começar"* →
   `briefing-viagem`, que pergunta em opções e devolve o pedido pronto.

@@ -27,6 +27,71 @@ Formato de cada entrada:
 
 ---
 
+## 2026-09-12 — Pivô: de site para planilha
+
+**Prompt (resumo):** "isso de fazer os website não está sendo tão bom quanto
+eu pensava; pivote o sistema para fazer planilhas de Excel estritamente
+organizadas e úteis para fazer os cálculos precisos e me ajudar a comparar
+orçamentos de viagens para os mesmos destinos" e, em seguida, "no Excel tem
+que ter opções de upgrade e downgrade da maioria dos itens e links para
+reservar e comprar cada item".
+
+**Sinais observados**
+- Rejeitou a entrega (site) depois de vê-la duas vezes, com uma frase — sem
+  pedir ajuste no site. O problema era o formato, não o conteúdo.
+- O que ele quer fazer com a entrega: calcular com precisão, comparar
+  orçamentos, escolher upgrade/downgrade por item, e comprar pelo link.
+
+**Inferido**
+- Decide em planilha, item a item. (confirmado — dito)
+- Compara alternativas antes de comprar; a comparação é a peça central.
+  (provável)
+
+**Aplicado ao PERFIL.md**
+- Nova seção "Formato da entrega" substitui "Preferências sobre o site gerado".
+
+**Aplicado ao repo**
+- Skill `planilha-viagem` (gerador + comparador + recálculo como portão);
+  `site-viagem` marcada opcional; `custo.opcoes` e `link` no contrato; CLAUDE.md,
+  README e mapa de conhecimento repontados.
+
+---
+
+## 2026-09-12 — Paris no lugar da Itália
+
+**Prompt (resumo):** "me ajude a planejar uma viagem pra França em outubro".
+
+**Sinais observados**
+- Uma rodada de perguntas bastou (o perfil respondeu companhia, saída,
+  ritmo, interesses e faixa) — o briefing encurtou de quatro rodadas para uma.
+- Escolheu Paris só, 4–5 dias, outubro de 2026 **no lugar** da Itália.
+- Acrescentou "com estadia na Disney de 1 noite e 2 dias" numa frase solta,
+  depois do pedido principal — o sinal mais revelador da sessão: parque
+  temático entra nos interesses, e com peso (≈ €450 dos €2.000).
+
+**Inferido**
+- Troca destino sem apego antes de comprar; compromisso é com janela e teto.
+  (hipótese)
+- Viagem curta para cidade única. (hipótese)
+- Parque temático / Disney como interesse real, não só "para acompanhar".
+  (provável)
+
+- Mandou um link de hotel do eDreams para comparar com as sugestões, e
+  pediu que o site entrasse nas fontes de pesquisa. O link trazia 17→21/10
+  (Toussaint, fora da janela 7→11/10) — devolvido como pergunta, não
+  corrigido em silêncio.
+
+**Aplicado ao PERFIL.md**
+- Orçamento e Ritmo → as duas hipóteses acima; base fixa em viagem curta.
+- Hospedagem → compara no eDreams (provável). Regras de uso do comparador
+  foram para `pesquisa-destino/references/fontes.md`.
+- Interesses → parque temático / Disney (provável).
+
+**Perguntas que não precisei fazer**
+- Companhia, saída, ritmo, interesses, teto, nacionalidade, moeda, fuso.
+
+---
+
 ## 2026-09-12 — Itália 2027 (briefing) e uma correção de fundação
 
 **Prompt (resumo):** "Quero planejar uma viagem pra Itália"; no briefing,

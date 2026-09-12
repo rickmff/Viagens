@@ -178,6 +178,34 @@ noite. Tarifa dupla residente/visitante vira duas colunas no `trip.json` e um
 botão no site. E busca com o ano no fim é o que revela que aquele ônibus de
 aeroporto recomendado pelo blog foi desativado há três anos.
 
+### Hospedagem e comparadores
+
+O usuário compara hotéis no **eDreams** (edreams.pt) — é a primeira aba que
+ele abre, então a pesquisa de hospedagem começa por lá e o link dele entra no
+`PESQUISA.md`. Regras para usar comparador sem ser enganado:
+
+- eDreams, Booking e Kayak são app JS: a página só mostra preço depois de
+  escolher datas, e o `WebFetch` devolve casca vazia. Peça ao usuário o nome
+  do hotel ou a captura, ou pesquise o hotel pelo nome em outro site.
+- **Confira as datas que vêm na URL** (`checkIn=`/`checkOut=`) contra a
+  janela do plano. Um link com datas diferentes é um sinal, não um erro de
+  digitação: pergunte se a viagem mudou.
+- O preço do eDreams na lista não é o final: a taxa de serviço aparece no
+  último passo e o desconto "Prime" pressupõe assinatura anual. Compare o
+  **total no checkout** com o Booking e com o site do hotel — em hotel de
+  rede (Accor, B&B) o site oficial costuma empatar e dá cancelamento grátis.
+- Anote no `trip.json` o hotel escolhido com nome, bairro, faixa de preço e
+  **onde ficou mais barato**, para o próximo destino já começar pelo canal
+  certo.
+
+Padrões de busca:
+
+```
+"<hotel> preço noite <mês> <ano>"
+"<hotel> booking.com"                          # nota de hóspede e localização
+"site:edreams.pt hotéis <cidade> <bairro>"     # páginas estáticas do eDreams
+```
+
 ## Transporte, bairros e roteiro
 
 ```

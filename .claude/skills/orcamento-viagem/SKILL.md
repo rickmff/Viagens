@@ -155,7 +155,14 @@ Em `compras`, peça um teto ao usuário em vez de estimar. É a única categoria
 que depende só da vontade dele, e chutar aqui erra por muito nos dois sentidos.
 
 Cada uma leva `previsto`, `economico`, `real` (começa `null`) e uma
-`observacao` dizendo de onde veio o número. A observação é o que permite
+`observacao` dizendo de onde veio o número.
+
+**Cada item grande leva três opções e um link.** Voo, hotel, o ingresso caro,
+o transporte de aeroporto: `custo.opcoes.economico` e `custo.opcoes.upgrade`,
+com valor, descrição (o que se perde, o que se ganha) e link, mais o `link`
+de compra do plano (`docs/trip-schema.md`). É o que a planilha usa para ele
+montar o próprio cenário sem fórmula. O econômico é uma alternativa real —
+outro hotel, outro aeroporto, ver de fora — nunca "o mesmo mais barato". A observação é o que permite
 revisar depois: "3 noites × €120 (diária média da pesquisa, bairro central)"
 pode ser contestado; "€360" não pode.
 
@@ -163,9 +170,10 @@ Grave em `orcamento` no `trip.json` conforme `docs/trip-schema.md`.
 
 ## Previsto vs real
 
-Durante a viagem ele lança gastos reais. Preencha `real` na categoria e deixe o
-site comparar — ele já mostra barra de previsto contra real e destaca o que
-passou.
+Durante a viagem ele lança gastos reais na aba Real da planilha. Ao
+atualizar, leia a aba (`planilha-viagem/references/estrutura.md`), passe os
+totais para `real` na categoria e regenere — o Resumo mostra Real − Escolhido
+e destaca o que passou.
 
 Quando uma categoria estourar, não se limite a apontar: diga de onde tirar.
 "Alimentação passou €150; dá para absorver na reserva, ou cortar o passeio de
