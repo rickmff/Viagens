@@ -254,7 +254,9 @@
           "notas": "Beco de fumaça e balcão apertado. Leve dinheiro vivo."
         }
       ],
-      "cortavel": false
+      "cortavel": false,
+      "icone": "plane",
+      "resumo": "monotrilho · ramen no beco"
     },
     {
       "data": "2026-10-14",
@@ -298,7 +300,9 @@
           "alternativa": "Se chover, o observatório do Metropolitan Government é coberto e gratuito."
         }
       ],
-      "cortavel": false
+      "cortavel": false,
+      "icone": "camera",
+      "resumo": "Meiji Jingu · Shibuya Sky ao pôr do sol"
     },
     {
       "data": "2026-10-15",
@@ -344,7 +348,9 @@
           "alternativa": "Com chuva forte o barco não sai — vale o Edo-Tokyo Museum."
         }
       ],
-      "cortavel": false
+      "cortavel": false,
+      "icone": "market",
+      "resumo": "Tsukiji cedo · Senso-ji · barco no Sumida"
     },
     {
       "data": "2026-10-16",
@@ -352,7 +358,85 @@
       "titulo": "Dia livre",
       "notas": "Sem nada marcado de propósito: até aqui a viagem já rendeu, e é o dia que absorve o que sobrar.",
       "blocos": [],
-      "cortavel": true
+      "cortavel": true,
+      "icone": "sun",
+      "resumo": "nada marcado, de propósito",
+      "opcaoA": "Dia livre",
+      "opcaoB": {
+        "rotulo": "Bate-volta a Kamakura",
+        "blocos": [
+          {
+            "id": "k1",
+            "hora": "08:30",
+            "duracaoMin": 60,
+            "tipo": "deslocamento",
+            "titulo": "Trem Shinjuku → Kamakura",
+            "lat": 35.3192,
+            "lon": 139.5467,
+            "custo": {
+              "valor": 950,
+              "moeda": "JPY",
+              "por": "pessoa"
+            }
+          },
+          {
+            "id": "k2",
+            "hora": "10:00",
+            "duracaoMin": 90,
+            "tipo": "atracao",
+            "titulo": "Grande Buda de Kotoku-in",
+            "lat": 35.3167,
+            "lon": 139.5358,
+            "custo": {
+              "valor": 300,
+              "moeda": "JPY",
+              "por": "pessoa"
+            }
+          },
+          {
+            "id": "k3",
+            "hora": "12:30",
+            "duracaoMin": 90,
+            "tipo": "refeicao",
+            "titulo": "Almoço na Komachi-dori",
+            "lat": 35.3213,
+            "lon": 139.5514,
+            "custo": {
+              "valor": 1800,
+              "moeda": "JPY",
+              "por": "pessoa"
+            }
+          },
+          {
+            "id": "k4",
+            "hora": "15:00",
+            "duracaoMin": 90,
+            "tipo": "atracao",
+            "titulo": "Hase-dera e a vista do mar",
+            "lat": 35.3126,
+            "lon": 139.533,
+            "custo": {
+              "valor": 400,
+              "moeda": "JPY",
+              "por": "pessoa"
+            }
+          }
+        ]
+      },
+      "momentos": [
+        [
+          "—",
+          "sem hora marcada"
+        ],
+        [
+          "ou",
+          "Kamakura, se sobrar energia"
+        ],
+        [
+          "18h",
+          "jantar em Shinjuku"
+        ]
+      ]
     },
     {
       "data": "2026-10-17",
@@ -384,7 +468,9 @@
           "lon": 135.7788
         }
       ],
-      "cortavel": false
+      "cortavel": false,
+      "icone": "train",
+      "resumo": "Shinkansen · Gion ao entardecer"
     },
     {
       "data": "2026-10-18",
@@ -416,7 +502,9 @@
           }
         }
       ],
-      "cortavel": false
+      "cortavel": false,
+      "icone": "torii",
+      "resumo": "Fushimi Inari às 6h30 · Nishiki"
     },
     {
       "data": "2026-10-19",
@@ -439,7 +527,9 @@
           "alternativa": "Chovendo, o bambuzal fica ainda melhor — só leve guarda-chuva."
         }
       ],
-      "cortavel": false
+      "cortavel": false,
+      "icone": "tree",
+      "resumo": "bambuzal · Tenryu-ji"
     },
     {
       "data": "2026-10-20",
@@ -461,7 +551,9 @@
           }
         }
       ],
-      "cortavel": false
+      "cortavel": false,
+      "icone": "suitcase",
+      "resumo": "Haruka para o Kansai"
     }
   ],
   "orcamento": {
@@ -748,5 +840,32 @@
       "prazo": "2026-10-05",
       "observacao": "Atendimento particular no Japão é caro."
     }
-  ]
+  ],
+  "design": {
+    "paleta": {
+      "noite": "#12101C",
+      "cair": "#1F1B2E",
+      "cair2": "#2A2540",
+      "ouro": "#D9A441",
+      "ouro2": "#F0C468",
+      "tinta": "#E0704A",
+      "creme": "#F5EEDF",
+      "ceuAlto": "#0B0A14",
+      "ceuMeio": "#171428",
+      "ceuBaixo": "#2B1F3A",
+      "horizonte": "#4A2A3E",
+      "silhueta": "#1A1526"
+    },
+    "fontes": {
+      "display": "\"Shippori Mincho\", \"Fraunces\", Georgia, serif",
+      "ui": "\"Instrument Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "google": "family=Shippori+Mincho:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600"
+    },
+    "horizonte": "M0 120V96h40V84h30v12h50V70h24v26h60V90h36v6h70V60h20v36h50V80h24l10-14 10 14h24v16h60V70l120-46 120 46v26h60V82h30v14h40V72l24-10 24 10v24h50V88h60l8-20 8 20h60v8h50V76h30v20h50V88h50v32z",
+    "momento": {
+      "tipo": "folhas",
+      "rotulo": "Ver as folhas de momiji caírem",
+      "icone": "leaf"
+    }
+  }
 }

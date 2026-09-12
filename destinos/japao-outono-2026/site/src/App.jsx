@@ -1,64 +1,96 @@
+import { useCallback, useMemo, useRef, useState } from 'react'
 import viagem from './data/trip.json'
-import Cabecalho from './components/Cabecalho'
-import Documentacao from './components/Documentacao'
+import { aplicarDesign } from './lib/design'
+import { PreferenciasProvider } from './lib/precos'
+import { data } from './lib/formato'
+import Ceu from './components/Ceu'
+import Topo from './components/Topo'
+import Bilhetes from './components/Bilhetes'
+import Tiles, { definirTiles } from './components/Tiles'
+import Modal from './components/Modal'
+import DiaModal from './components/DiaModal'
 import Reservas from './components/Reservas'
+import Documentacao from './components/Documentacao'
 import Logistica from './components/Logistica'
-import Roteiro from './components/Roteiro'
 import Mapa from './components/Mapa'
 import Clima from './components/Clima'
-import Cambio from './components/Cambio'
 import Orcamento from './components/Orcamento'
+import Cambio from './components/Cambio'
 import Bagagem from './components/Bagagem'
 import Gastronomia from './components/Gastronomia'
 import Frases from './components/Frases'
 import Links from './components/Links'
-import { pontosDoMapa } from './lib/viagem'
-import { PreferenciasProvider } from './lib/precos'
 
-// A navegação lista só o que a página realmente tem. Seção vazia não vira
-// item de menu que leva a lugar nenhum — e é isso que permite um trip.json
-// incompleto gerar um site menor e coerente em vez de um site furado.
-function secoesVisiveis(v) {
-  const temCambio = (v.destinos || []).some((d) => d.moeda && d.moeda !== (v.moedaBase || 'BRL'))
-  const temClima = (v.destinos || []).some((d) => d.lat != null && d.lon != null)
-  const d = v.documentacao
-
-  return [
-    { id: 'documentacao', rotulo: 'Documentos', tem: !!(d?.visto || d?.vacinas?.length || d?.seguro || d?.checklist?.length) },
-    { id: 'reservas',     rotulo: 'Reservar',   tem: !!v.reservas?.length },
-    { id: 'logistica',    rotulo: 'Logística',  tem: !!(v.voos?.length || v.hospedagens?.length || v.transportes?.length) },
-    { id: 'roteiro',      rotulo: 'Roteiro',    tem: !!v.dias?.length },
-    { id: 'mapa',         rotulo: 'Mapa',       tem: pontosDoMapa(v).length > 0 },
-    { id: 'clima',        rotulo: 'Clima',      tem: temClima },
-    { id: 'orcamento',    rotulo: 'Orçamento',  tem: !!(v.orcamento?.categorias?.length || v.orcamento?.teto) },
-    { id: 'cambio',       rotulo: 'Câmbio',     tem: temCambio },
-    { id: 'comer',        rotulo: 'Comer',      tem: !!v.gastronomia?.length },
-    { id: 'bagagem',      rotulo: 'Bagagem',    tem: !!v.bagagem?.length },
-    { id: 'frases',       rotulo: 'Frases',     tem: !!v.frases?.length },
-    { id: 'util',         rotulo: 'Útil',       tem: !!(v.links?.length || v.avisos?.length) },
-  ].filter((s) => s.tem)
+// O que cada tile mostra ao abrir. As seções decidem sozinhas se têm conteúdo,
+// então agrupar duas num modal nunca deixa um bloco vazio no meio.
+const CORPOS = {
+  reservar:  (v) => <><Reservas viagem={v} /><Documentacao viagem={v} /></>,
+  logistica: (v) => <Logistica viagem={v} />,
+  mapa:      (v) => <Mapa viagem={v} />,
+  orcamento: (v) => <><Orcamento viagem={v} /><Cambio viagem={v} /></>,
+  mala:      (v) => <><Bagagem viagem={v} /><Frases viagem={v} /></>,
+  guia:      (v) => <><Clima viagem={v} /><Gastronomia viagem={v} /><Links viagem={v} /></>,
 }
 
 export default function App() {
+  const design = useMemo(() => aplicarDesign(viagem.design), [])
+  const tiles = useMemo(() => definirTiles(viagem), [])
+  const dias = viagem.dias || []
+
+  // A ordem de navegação com ← → é bilhetes primeiro, tiles depois, circular.
+  const ordem = useMemo(() => [
+    ...dias.map((_, i) => ({ tipo: 'dia', i })),
+    ...tiles.map((_, i) => ({ tipo: 'tile', i })),
+  ], [dias, tiles])
+
+  const [atual, setAtual] = useState(-1)
+  const [origem, setOrigem] = useState(null)
+  const [momentoAtivo, setMomentoAtivo] = useState(false)
+  const temporizador = useRef(null)
+
+  const abrir = useCallback((idx, el) => { setOrigem(el || null); setAtual(idx) }, [])
+  const fechar = useCallback(() => setAtual(-1), [])
+  const passo = useCallback((dir) => {
+    setOrigem(null)
+    setAtual((a) => (a + dir + ordem.length) % ordem.length)
+  }, [ordem.length])
+
+  // O momento: partículas por alguns segundos, uma vez na carga e a cada
+  // clique no título ou no botão. Respeita quem pediu menos movimento.
+  const momento = useCallback((ms = 5000) => {
+    if (!design.momento || matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    setMomentoAtivo(true)
+    clearTimeout(temporizador.current)
+    temporizador.current = setTimeout(() => setMomentoAtivo(false), ms)
+  }, [design.momento])
+  useMemo(() => { setTimeout(() => momento(4200), 1100) }, [momento])
+
+  const item = useMemo(() => {
+    const o = ordem[atual]
+    if (!o) return null
+    if (o.tipo === 'dia') {
+      const dia = dias[o.i]
+      return {
+        chave: `dia-${o.i}`, num: o.i + 1, titulo: dia.titulo || 'Dia livre',
+        kicker: `${data(dia.data, { weekday: 'long', day: '2-digit', month: 'long' })} · dia ${o.i + 1} de ${dias.length}`,
+        corpo: <DiaModal viagem={viagem} dia={dia} />,
+      }
+    }
+    const t = tiles[o.i]
+    return { chave: `tile-${t.id}`, titulo: t.t, kicker: t.kicker, corpo: CORPOS[t.id]?.(viagem) }
+  }, [atual, ordem, dias, tiles])
+
   return (
     <PreferenciasProvider viagem={viagem}>
-      <div className="min-h-dvh">
-        <Cabecalho viagem={viagem} secoes={secoesVisiveis(viagem)} />
-        <main className="divide-y divide-linha">
-          <Documentacao viagem={viagem} />
-          <Reservas viagem={viagem} />
-          <Logistica viagem={viagem} />
-          <Roteiro viagem={viagem} />
-          <Mapa viagem={viagem} />
-          <Clima viagem={viagem} />
-          <Orcamento viagem={viagem} />
-          <Cambio viagem={viagem} />
-          <Gastronomia viagem={viagem} />
-          <Bagagem viagem={viagem} />
-          <Frases viagem={viagem} />
-          <Links viagem={viagem} />
-        </main>
-      </div>
+      <Ceu design={design} ativo={momentoAtivo} />
+      <main className="palco">
+        <Topo viagem={viagem} design={design} aoMomento={() => momento()} />
+        <Bilhetes viagem={viagem} aoAbrir={(i, el) => abrir(i, el)} />
+        <Tiles viagem={viagem} tiles={tiles} deslocamento={dias.length}
+               aoAbrir={(i, el) => abrir(dias.length + i, el)} />
+      </main>
+      <Modal aberto={atual >= 0} item={item} origem={origem}
+             aoFechar={fechar} aoAnterior={() => passo(-1)} aoProximo={() => passo(1)} />
     </PreferenciasProvider>
   )
 }

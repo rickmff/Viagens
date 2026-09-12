@@ -62,8 +62,6 @@ export default function Logistica({ viagem }) {
 
   return (
     <Secao
-      id="logistica"
-      titulo="Logística"
       descricao="Voos, onde dormir e como circular. É o que já está pago ou cotado."
     >
       {voos.length > 0 && (

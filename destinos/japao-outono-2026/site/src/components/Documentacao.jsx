@@ -13,7 +13,7 @@ export default function Documentacao({ viagem }) {
 
   return (
     <Secao
-      id="documentacao"
+
       titulo="Documentação"
       descricao="O único bloco da página que impede o embarque se estiver errado. Confirme no consulado antes de comprar passagem."
     >
@@ -103,7 +103,7 @@ export default function Documentacao({ viagem }) {
                   <li key={item.id}>
                     <label className="flex cursor-pointer items-start gap-2.5 rounded-lg py-1.5 text-sm hover:bg-superficie-2">
                       <input type="checkbox" checked={feito} onChange={() => alternar(item.id)}
-                             className="mt-0.5 size-4 shrink-0 accent-[var(--acento)]" />
+                             className="mt-0.5 size-4 shrink-0 accent-[var(--ouro)]" />
                       <span className={feito ? 'text-tinta-3 line-through' : ''}>
                         {item.texto}
                         {item.prazo && (

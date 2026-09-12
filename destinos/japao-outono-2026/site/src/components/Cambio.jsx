@@ -20,7 +20,7 @@ export default function Cambio({ viagem }) {
 
   return (
     <Secao
-      id="cambio"
+
       titulo="Câmbio"
       descricao={`Quanto custa de verdade em ${base}, já contando IOF e spread do cartão.`}
       acao={moedas.length > 1 && (
@@ -28,7 +28,7 @@ export default function Cambio({ viagem }) {
           {moedas.map((m) => (
             <button key={m} onClick={() => setAtiva(m)} aria-pressed={m === ativa}
               className={`rounded-lg border px-3 py-1.5 text-sm transition-colors ${
-                m === ativa ? 'border-transparent bg-acento text-white'
+                m === ativa ? 'border-transparent bg-acento text-plano'
                             : 'border-borda text-tinta-2 hover:bg-superficie-2'}`}>
               {m}
             </button>

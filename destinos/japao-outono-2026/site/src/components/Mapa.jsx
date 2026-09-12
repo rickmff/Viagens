@@ -45,7 +45,7 @@ export default function Mapa({ viagem }) {
   const mapa = useRef(null)
   const camada = useRef(null)
   const [diaFiltro, setDiaFiltro] = useState('todos')
-  const [escuro, setEscuro] = useState(estaEscuro)
+  const [escuro] = useState(true)
 
   const pontos = useMemo(() => pontosDoMapa(viagem), [viagem])
   const dias = viagem.dias || []
@@ -69,12 +69,17 @@ export default function Mapa({ viagem }) {
     if (!elemento.current || mapa.current) return
     const { centro, zoom } = centroDoMapa(pontos, viagem.destinos || [])
     mapa.current = L.map(elemento.current, { scrollWheelZoom: false }).setView(centro, zoom)
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    // Tiles escuros para não furar a paleta da noite. Dados do OSM, desenho do
+    // CARTO — ambos gratuitos com a atribuição abaixo.
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19, subdomains: 'abcd',
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     }).addTo(mapa.current)
     camada.current = L.layerGroup().addTo(mapa.current)
-    return () => { mapa.current?.remove(); mapa.current = null }
+    // O painel do modal ainda está escalando quando o mapa nasce; sem isso os
+    // tiles ficam calculados para um tamanho que não é o final.
+    const t = setTimeout(() => mapa.current?.invalidateSize(), 450)
+    return () => { clearTimeout(t); mapa.current?.remove(); mapa.current = null }
   }, [])
 
   useEffect(() => {
@@ -94,8 +99,6 @@ export default function Mapa({ viagem }) {
 
   return (
     <Secao
-      id="mapa"
-      titulo="Mapa"
       descricao="Tudo que tem endereço, num lugar só. Filtre por dia para ver se o roteiro daquele dia fecha geograficamente."
       mostrar={pontos.length > 0}
     >
@@ -108,7 +111,7 @@ export default function Mapa({ viagem }) {
               aria-pressed={diaFiltro === v}
               className={`shrink-0 rounded-lg border px-3 py-1.5 text-sm transition-colors ${
                 diaFiltro === v
-                  ? 'border-transparent bg-acento text-white'
+                  ? 'border-transparent bg-acento text-plano'
                   : 'border-borda text-tinta-2 hover:bg-superficie-2'
               }`}>
               {r}

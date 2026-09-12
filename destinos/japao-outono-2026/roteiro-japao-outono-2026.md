@@ -201,4 +201,4 @@ _Câmbio de referência: 1 JPY = 0.0332 BRL (2026-09-11). Compras no cartão sae
 
 ---
 
-_Gerado de `trip.json` em 11 de setembro de 2026. Para mudar qualquer coisa aqui, mude o trip.json e gere de novo._
+_Gerado de `trip.json` em 12 de setembro de 2026. Para mudar qualquer coisa aqui, mude o trip.json e gere de novo._

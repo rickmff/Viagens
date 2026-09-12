@@ -4,7 +4,7 @@ export default function Frases({ viagem }) {
   const frases = viagem.frases || []
   return (
     <Secao
-      id="frases"
+
       titulo="Frases que salvam"
       descricao="O suficiente para pedir, agradecer e sair de uma enrascada."
       mostrar={frases.length > 0}

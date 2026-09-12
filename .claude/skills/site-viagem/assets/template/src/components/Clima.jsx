@@ -31,7 +31,7 @@ export default function Clima({ viagem }) {
 
   return (
     <Secao
-      id="clima"
+
       titulo="Clima"
       descricao="O que esperar do tempo — é isso que decide a mala e o plano B dos dias ao ar livre."
       acao={destinos.length > 1 && (
@@ -39,7 +39,7 @@ export default function Clima({ viagem }) {
           {destinos.map((d, i) => (
             <button key={d.id} onClick={() => setAtivo(i)} aria-pressed={i === ativo}
               className={`rounded-lg border px-3 py-1.5 text-sm transition-colors ${
-                i === ativo ? 'border-transparent bg-acento text-white'
+                i === ativo ? 'border-transparent bg-acento text-plano'
                             : 'border-borda text-tinta-2 hover:bg-superficie-2'}`}>
               {d.nome}
             </button>

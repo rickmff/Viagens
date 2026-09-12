@@ -70,8 +70,6 @@ export default function Reservas({ viagem }) {
 
   return (
     <Secao
-      id="reservas"
-      titulo="Reservar antes"
       descricao="Em ordem de urgência. O que esgota primeiro está no topo — marque conforme for resolvendo."
       mostrar={reservas.length > 0}
       acao={<span className="text-sm text-tinta-2 tabular-nums">{total} de {reservas.length} feitas</span>}
@@ -86,7 +84,7 @@ export default function Reservas({ viagem }) {
                 <input
                   type="checkbox" checked={feito} onChange={() => alternar(r.id)}
                   aria-label={`Marcar "${r.oQue}" como resolvido`}
-                  className="mt-1 size-4 shrink-0 accent-[var(--acento)]"
+                  className="mt-1 size-4 shrink-0 accent-[var(--ouro)]"
                 />
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">

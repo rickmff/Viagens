@@ -53,17 +53,23 @@ export default function Reservas({ viagem }) {
   const reservas = viagem.reservas || []
   const { marcados, alternar, total } = useMarcados(`viagem:${viagem.slug}:reservas`)
 
+  // Ordenar pelo prazo real, e não pelo rótulo: uma venda que abre em três
+  // dias vence um voo "imediato" que ainda tem duas semanas. Reserva sem data
+  // cai para um prazo estimado a partir da urgência, para não afundar no fim.
+  const ESTIMADO = { 'imediato': 0, 'data-exata': 0, 'sorteio': 14, 'um-mes': 30,
+                     'duas-semanas': 21, 'ultima-semana': 60 }
+  const prazoEfetivo = (r) => {
+    if (r.prazo) return diasAte(r.prazo) ?? 999
+    return ESTIMADO[r.urgencia] ?? 99
+  }
   const ordenadas = reservas.slice().sort((a, b) => {
-    const pa = URGENCIAS[a.urgencia]?.peso ?? 9
-    const pb = URGENCIAS[b.urgencia]?.peso ?? 9
-    if (pa !== pb) return pa - pb
-    return (a.prazo || '9999').localeCompare(b.prazo || '9999')
+    const d = prazoEfetivo(a) - prazoEfetivo(b)
+    if (d !== 0) return d
+    return (URGENCIAS[a.urgencia]?.peso ?? 9) - (URGENCIAS[b.urgencia]?.peso ?? 9)
   })
 
   return (
     <Secao
-      id="reservas"
-      titulo="Reservar antes"
       descricao="Em ordem de urgência. O que esgota primeiro está no topo — marque conforme for resolvendo."
       mostrar={reservas.length > 0}
       acao={<span className="text-sm text-tinta-2 tabular-nums">{total} de {reservas.length} feitas</span>}
@@ -78,7 +84,7 @@ export default function Reservas({ viagem }) {
                 <input
                   type="checkbox" checked={feito} onChange={() => alternar(r.id)}
                   aria-label={`Marcar "${r.oQue}" como resolvido`}
-                  className="mt-1 size-4 shrink-0 accent-[var(--acento)]"
+                  className="mt-1 size-4 shrink-0 accent-[var(--ouro)]"
                 />
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">

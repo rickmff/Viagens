@@ -71,6 +71,25 @@ export function PreferenciasProvider({ viagem, children }) {
       : moeda(convertido, base) + porPessoa
   }, [valor, emBase, base, emMoedaBase])
 
+  /** Soma uma lista de custos e devolve a string pronta, respeitando a moeda
+   *  escolhida. Custos "por pessoa" são multiplicados pelos viajantes. Em
+   *  moeda local só soma se todos os custos forem da mesma moeda; misturado,
+   *  cai para a moeda base — somar iene com euro não tem resposta honesta. */
+  const somaCustos = useMemo(() => (custos) => {
+    const validos = (custos || []).filter((c) => c && c.valor != null)
+    if (!validos.length) return null
+    const pessoas = Math.max(1, viagem.viajantes?.length || 1)
+    const mult = (c) => (c.por === 'pessoa' ? pessoas : 1)
+    const moedas = new Set(validos.map((c) => c.moeda || base))
+    if (!emBase && moedas.size === 1) {
+      const m = [...moedas][0]
+      return moeda(Math.round(validos.reduce((s, c) => s + valor(c) * mult(c), 0)), m)
+    }
+    let total = 0
+    for (const c of validos) { const v = emMoedaBase(c); if (v == null) return null; total += v * mult(c) }
+    return moeda(Math.round(total), base)
+  }, [emBase, base, valor, emMoedaBase, viagem])
+
   const moedasLocais = useMemo(() => (
     [...new Set((viagem.destinos || []).map((d) => d.moeda).filter((m) => m && m !== base))]
   ), [viagem, base])
@@ -78,7 +97,7 @@ export function PreferenciasProvider({ viagem, children }) {
   const contexto = {
     base, taxas, erroTaxas, emBase, setEmBase,
     tarifaDupla, residente, setResidente,
-    moedasLocais, fmt, emMoedaBase, valor,
+    moedasLocais, fmt, emMoedaBase, valor, somaCustos,
   }
 
   return <Ctx.Provider value={contexto}>{children}</Ctx.Provider>
@@ -92,37 +111,20 @@ export function ControlesDePreco() {
   if (!p) return null
   const { moedasLocais, emBase, setEmBase, base, tarifaDupla, residente, setResidente } = p
   if (!moedasLocais.length && !tarifaDupla) return null
-
-  const Botao = ({ ativo, onClick, children, titulo }) => (
-    <button onClick={onClick} aria-pressed={ativo} title={titulo}
-      className={`rounded-md px-2 py-1 text-xs font-medium transition-colors ${
-        ativo ? 'bg-acento text-white' : 'text-tinta-2 hover:bg-superficie-2'}`}>
-      {children}
-    </button>
-  )
-
   return (
-    <div className="flex items-center gap-1.5">
+    <>
       {moedasLocais.length > 0 && (
-        <div className="flex rounded-lg border border-borda p-0.5"
-             role="group" aria-label="Moeda dos preços">
-          <Botao ativo={!emBase} onClick={() => setEmBase(false)}
-                 titulo="Preços na moeda local">{moedasLocais[0]}</Botao>
-          <Botao ativo={emBase} onClick={() => setEmBase(true)}
-                 titulo={`Preços convertidos para ${base}, já com IOF e spread`}>{base}</Botao>
+        <div className="seg" role="group" aria-label="Moeda dos preços">
+          <button aria-pressed={!emBase} onClick={() => setEmBase(false)} title="Preços na moeda local">{moedasLocais[0]}</button>
+          <button aria-pressed={emBase} onClick={() => setEmBase(true)} title={`Convertido para ${base}, já com IOF e spread`}>{base}</button>
         </div>
       )}
       {tarifaDupla && (
-        <div className="flex rounded-lg border border-borda p-0.5"
-             role="group" aria-label={tarifaDupla.rotulo || 'Tarifa'}>
-          <Botao ativo={residente} onClick={() => setResidente(true)}>
-            {tarifaDupla.rotuloResidente || 'Residente'}
-          </Botao>
-          <Botao ativo={!residente} onClick={() => setResidente(false)}>
-            {tarifaDupla.rotuloVisitante || 'Visitante'}
-          </Botao>
+        <div className="seg" role="group" aria-label={tarifaDupla.rotulo || 'Tarifa'}>
+          <button aria-pressed={residente} onClick={() => setResidente(true)}>{tarifaDupla.rotuloResidente || 'Residente'}</button>
+          <button aria-pressed={!residente} onClick={() => setResidente(false)}>{tarifaDupla.rotuloVisitante || 'Visitante'}</button>
         </div>
       )}
-    </div>
+    </>
   )
 }

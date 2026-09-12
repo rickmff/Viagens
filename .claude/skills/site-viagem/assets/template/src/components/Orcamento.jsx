@@ -108,8 +108,6 @@ export default function Orcamento({ viagem }) {
 
   return (
     <Secao
-      id="orcamento"
-      titulo="Orçamento"
       descricao={DESCRICAO[modo]}
       mostrar={categorias.length > 0 || t.teto != null}
       acao={abas.length > 1 && (
@@ -117,7 +115,7 @@ export default function Orcamento({ viagem }) {
           {abas.map((a) => (
             <button key={a.v} onClick={() => setModo(a.v)} aria-pressed={modo === a.v}
               className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
-                modo === a.v ? 'bg-acento text-white' : 'text-tinta-2 hover:bg-superficie-2'}`}>
+                modo === a.v ? 'bg-acento text-plano' : 'text-tinta-2 hover:bg-superficie-2'}`}>
               {a.r}
             </button>
           ))}

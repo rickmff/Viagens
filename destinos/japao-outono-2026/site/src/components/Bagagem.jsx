@@ -8,8 +8,6 @@ export default function Bagagem({ viagem }) {
 
   return (
     <Secao
-      id="bagagem"
-      titulo="Bagagem"
       descricao="Vá marcando enquanto arruma. Fica salvo neste aparelho, então dá para fechar a mala em duas sentadas."
       mostrar={grupos.length > 0}
       acao={
@@ -36,7 +34,7 @@ export default function Bagagem({ viagem }) {
                   <li key={id}>
                     <label className="flex cursor-pointer items-start gap-2.5 rounded-lg py-1 text-sm hover:bg-superficie-2">
                       <input type="checkbox" checked={feito} onChange={() => alternar(id)}
-                             className="mt-0.5 size-4 shrink-0 accent-[var(--acento)]" />
+                             className="mt-0.5 size-4 shrink-0 accent-[var(--ouro)]" />
                       <span className={feito ? 'text-tinta-3 line-through' : ''}>{item}</span>
                     </label>
                   </li>

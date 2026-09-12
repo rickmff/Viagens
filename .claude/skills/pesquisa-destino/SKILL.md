@@ -1,6 +1,6 @@
 ---
 name: pesquisa-destino
-description: Pesquisa um destino de viagem na web e transforma o resultado em destinos/<slug>/PESQUISA.md e num trip.json válido — ancorando as datas em festivais e sazonalidade, verificando o que abre em cada dia da semana antes de fixar a ordem do roteiro, e cobrindo visto para brasileiros, custos reais, bairros, transporte, voos e segurança. Use sempre que o usuário mencionar querer viajar para algum lugar, pedir sugestões de roteiro, perguntar "vale a pena ir para X em tal mês", perguntar qual a melhor época para visitar um país, quiser saber quanto custa uma viagem, precisar de informação de visto, ou pedir para atualizar a pesquisa de um destino que já existe no repo. É o passo que antecede a geração do site.
+description: Pesquisa um destino de viagem na web, com fontes datadas, e grava os fatos em destinos/<slug>/PESQUISA.md e no trip.json — documentação para brasileiros, festivais e sazonalidade com previsão do ano, o que abre e fecha em cada dia da semana, horário de última entrada, custos reais, taxa de turismo, tarifa dupla, voos, bairros, transporte, segurança e a lista de atrações candidatas filtrada pelo perfil. Use sempre que o usuário mencionar querer viajar para algum lugar, pedir sugestões de roteiro, perguntar "vale a pena ir para X em tal mês", perguntar qual a melhor época para visitar um país, quiser saber quanto custa uma viagem, precisar de informação de visto, ou pedir para atualizar a pesquisa de um destino que já existe no repo. É o passo que antecede a geração do site.
 ---
 
 # Pesquisa de destino
@@ -137,44 +137,6 @@ Pratos e mercados que valem a viagem, com as restrições do perfil respeitadas.
 
 Endpoints, padrões de busca e onde achar cada coisa: `references/fontes.md`.
 
-## Montar os dias
-
-**Construção geográfica, não temática.** Entre por uma ponta, saia pela outra, e
-encaixe paradas intermediárias **nos trajetos que já iam ser feitos**. Um lugar
-no meio do caminho entre duas cidades custa algumas horas; o mesmo lugar como
-ida e volta custa um dia inteiro. Essa única decisão costuma render mais tempo
-livre que qualquer outra otimização.
-
-Dentro de cada dia, agrupe por proximidade a pé. Quatro atrações em quatro
-bairros não é um dia cheio, é um dia impossível — conte o deslocamento como
-tempo real.
-
-**Dia de chegada e dia de partida não são dias inteiros** — conte meio dia em
-cada. Um voo que pousa às 16h não rende uma tarde de museu depois da imigração,
-da bagagem e do trajeto até o hotel. Em viagem de mais de dez dias, deixe
-também um dia inteiro sem plano.
-
-**Um dia, uma zona.** Atravessar a cidade três vezes gasta o dia em transporte.
-E cuidado com o excesso de ambição geográfica: quatro cidades em cinco dias é
-uma viagem de rodoviária com paradas turísticas.
-
-**A hora do dia muda a experiência.** Mirante e lugar muito fotografado de
-manhã cedo, mercado na hora do café, bairro de luzes ao anoitecer. Escolher a
-hora certa costuma valer mais que escolher o lugar certo. E **marque os dias mais fáceis de cortar** (`cortavel: true`),
-porque viagem encurta e é melhor a decisão já estar tomada.
-
-Coloque `alternativa` nos blocos ao ar livre quando o clima do período for
-instável. É o campo que salva o dia de chuva.
-
-Nas notas de cada dia, escreva o que só quem já esteve lá sabe: a que horas
-chegar para não pegar fila, de que lado do trem sentar, qual fila virtual abrir
-assim que entrar no parque, qual dia da semana é o mais vazio. É isso que
-separa um roteiro de uma lista de atrações.
-
-**Cada interesse que ele mencionou de passagem merece pelo menos um bloco.** Se
-ele disse "a gente é nerd" ou "ela adora cerâmica", isso é um pedido, mesmo sem
-ponto de interrogação.
-
 ## O que produzir
 
 ### `destinos/<slug>/PESQUISA.md`
@@ -191,10 +153,17 @@ que três parágrafos neutros.
 
 ### `destinos/<slug>/trip.json`
 
-Siga `docs/trip-schema.md`. Preencha `destinos`, `documentacao`, `reservas`,
-`dias`, `gastronomia`, `frases`, `links` e `avisos`. Deixe `voos`,
-`hospedagens` e `orcamento` para as etapas seguintes, mas já registre os custos
-que descobriu nos blocos do roteiro — é deles que o orçamento parte.
+Siga `docs/trip-schema.md`. Preencha `destinos` (com `lat`/`lon`, moeda e
+fuso), `documentacao`, `gastronomia`, `frases`, `links` e `avisos`. Deixe
+`dias` e `reservas` para `roteiro-viagem`, e `voos`, `hospedagens` e
+`orcamento` para as etapas seguintes.
+
+O que a pesquisa entrega para o roteiro é a **lista de candidatos**: cada
+atração e experiência filtrada pelo perfil, com duração real, dia de
+fechamento, horário de última entrada, se precisa reserva e com quanta
+antecedência, custo com moeda, e coordenadas. Grave isso na `PESQUISA.md` numa
+tabela — é dela que `roteiro-viagem` monta os dias sem precisar pesquisar de
+novo.
 
 Campo que você não pesquisou fica `null`. O site esconde seção vazia, então um
 `trip.json` honesto gera um site menor e verdadeiro; um inventado gera um site
@@ -208,7 +177,8 @@ lote no fim, não um a um no meio da pesquisa.
 
 ## Ao terminar
 
-Resuma em prosa: a janela é boa, quanto vai custar mais ou menos, o que exige
-ação imediata, e uma recomendação clara. Destaque os conflitos que você
-corrigiu — uma correção vale mais que uma sugestão. Depois acione
-`perfil-viajante` no modo escrita.
+Resuma em prosa: a janela é boa, quanto deve custar mais ou menos, o que exige
+ação imediata, e uma recomendação clara. Destaque o que a pesquisa derrubou —
+uma época ruim, um lugar fechado no período, um passe que não compensa — porque
+uma correção vale mais que uma sugestão. Depois: `roteiro-viagem` para virar
+dias, e `perfil-viajante` no modo escrita.

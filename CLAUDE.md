@@ -13,12 +13,16 @@ perfil/
   insights.md        Log append-only de cada sessão e do que ela ensinou.
 destinos/
   <slug>/
+    BRIEFING.md         O pedido, quando veio pelo briefing guiado.
     trip.json           Fonte da verdade do destino (contrato compartilhado).
     PESQUISA.md         Pesquisa bruta com fontes e datas de consulta.
     APRENDIZADOS.md     Pós-viagem: o que funcionou, o que não funcionou.
     roteiro-<slug>.md   Roteiro imprimível, gerado do trip.json.
-    site/               App React + Vite gerado a partir do trip.json.
-.claude/skills/      As skills que operam tudo isso.
+    site/               Palco imersivo React + Vite gerado a partir do trip.json.
+docs/
+  trip-schema.md         O contrato que liga as skills.
+  mapa-de-conhecimento.md  De onde veio cada regra e em qual skill ela vive.
+.claude/skills/      As sete skills que operam tudo isso.
 ```
 
 ## Regras que valem para qualquer trabalho neste repo
@@ -40,6 +44,11 @@ quando a mudança for de comportamento ou visual, nunca de conteúdo.
 janela de venda de ingresso e feriado local mandam mais na ordem do roteiro que
 qualquer preferência — e descobrir isso depois custa caro. Ver
 `.claude/skills/pesquisa-destino/references/verificacoes.md`.
+
+**A identidade do site vem do destino.** Paleta, fontes, silhueta e momento
+são escolhidos por viagem no bloco `design` do `trip.json`, seguindo
+`.claude/skills/site-viagem/references/design.md`. Entregar com a paleta
+padrão do template é entregar sem fazer o design.
 
 **O QA do site é portão, não sugestão.** `node
 .claude/skills/site-viagem/scripts/qa-site.mjs <slug>` tem que passar antes de
@@ -65,7 +74,9 @@ Nomes de arquivo e de código em inglês ou slug sem acento.
 
 ## Stack do site gerado
 
-React 19 + Vite + Tailwind v4. Dependências de runtime: apenas `react`,
-`react-dom` e `leaflet`. Dados ao vivo vêm de APIs sem chave (Open-Meteo,
-Nominatim, exchangerate) chamadas direto do browser. Resista a adicionar
+React 19 + Vite + Tailwind v4, num palco de uma tela só (sem rolagem; dias e
+tiles abrem em modal). Dependências de runtime: apenas `react`, `react-dom` e
+`leaflet`. Dados ao vivo vêm de APIs sem chave (Open-Meteo, Nominatim,
+exchangerate, tiles CARTO) chamadas direto do browser. Resista a adicionar
 dependências: o template é de propósito magro para não apodrecer entre viagens.
+Movimento só na carga e em resposta a um clique.

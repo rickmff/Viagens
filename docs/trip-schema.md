@@ -42,6 +42,34 @@ meio inventadas.
     "rotuloVisitante": "Não residentes"
   },
 
+  // ── Design ────────────────────────────────────────────────────────────
+  // O site é imersivo e a identidade vem do destino, nunca de um padrão.
+  // Uma viagem ao Japão no outono não pode parecer uma a Paris na primavera.
+  // Como derivar cada campo: site-viagem/references/design.md.
+  "design": {
+    "paleta": {
+      "noite":   "#141225",   // fundo profundo da página
+      "cair":    "#221F3A",   // bilhetes e painel do modal
+      "cair2":   "#2E2A4C",   // hover e superfície elevada
+      "ouro":    "#E0A23A",   // numerais, horas, links, ícones
+      "tinta":   "#D98C6B",   // preços e itálicos (um segundo acento)
+      "creme":   "#F4EDE0",   // texto — contraste ≥ 7:1 sobre "noite"
+      "ceuAlto": "#0C0B1B", "ceuMeio": "#181633", "ceuBaixo": "#2A2447",
+      "horizonte": "#3B3060", "silhueta": "#1A1735"
+    },
+    "fontes": {
+      "display": "\"Fraunces\", Georgia, serif",        // numerais e títulos, itálico no h1
+      "ui": "\"Instrument Sans\", system-ui, sans-serif",
+      "google": "family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400;500;600"
+    },
+    // Silhueta do lugar em viewBox 0 0 1440 120, um único path de baixa
+    // opacidade. Skyline, litoral, montanha. Sem logotipo. `null` = só gradiente.
+    "horizonte": "M0 120V92h60V78h50v14h70V70h40v22h80V60h30v32h70V84h60v8h60V66h30v26h50V82h40l40-44 8-30 8 30 40 44h60v10h60V72h50v20h40V62l40-24 40 24v30h60V86h40v6h70V70h40v22h80V80h50v12h50V60h30v32h70V78h50v14h60v28z",
+    // O único momento de encantamento da página. `tipo` decide a partícula:
+    // estrelas | folhas | petalas | neve | null. Sem momento óbvio, `null`.
+    "momento": { "tipo": "folhas", "rotulo": "Ver as folhas caírem", "icone": "tree" }
+  },
+
   // ── Destinos ──────────────────────────────────────────────────────────
   // Cada cidade/base da viagem. lat/lon são obrigatórios: o mapa, o clima e
   // o fuso horário do site dependem deles. Use Nominatim para obtê-los.
@@ -153,10 +181,17 @@ meio inventadas.
       "data": "2026-10-13",
       "destinoId": "tokyo",
       "titulo": "Chegada e Shibuya devagar",
+      "resumo": "monotrilho · ramen no beco",   // uma linha sob o título do bilhete
+      // Os três momentos que aparecem no bilhete. Opcional: sem eles o site
+      // usa os três primeiros blocos. Três, não dois nem cinco.
+      "momentos": [["18h30", "Haneda → Shinjuku"], ["20h30", "Omoide Yokocho"], ["22h00", "dormir cedo"]],
+      "icone": "plane",   // ver a lista em design.md; fallback pelo tipo do 1º bloco
       "notas": "Dia de jet lag: nada que exija acordar cedo.",
       // Marque os dias mais fáceis de sacrificar. Viagem encurta, e é melhor
       // a decisão já estar tomada do que ser improvisada na véspera.
       "cortavel": false,
+      // Dia com duas versões válidas vira abas no modal. Opcional.
+      "opcaoB": { "rotulo": "Bate-volta a Kamakura", "blocos": [ /* mesmo formato */ ] },
       "blocos": [
         {
           "id": "b1",

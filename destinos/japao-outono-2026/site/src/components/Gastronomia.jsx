@@ -6,7 +6,7 @@ export default function Gastronomia({ viagem }) {
 
   return (
     <Secao
-      id="comer"
+
       titulo="Onde comer"
       descricao="O que vale a viagem, não o que é conveniente."
       mostrar={lugares.length > 0}
