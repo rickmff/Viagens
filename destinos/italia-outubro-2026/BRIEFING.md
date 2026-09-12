@@ -1,4 +1,4 @@
-# Briefing — Itália clássica, 2027
+# Briefing — Itália clássica, outubro de 2026
 
 Gravado em 2026-09-12, no primeiro briefing guiado do repo.
 
@@ -31,3 +31,12 @@ mercado, vinho). Ritmo de dois ou três blocos por dia, com folga.
 - Nacionalidade ainda não registrada. Para a Itália não muda nada (Schengen,
   residente em Portugal); vai importar na próxima viagem fora da Europa.
 - Cartão sem taxa de câmbio não importa aqui — tudo em euro.
+
+## Decisões de 2026-09-12 (segunda rodada)
+
+- **Janela: outubro de 2026** — escolheu a opção "outra" com o ano corrente,
+  não 2027. Viagem daqui a cinco semanas: toda reserva com prazo vira urgente.
+- **Veneza sai.** Roma + Florença, com folga.
+- **Pompeia entra como opção B** de um dia em Roma; decide na semana.
+- Teto continua **€2.000**. Outubro é meia temporada: fecha só com B&B/2★,
+  segunda quinzena e sem Pompeia — a conta está no orçamento.

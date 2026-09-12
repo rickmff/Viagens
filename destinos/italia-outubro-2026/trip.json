@@ -1,0 +1,1373 @@
+{
+  "schemaVersion": 1,
+  "slug": "italia-outubro-2026",
+  "titulo": "Roma & Florença — Outubro 2026",
+  "subtitulo": "17 → 24 de outubro · casal · Roma antiga, Vaticano, Uffizi e muita trattoria, com folga.",
+  "atualizadoEm": "2026-09-12",
+  "status": "planejando",
+  "periodo": {
+    "inicio": "2026-10-17",
+    "fim": "2026-10-24"
+  },
+  "casa": {
+    "pais": "PT",
+    "cidade": "Porto",
+    "iata": "OPO",
+    "fuso": "Europe/Lisbon",
+    "moeda": "EUR"
+  },
+  "moedaBase": "EUR",
+  "viajantes": [
+    {
+      "id": "rick",
+      "nome": "Rick"
+    },
+    {
+      "id": "par",
+      "nome": "Companhia"
+    }
+  ],
+  "tarifaDupla": {
+    "ativo": false
+  },
+  "design": {
+    "paleta": {
+      "noite": "#151312",
+      "cair": "#231F1C",
+      "cair2": "#2F2925",
+      "ouro": "#D8A85A",
+      "ouro2": "#EDC47B",
+      "tinta": "#C4623A",
+      "creme": "#F3ECDF",
+      "ceuAlto": "#0E0C0B",
+      "ceuMeio": "#1D1816",
+      "ceuBaixo": "#3A2A22",
+      "horizonte": "#5A3A2A",
+      "silhueta": "#1C1714"
+    },
+    "fontes": {
+      "display": "\"Cormorant Garamond\", \"Fraunces\", Georgia, serif",
+      "ui": "\"Instrument Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "google": "family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Sans:wght@400;500;600"
+    },
+    "horizonte": "M0 120V98h30V88h14v10h14V88h14v10h14V88h14v10h14V88h14v10h14V88h14v10h30v10h40V84h20l6-10 6 10h20v14h40V70q40-40 80 0v28h40V92h20v6h30V80h20v12h30V64q30-30 60 0v28h10V56h8v36h12V80h8v12h30V98h20v-8l6-16 6 16v8h30V96h30v24z",
+    "momento": {
+      "tipo": "estrelas",
+      "rotulo": "Noite romana",
+      "icone": "star"
+    }
+  },
+  "destinos": [
+    {
+      "id": "roma",
+      "nome": "Roma",
+      "pais": "Itália",
+      "paisISO": "IT",
+      "moeda": "EUR",
+      "lat": 41.8933,
+      "lon": 12.4829,
+      "fuso": "Europe/Rome",
+      "chegada": "2026-10-17",
+      "saida": "2026-10-21",
+      "bairroBase": "Monti",
+      "resumo": "Quatro noites. Monti é caminhável até o Coliseu e fica a duas paradas de Termini; a comida fica em Testaccio e Trastevere.",
+      "taxaTurismo": {
+        "valor": 5,
+        "moeda": "EUR",
+        "por": "pessoa-noite"
+      }
+    },
+    {
+      "id": "florenca",
+      "nome": "Florença",
+      "pais": "Itália",
+      "paisISO": "IT",
+      "moeda": "EUR",
+      "lat": 43.7696,
+      "lon": 11.2558,
+      "fuso": "Europe/Rome",
+      "chegada": "2026-10-21",
+      "saida": "2026-10-24",
+      "bairroBase": "Oltrarno / Santo Spirito",
+      "resumo": "Três noites do outro lado do Arno: trattoria de bairro, dez minutos a pé dos Uffizi e longe da fila do Duomo.",
+      "taxaTurismo": {
+        "valor": 6,
+        "moeda": "EUR",
+        "por": "pessoa-noite"
+      }
+    }
+  ],
+  "documentacao": {
+    "verificadoEm": "2026-09-12",
+    "visto": {
+      "necessario": false,
+      "detalhe": "Itália é Schengen: residente em Portugal viaja sem fronteira e sem visto. Leve passaporte (ou cartão de cidadão, se for da UE) e, se não for cidadão da UE, o título de residência junto.",
+      "fonte": null
+    },
+    "passaporte": {
+      "validadeMinimaMeses": null,
+      "observacao": "Dentro do Schengen basta estar válido durante a viagem."
+    },
+    "vacinas": [],
+    "seguro": {
+      "obrigatorio": false,
+      "coberturaMinima": null,
+      "observacao": "Se tiver direito ao Cartão Europeu de Seguro de Doença, ele cobre o SNS italiano. Seguro privado só para bagagem e cancelamento."
+    },
+    "alfandega": [],
+    "checklist": [
+      {
+        "id": "doc-cartao-europeu",
+        "texto": "Pedir ou conferir o Cartão Europeu de Seguro de Doença (CESD)",
+        "prazo": "2026-10-05"
+      },
+      {
+        "id": "doc-residencia",
+        "texto": "Título de residência na carteira, se não for cidadão da UE",
+        "prazo": "2026-10-16"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "id": "res-voo-ida",
+      "oQue": "Voo Ryanair Porto → Roma Fiumicino, sáb 17/10 de manhã",
+      "urgencia": "imediato",
+      "prazo": "2026-09-16",
+      "onde": "https://www.ryanair.com/pt/pt",
+      "observacao": "Faltam cinco semanas: o preço só sobe daqui. Bagagem de 10 kg custa à parte — os dois de mão cabem em uma."
+    },
+    {
+      "id": "res-voo-volta",
+      "oQue": "Voo Ryanair Pisa → Porto, sáb 24/10",
+      "urgencia": "imediato",
+      "prazo": "2026-09-16",
+      "onde": "https://www.ryanair.com/pt/pt",
+      "observacao": "Ryanair só voa Pisa → Porto às segundas, quintas e sábados. Sair de Florença evita o trem de volta a Roma."
+    },
+    {
+      "id": "res-hosp-roma",
+      "oQue": "B&B em Monti, 4 noites (17 → 21/10)",
+      "urgencia": "imediato",
+      "prazo": "2026-09-20",
+      "observacao": "Cancelamento grátis. Taxa de turismo (€5 pp/noite) se paga no check-in, às vezes só em dinheiro."
+    },
+    {
+      "id": "res-hosp-florenca",
+      "oQue": "B&B em Oltrarno / Santo Spirito, 3 noites (21 → 24/10)",
+      "urgencia": "imediato",
+      "prazo": "2026-09-20",
+      "observacao": "Outubro em Florença é meia temporada: B&B simples a partir de ≈ €120. Taxa €6 pp/noite no check-in."
+    },
+    {
+      "id": "res-coliseu",
+      "oQue": "Coliseu + Fórum + Palatino, dom 18/10 às 8h30",
+      "urgencia": "data-exata",
+      "prazo": "2026-09-18",
+      "abreVendaEm": {
+        "local": "2026-09-18T08:45",
+        "fuso": "Europe/Rome",
+        "emCasa": "2026-09-18T07:45"
+      },
+      "onde": "https://ticketing.colosseo.it",
+      "nominativo": "Nome exatamente como no documento que vai levar",
+      "observacao": "Vende 30 dias antes, liberado por faixa horária ao longo da manhã. Deixe a conta criada e a página aberta às 7h40. Os dois ingressos na mesma compra."
+    },
+    {
+      "id": "res-vaticano",
+      "oQue": "Museus Vaticanos + Capela Sistina, seg 19/10 às 8h",
+      "urgencia": "um-mes",
+      "prazo": "2026-09-25",
+      "onde": "https://www.museivaticani.va",
+      "observacao": "A primeira entrada da segunda é a menos cheia da semana. Site oficial; agregador cobra o dobro."
+    },
+    {
+      "id": "res-trem-roma-florenca",
+      "oQue": "Trem Roma Termini → Firenze SMN, qua 21/10 de manhã",
+      "urgencia": "um-mes",
+      "prazo": "2026-09-25",
+      "onde": "https://www.italotreno.com",
+      "observacao": "Italo Low Cost ou Frecciarossa Super Economy: ≈ €20–25 pp comprando agora, €50+ na semana."
+    },
+    {
+      "id": "res-uffizi",
+      "oQue": "Uffizi, qui 22/10 às 8h15",
+      "urgencia": "um-mes",
+      "prazo": "2026-09-25",
+      "onde": "https://www.uffizi.it",
+      "observacao": "Primeira entrada do dia. Fecha às segundas — por isso Florença cai de quarta a sábado."
+    },
+    {
+      "id": "res-accademia",
+      "oQue": "Galleria dell'Accademia (David), sex 23/10 às 8h15",
+      "urgencia": "duas-semanas",
+      "prazo": "2026-10-05",
+      "observacao": "Também fecha segunda. Meia hora basta para o David; o resto é bônus."
+    },
+    {
+      "id": "res-pompeia",
+      "oQue": "Pompeia (se a opção B da terça for escolhida)",
+      "urgencia": "duas-semanas",
+      "prazo": "2026-10-12",
+      "onde": "https://pompeiisites.org",
+      "nominativo": "Ingresso nominativo, com faixa horária",
+      "observacao": "Decida até 12/10. Trem Roma → Nápoles antecipado + Circumvesuviana + ingresso €20 = ≈ €65 pp."
+    }
+  ],
+  "voos": [
+    {
+      "id": "ida",
+      "tipo": "ida",
+      "de": "OPO",
+      "para": "FCO",
+      "partida": "2026-10-17T07:30",
+      "chegada": "2026-10-17T11:20",
+      "cia": "Ryanair",
+      "voo": null,
+      "escalas": [],
+      "duracaoTotalMin": 170,
+      "custo": {
+        "valor": 95,
+        "moeda": "EUR",
+        "por": "pessoa"
+      },
+      "status": "cotado"
+    },
+    {
+      "id": "volta",
+      "tipo": "volta",
+      "de": "PSA",
+      "para": "OPO",
+      "partida": "2026-10-24T16:00",
+      "chegada": "2026-10-24T17:40",
+      "cia": "Ryanair",
+      "voo": null,
+      "escalas": [],
+      "duracaoTotalMin": 160,
+      "custo": {
+        "valor": 75,
+        "moeda": "EUR",
+        "por": "pessoa"
+      },
+      "status": "cotado"
+    }
+  ],
+  "hospedagens": [
+    {
+      "id": "hosp-roma",
+      "destinoId": "roma",
+      "nome": "B&B em Monti (a escolher)",
+      "checkin": "2026-10-17",
+      "checkout": "2026-10-21",
+      "lat": 41.8945,
+      "lon": 12.493,
+      "custo": {
+        "valor": 480,
+        "moeda": "EUR",
+        "por": "total"
+      },
+      "porque": "Quinze minutos a pé do Coliseu, metrô Cavour na porta, e bar de bairro para o café. Sem a fila de Termini nem o preço do centro histórico.",
+      "status": "cotado"
+    },
+    {
+      "id": "hosp-florenca",
+      "destinoId": "florenca",
+      "nome": "B&B em Oltrarno / Santo Spirito (a escolher)",
+      "checkin": "2026-10-21",
+      "checkout": "2026-10-24",
+      "lat": 43.7667,
+      "lon": 11.2477,
+      "custo": {
+        "valor": 405,
+        "moeda": "EUR",
+        "por": "total"
+      },
+      "porque": "O lado tranquilo do rio: trattoria de bairro na praça, dez minutos a pé dos Uffizi, e o Piazzale Michelangelo subindo a rua.",
+      "status": "cotado"
+    }
+  ],
+  "transportes": [
+    {
+      "id": "fl1",
+      "tipo": "trem",
+      "nome": "Fiumicino → Roma: trem regional FL1 até Trastevere/Ostiense + metrô",
+      "custo": {
+        "valor": 8,
+        "moeda": "EUR",
+        "por": "pessoa"
+      },
+      "cobre": [
+        "roma"
+      ],
+      "observacao": "O Leonardo Express (€14) só compensa se for direto a Termini. Para Monti, FL1 + metrô B leva o mesmo tempo por metade."
+    },
+    {
+      "id": "atac",
+      "tipo": "passe",
+      "nome": "Bilhetes ATAC (metrô/ônibus de Roma), ≈ 10 viagens",
+      "custo": {
+        "valor": 15,
+        "moeda": "EUR",
+        "por": "pessoa"
+      },
+      "cobre": [
+        "roma"
+      ],
+      "observacao": "Roma se faz a pé; o metrô é para Vaticano e Testaccio. Pague por aproximação do cartão na catraca, sem comprar bilhete."
+    },
+    {
+      "id": "frecciarossa",
+      "tipo": "trem",
+      "nome": "Roma → Florença, Italo ou Frecciarossa",
+      "custo": {
+        "valor": 25,
+        "moeda": "EUR",
+        "por": "pessoa"
+      },
+      "cobre": [
+        "roma",
+        "florenca"
+      ],
+      "observacao": "1h30. Comprar agora no site da operadora; Termini → SMN, as duas centrais."
+    },
+    {
+      "id": "pisa",
+      "tipo": "trem",
+      "nome": "Florença SMN → Pisa Aeroporto (regional + PisaMover)",
+      "custo": {
+        "valor": 12,
+        "moeda": "EUR",
+        "por": "pessoa"
+      },
+      "cobre": [
+        "florenca"
+      ],
+      "observacao": "≈ 1h15 no total. Sair de Florença 3h30 antes do voo."
+    }
+  ],
+  "dias": [
+    {
+      "data": "2026-10-17",
+      "destinoId": "roma",
+      "titulo": "Chegada e Roma a pé",
+      "resumo": "Pantheon · Navona · jantar em Trastevere",
+      "icone": "plane",
+      "momentos": [
+        [
+          "11h20",
+          "pouso em Fiumicino"
+        ],
+        [
+          "16h30",
+          "Pantheon e Navona"
+        ],
+        [
+          "20h",
+          "trattoria em Trastevere"
+        ]
+      ],
+      "notas": "Meio dia, de propósito. Nada com hora marcada: o centro histórico a pé e o primeiro jantar.",
+      "blocos": [
+        {
+          "id": "r1",
+          "hora": "11:20",
+          "duracaoMin": 90,
+          "tipo": "deslocamento",
+          "titulo": "Fiumicino → Monti (FL1 + metrô B, Cavour)",
+          "lat": 41.8154,
+          "lon": 12.2265,
+          "custo": {
+            "valor": 8,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Bilhete no app Trenitalia ou na máquina; valide antes de subir."
+        },
+        {
+          "id": "r2",
+          "hora": "14:00",
+          "duracaoMin": 60,
+          "tipo": "refeicao",
+          "titulo": "Almoço tardio em Monti: pizza al taglio",
+          "custo": {
+            "valor": 8,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "r3",
+          "hora": "16:30",
+          "duracaoMin": 90,
+          "tipo": "atracao",
+          "titulo": "Pantheon (entrada €5) e Piazza Navona",
+          "lat": 41.8986,
+          "lon": 12.4768,
+          "custo": {
+            "valor": 5,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Às 16h30 a luz entra pelo óculo na diagonal; a fila é curta no fim da tarde."
+        },
+        {
+          "id": "r4",
+          "hora": "18:30",
+          "duracaoMin": 60,
+          "tipo": "livre",
+          "titulo": "Ponte Sisto ao pôr do sol, atravessando para Trastevere",
+          "lat": 41.8896,
+          "lon": 12.4705
+        },
+        {
+          "id": "r5",
+          "hora": "20:00",
+          "duracaoMin": 120,
+          "tipo": "refeicao",
+          "titulo": "Trattoria em Trastevere: cacio e pepe e carbonara",
+          "lat": 41.8896,
+          "lon": 12.4705,
+          "custo": {
+            "valor": 32,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Fuja da Piazza di Santa Maria; duas ruas para dentro o preço cai e a comida melhora."
+        }
+      ]
+    },
+    {
+      "data": "2026-10-18",
+      "destinoId": "roma",
+      "titulo": "Roma antiga",
+      "resumo": "Coliseu 8h30 · Fórum · Aventino ao pôr do sol",
+      "icone": "column",
+      "momentos": [
+        [
+          "8h30",
+          "Coliseu, primeira entrada"
+        ],
+        [
+          "11h",
+          "Fórum e Palatino"
+        ],
+        [
+          "18h",
+          "laranjal do Aventino"
+        ]
+      ],
+      "notas": "Domingo é o dia certo: o Vaticano fecha, e o Coliseu na primeira entrada ainda tem sombra e silêncio.",
+      "blocos": [
+        {
+          "id": "r6",
+          "hora": "08:30",
+          "duracaoMin": 120,
+          "tipo": "atracao",
+          "titulo": "Coliseu — entrada 8h30",
+          "lat": 41.8909,
+          "lon": 12.4919,
+          "custo": {
+            "valor": 18,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "reservaNecessaria": true,
+          "link": "https://ticketing.colosseo.it",
+          "notas": "O ingresso vale 24h e inclui Fórum e Palatino. Chegue 20 min antes; nome no documento tem que bater."
+        },
+        {
+          "id": "r7",
+          "hora": "11:00",
+          "duracaoMin": 150,
+          "tipo": "atracao",
+          "titulo": "Fórum Romano e Palatino",
+          "lat": 41.8916,
+          "lon": 12.4867,
+          "notas": "Entre pelo Palatino (Via di San Gregorio): fila menor e a vista de cima antes de descer ao Fórum.",
+          "alternativa": "Chovendo, Musei Capitolini (€16) cobrem a mesma história, coberto e vazio."
+        },
+        {
+          "id": "r8",
+          "hora": "13:45",
+          "duracaoMin": 75,
+          "tipo": "refeicao",
+          "titulo": "Almoço em Monti: trapizzino ou supplì",
+          "custo": {
+            "valor": 10,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "r9",
+          "hora": "15:30",
+          "duracaoMin": 120,
+          "tipo": "livre",
+          "titulo": "Tarde livre — sesta, ou Bocca della Verità e Circo Máximo a pé"
+        },
+        {
+          "id": "r10",
+          "hora": "18:00",
+          "duracaoMin": 60,
+          "tipo": "atracao",
+          "titulo": "Giardino degli Aranci e o buraco da fechadura, no Aventino",
+          "lat": 41.8843,
+          "lon": 12.4795,
+          "notas": "Pôr do sol às 18h20 em outubro. A fechadura de Malta tem fila de 10 min e vale."
+        },
+        {
+          "id": "r11",
+          "hora": "20:00",
+          "duracaoMin": 120,
+          "tipo": "refeicao",
+          "titulo": "Jantar em Testaccio: trattoria de bairro",
+          "lat": 41.8776,
+          "lon": 12.4733,
+          "custo": {
+            "valor": 30,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        }
+      ]
+    },
+    {
+      "data": "2026-10-19",
+      "destinoId": "roma",
+      "titulo": "Vaticano cedo",
+      "resumo": "Museus 8h · Sistina · São Pedro · aperitivo",
+      "icone": "dome",
+      "momentos": [
+        [
+          "8h",
+          "Museus Vaticanos"
+        ],
+        [
+          "12h",
+          "Basílica de São Pedro"
+        ],
+        [
+          "18h30",
+          "aperitivo no Campo de' Fiori"
+        ]
+      ],
+      "notas": "Segunda é o dia menos cheio da semana no Vaticano — muita gente acha que fecha. Entrada das 8h, direto para a Sistina antes de voltar às galerias.",
+      "blocos": [
+        {
+          "id": "r12",
+          "hora": "08:00",
+          "duracaoMin": 210,
+          "tipo": "atracao",
+          "titulo": "Museus Vaticanos e Capela Sistina — entrada 8h",
+          "lat": 41.9065,
+          "lon": 12.4536,
+          "custo": {
+            "valor": 25,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "reservaNecessaria": true,
+          "link": "https://www.museivaticani.va",
+          "notas": "Última entrada às 18h. Da Sistina, a porta dos grupos à direita dá direto na Basílica, sem refazer a fila de fora."
+        },
+        {
+          "id": "r13",
+          "hora": "12:00",
+          "duracaoMin": 75,
+          "tipo": "atracao",
+          "titulo": "Basílica de São Pedro (grátis)",
+          "lat": 41.9022,
+          "lon": 12.4539,
+          "notas": "Joelhos e ombros cobertos. A cúpula (€10, 551 degraus) fica para um dia sem chuva."
+        },
+        {
+          "id": "r14",
+          "hora": "13:45",
+          "duracaoMin": 75,
+          "tipo": "refeicao",
+          "titulo": "Almoço em Borgo Pio, longe da fila",
+          "custo": {
+            "valor": 15,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "r15",
+          "hora": "15:30",
+          "duracaoMin": 60,
+          "tipo": "livre",
+          "titulo": "Castel Sant'Angelo por fora e a ponte dos anjos",
+          "lat": 41.9031,
+          "lon": 12.4663
+        },
+        {
+          "id": "r16",
+          "hora": "18:30",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Aperitivo e jantar leve no Campo de' Fiori / Jewish Ghetto",
+          "lat": 41.8955,
+          "lon": 12.4722,
+          "custo": {
+            "valor": 28,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "No Ghetto: carciofo alla giudia. Evite as mesas na praça — preço de vitrine."
+        }
+      ]
+    },
+    {
+      "data": "2026-10-20",
+      "destinoId": "roma",
+      "titulo": "Roma sem hora",
+      "resumo": "mercado de Testaccio · Trastevere · Gianicolo",
+      "icone": "market",
+      "cortavel": true,
+      "opcaoA": "Roma sem hora",
+      "momentos": [
+        [
+          "10h",
+          "Mercato di Testaccio"
+        ],
+        [
+          "tarde",
+          "Trastevere sem plano"
+        ],
+        [
+          "ou",
+          "Pompeia, o dia inteiro"
+        ]
+      ],
+      "notas": "O dia de folga que o ritmo pede. A opção B troca tudo isso por Pompeia: dia inteiro, ≈ €65 por pessoa, decidir até 12/10.",
+      "blocos": [
+        {
+          "id": "r17",
+          "hora": "10:00",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Mercato di Testaccio: Mordi e Vai (sanduíche de allesso)",
+          "lat": 41.8776,
+          "lon": 12.4733,
+          "custo": {
+            "valor": 8,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Mercado fecha às 15h e não abre domingo. O box 15 é o Mordi e Vai; fila anda rápido."
+        },
+        {
+          "id": "r18",
+          "hora": "12:00",
+          "duracaoMin": 180,
+          "tipo": "livre",
+          "titulo": "Trastevere sem plano: Santa Cecilia, vielas, sesta",
+          "lat": 41.8896,
+          "lon": 12.4705
+        },
+        {
+          "id": "r19",
+          "hora": "17:30",
+          "duracaoMin": 60,
+          "tipo": "atracao",
+          "titulo": "Subida ao Gianicolo para o pôr do sol sobre Roma"
+        },
+        {
+          "id": "r20",
+          "hora": "20:00",
+          "duracaoMin": 120,
+          "tipo": "refeicao",
+          "titulo": "Jantar de despedida de Roma: pizza romana fina",
+          "lat": 41.8896,
+          "lon": 12.4705,
+          "custo": {
+            "valor": 22,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        }
+      ],
+      "opcaoB": {
+        "rotulo": "Bate-volta a Pompeia",
+        "blocos": [
+          {
+            "id": "p1",
+            "hora": "07:30",
+            "duracaoMin": 75,
+            "tipo": "deslocamento",
+            "titulo": "Frecciarossa Roma Termini → Napoli Centrale",
+            "lat": 41.8996,
+            "lon": 12.5062,
+            "custo": {
+              "valor": 20,
+              "moeda": "EUR",
+              "por": "pessoa"
+            },
+            "notas": "Comprar antecipado; na hora custa o dobro."
+          },
+          {
+            "id": "p2",
+            "hora": "09:00",
+            "duracaoMin": 40,
+            "tipo": "deslocamento",
+            "titulo": "Circumvesuviana Napoli → Pompei Scavi (€3,20)",
+            "custo": {
+              "valor": 4,
+              "moeda": "EUR",
+              "por": "pessoa"
+            },
+            "notas": "Plataforma da Circumvesuviana fica no subsolo de Garibaldi; guarde a carteira no bolso da frente."
+          },
+          {
+            "id": "p3",
+            "hora": "10:00",
+            "duracaoMin": 270,
+            "tipo": "atracao",
+            "titulo": "Pompeia — entrada 10h, até as 15h",
+            "lat": 40.75,
+            "lon": 14.4761,
+            "custo": {
+              "valor": 20,
+              "moeda": "EUR",
+              "por": "pessoa"
+            },
+            "reservaNecessaria": true,
+            "link": "https://pompeiisites.org",
+            "notas": "Nominativo. Casa dos Vettii, Vila dos Mistérios e o Fórum; tênis, água, chapéu."
+          },
+          {
+            "id": "p4",
+            "hora": "16:00",
+            "duracaoMin": 120,
+            "tipo": "deslocamento",
+            "titulo": "Volta: Circumvesuviana + Frecciarossa",
+            "custo": {
+              "valor": 24,
+              "moeda": "EUR",
+              "por": "pessoa"
+            }
+          },
+          {
+            "id": "p5",
+            "hora": "20:00",
+            "duracaoMin": 90,
+            "tipo": "refeicao",
+            "titulo": "Jantar tarde em Monti",
+            "custo": {
+              "valor": 25,
+              "moeda": "EUR",
+              "por": "pessoa"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": "2026-10-21",
+      "destinoId": "florenca",
+      "titulo": "Trem e o outro lado do Arno",
+      "resumo": "Frecciarossa 9h · Ponte Vecchio · Santo Spirito",
+      "icone": "train",
+      "momentos": [
+        [
+          "9h",
+          "Termini → SMN"
+        ],
+        [
+          "15h",
+          "Ponte Vecchio"
+        ],
+        [
+          "20h",
+          "trattoria em Santo Spirito"
+        ]
+      ],
+      "notas": "Quarta é dia de trem de propósito: Uffizi e Accademia fecham segunda, então Florença fica de quarta a sábado.",
+      "blocos": [
+        {
+          "id": "f1",
+          "hora": "09:00",
+          "duracaoMin": 95,
+          "tipo": "deslocamento",
+          "titulo": "Italo / Frecciarossa Roma Termini → Firenze SMN",
+          "lat": 41.8996,
+          "lon": 12.5062,
+          "custo": {
+            "valor": 25,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "reservaNecessaria": true,
+          "link": "https://www.italotreno.com",
+          "notas": "Lado esquerdo pega os campos da Toscana na chegada."
+        },
+        {
+          "id": "f2",
+          "hora": "11:00",
+          "duracaoMin": 60,
+          "tipo": "deslocamento",
+          "titulo": "SMN → Oltrarno a pé (15 min) e check-in",
+          "lat": 43.7776,
+          "lon": 11.2474
+        },
+        {
+          "id": "f3",
+          "hora": "13:00",
+          "duracaoMin": 60,
+          "tipo": "refeicao",
+          "titulo": "Lampredotto ou schiacciata num balcão do Oltrarno",
+          "lat": 43.7667,
+          "lon": 11.2477,
+          "custo": {
+            "valor": 7,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "f4",
+          "hora": "15:00",
+          "duracaoMin": 120,
+          "tipo": "livre",
+          "titulo": "Ponte Vecchio, Via de' Tornabuoni e o centro sem entrar em nada",
+          "lat": 43.768,
+          "lon": 11.2532
+        },
+        {
+          "id": "f5",
+          "hora": "20:00",
+          "duracaoMin": 120,
+          "tipo": "refeicao",
+          "titulo": "Trattoria na Piazza Santo Spirito: ribollita, pappa al pomodoro",
+          "lat": 43.7667,
+          "lon": 11.2477,
+          "custo": {
+            "valor": 30,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "A praça fica viva à noite; sente do lado da igreja."
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "destinoId": "florenca",
+      "titulo": "Uffizi e o Piazzale",
+      "resumo": "Uffizi 8h15 · Mercato Centrale · pôr do sol lá de cima",
+      "icone": "museum",
+      "momentos": [
+        [
+          "8h15",
+          "Uffizi, primeira entrada"
+        ],
+        [
+          "13h",
+          "Mercato Centrale"
+        ],
+        [
+          "18h",
+          "Piazzale Michelangelo"
+        ]
+      ],
+      "notas": "Uffizi na primeira entrada: três horas com Botticelli sem cotovelo. Depois, o dia desce o ritmo.",
+      "blocos": [
+        {
+          "id": "f6",
+          "hora": "08:15",
+          "duracaoMin": 180,
+          "tipo": "atracao",
+          "titulo": "Galleria degli Uffizi — entrada 8h15",
+          "lat": 43.7683,
+          "lon": 11.2558,
+          "custo": {
+            "valor": 29,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "reservaNecessaria": true,
+          "link": "https://www.uffizi.it",
+          "notas": "Última entrada 17h30. Suba direto ao segundo andar (salas 10–14, Botticelli) e desça depois.",
+          "alternativa": "O ingresso da tarde (após 16h) é mais barato; se chover de manhã, troque e faça o Duomo por fora antes."
+        },
+        {
+          "id": "f7",
+          "hora": "12:00",
+          "duracaoMin": 60,
+          "tipo": "atracao",
+          "titulo": "Duomo e Batistério por fora, Campanário de Giotto",
+          "lat": 43.7731,
+          "lon": 11.2566,
+          "notas": "Entrar no Duomo é grátis mas a fila come uma hora; a cúpula exige reserva e 463 degraus."
+        },
+        {
+          "id": "f8",
+          "hora": "13:00",
+          "duracaoMin": 75,
+          "tipo": "refeicao",
+          "titulo": "Mercato Centrale (andar de cima) ou All'Antico Vinaio",
+          "lat": 43.7766,
+          "lon": 11.2532,
+          "custo": {
+            "valor": 12,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "f9",
+          "hora": "15:00",
+          "duracaoMin": 120,
+          "tipo": "livre",
+          "titulo": "Sesta, ou San Lorenzo e o mercado de couro"
+        },
+        {
+          "id": "f10",
+          "hora": "17:45",
+          "duracaoMin": 60,
+          "tipo": "atracao",
+          "titulo": "Piazzale Michelangelo ao pôr do sol",
+          "lat": 43.7628,
+          "lon": 11.265,
+          "notas": "Sobe-se em 15 min de San Niccolò. Pôr do sol às 18h15; leve uma garrafa de vinho.",
+          "alternativa": "Com chuva, San Miniato al Monte, dois minutos acima, tem vésperas cantadas às 17h30."
+        },
+        {
+          "id": "f11",
+          "hora": "20:00",
+          "duracaoMin": 120,
+          "tipo": "refeicao",
+          "titulo": "Jantar em San Frediano",
+          "custo": {
+            "valor": 32,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        }
+      ]
+    },
+    {
+      "data": "2026-10-23",
+      "destinoId": "florenca",
+      "titulo": "David e o mercado",
+      "resumo": "Accademia 8h15 · Sant'Ambrogio · jantar de despedida",
+      "icone": "camera",
+      "momentos": [
+        [
+          "8h15",
+          "Accademia"
+        ],
+        [
+          "12h30",
+          "Mercato di Sant'Ambrogio"
+        ],
+        [
+          "20h",
+          "bistecca de despedida"
+        ]
+      ],
+      "notas": "Dia leve. O David leva meia hora; o resto do dia é comida e caminhada.",
+      "blocos": [
+        {
+          "id": "f12",
+          "hora": "08:15",
+          "duracaoMin": 75,
+          "tipo": "atracao",
+          "titulo": "Galleria dell'Accademia — o David",
+          "lat": 43.7769,
+          "lon": 11.2588,
+          "custo": {
+            "valor": 20,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "reservaNecessaria": true,
+          "notas": "Fecha segunda. A sala do David fica no fundo à esquerda; vá direto e depois volte aos Prisioneiros."
+        },
+        {
+          "id": "f13",
+          "hora": "10:00",
+          "duracaoMin": 90,
+          "tipo": "livre",
+          "titulo": "Santa Croce por fora e as vielas de Sant'Ambrogio"
+        },
+        {
+          "id": "f14",
+          "hora": "12:30",
+          "duracaoMin": 75,
+          "tipo": "refeicao",
+          "titulo": "Mercato di Sant'Ambrogio: almoço no balcão",
+          "lat": 43.7705,
+          "lon": 11.2668,
+          "custo": {
+            "valor": 12,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "O mercado dos florentinos, sem turista. Fecha às 14h."
+        },
+        {
+          "id": "f15",
+          "hora": "15:00",
+          "duracaoMin": 150,
+          "tipo": "livre",
+          "titulo": "Tarde livre: Giardino Bardini (€10) ou gelato e sesta",
+          "alternativa": "Chovendo, Palazzo Pitti cobre a tarde inteira."
+        },
+        {
+          "id": "f16",
+          "hora": "20:00",
+          "duracaoMin": 120,
+          "tipo": "refeicao",
+          "titulo": "Jantar de despedida: bistecca alla fiorentina para dois",
+          "lat": 43.7667,
+          "lon": 11.2477,
+          "custo": {
+            "valor": 40,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Pede-se por peso, 1 kg para dois. É o gasto de comida que vale a viagem."
+        }
+      ]
+    },
+    {
+      "data": "2026-10-24",
+      "destinoId": "florenca",
+      "titulo": "Volta por Pisa",
+      "resumo": "trem 11h30 · voo 16h",
+      "icone": "suitcase",
+      "momentos": [
+        [
+          "9h",
+          "café na praça"
+        ],
+        [
+          "11h30",
+          "SMN → Pisa Aeroporto"
+        ],
+        [
+          "16h",
+          "voo para o Porto"
+        ]
+      ],
+      "notas": "Meio dia. Café sem pressa, uma última volta, e o regional para Pisa com folga.",
+      "blocos": [
+        {
+          "id": "f17",
+          "hora": "09:00",
+          "duracaoMin": 90,
+          "tipo": "refeicao",
+          "titulo": "Café da manhã longo na Piazza Santo Spirito",
+          "lat": 43.7667,
+          "lon": 11.2477,
+          "custo": {
+            "valor": 6,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        },
+        {
+          "id": "f18",
+          "hora": "11:30",
+          "duracaoMin": 75,
+          "tipo": "deslocamento",
+          "titulo": "Regional Firenze SMN → Pisa Centrale + PisaMover",
+          "lat": 43.7776,
+          "lon": 11.2474,
+          "custo": {
+            "valor": 12,
+            "moeda": "EUR",
+            "por": "pessoa"
+          },
+          "notas": "Compre no app Trenitalia. Em Pisa Centrale, o PisaMover (€5) leva 5 min ao aeroporto."
+        },
+        {
+          "id": "f19",
+          "hora": "16:00",
+          "duracaoMin": 160,
+          "tipo": "deslocamento",
+          "titulo": "Voo Ryanair Pisa → Porto",
+          "lat": 43.6848,
+          "lon": 10.3955,
+          "custo": {
+            "valor": 75,
+            "moeda": "EUR",
+            "por": "pessoa"
+          }
+        }
+      ]
+    }
+  ],
+  "orcamento": {
+    "teto": {
+      "valor": 2000,
+      "moeda": "EUR"
+    },
+    "tetoPor": "total",
+    "margemCartao": 0,
+    "cambioReferencia": [],
+    "categorias": [
+      {
+        "id": "voos",
+        "nome": "Voos",
+        "previsto": 340,
+        "economico": 240,
+        "real": null,
+        "observacao": "Ryanair OPO→FCO e PSA→OPO para 2, cotado a 5 semanas com uma mala de 10 kg cada. Econômico: só bagagem de mão."
+      },
+      {
+        "id": "hospedagem",
+        "nome": "Hospedagem",
+        "previsto": 885,
+        "economico": 745,
+        "real": null,
+        "observacao": "4 noites B&B em Monti (≈ €120) + 3 em Oltrarno (≈ €135). Econômico: quarto em apartamento a €100/€115."
+      },
+      {
+        "id": "taxa-turismo",
+        "nome": "Taxa de turismo",
+        "previsto": 76,
+        "economico": 76,
+        "real": null,
+        "observacao": "Roma €5 e Florença €6 por pessoa por noite, no check-in."
+      },
+      {
+        "id": "alimentacao",
+        "nome": "Alimentação",
+        "previsto": 520,
+        "economico": 520,
+        "real": null,
+        "intocavel": true,
+        "observacao": "€65 por dia para o casal: bar de manhã, mercado ao meio-dia, trattoria à noite. Comer bem é o motivo da viagem — não corta."
+      },
+      {
+        "id": "transporte-local",
+        "nome": "Transporte local",
+        "previsto": 126,
+        "economico": 100,
+        "real": null,
+        "observacao": "FL1 do aeroporto, ATAC, Roma→Florença antecipado, Florença→Pisa. Econômico: Italo Low Cost."
+      },
+      {
+        "id": "atracoes",
+        "nome": "Atrações",
+        "previsto": 194,
+        "economico": 176,
+        "real": null,
+        "intocavel": true,
+        "observacao": "Coliseu, Vaticano, Uffizi, Accademia, Pantheon para 2. Econômico: Uffizi no ingresso da tarde."
+      },
+      {
+        "id": "extras",
+        "nome": "Extras e compras",
+        "previsto": 100,
+        "economico": 60,
+        "real": null,
+        "observacao": "Teto assumido — diga o seu. Pompeia, se entrar, são +€130 aqui."
+      }
+    ],
+    "reserva": {
+      "valor": 200,
+      "moeda": "EUR",
+      "percentual": 10
+    }
+  },
+  "bagagem": [
+    {
+      "categoria": "Documentos",
+      "itens": [
+        "Passaporte ou cartão de cidadão",
+        "Título de residência (se não for da UE)",
+        "Cartão Europeu de Seguro de Doença",
+        "Ingressos do Coliseu, Vaticano e Uffizi no celular e impressos"
+      ]
+    },
+    {
+      "categoria": "Roupa (outono, 11–22 °C)",
+      "itens": [
+        "Casaco leve impermeável",
+        "Camadas para sobrepor",
+        "Tênis de caminhada já amaciado",
+        "Guarda-chuva dobrável",
+        "Uma roupa com ombros e joelhos cobertos para o Vaticano"
+      ]
+    },
+    {
+      "categoria": "Eletrônicos",
+      "itens": [
+        "Carregador (tomada igual à de Portugal)",
+        "Power bank",
+        "Fone"
+      ]
+    },
+    {
+      "categoria": "Dinheiro",
+      "itens": [
+        "Cartão por aproximação (metrô de Roma)",
+        "€100 em notas pequenas: taxa de turismo e mercado",
+        "Cartão reserva guardado separado"
+      ]
+    },
+    {
+      "categoria": "Saúde",
+      "itens": [
+        "Analgésico",
+        "Curativo para bolha — Roma são 15 km por dia"
+      ]
+    }
+  ],
+  "gastronomia": [
+    {
+      "nome": "Mordi e Vai — Mercato di Testaccio",
+      "destinoId": "roma",
+      "tipo": "balcão de mercado",
+      "lat": 41.8776,
+      "lon": 12.4733,
+      "faixaPreco": "$",
+      "porque": "Sanduíche de allesso por €5, no mercado onde os romanos compram."
+    },
+    {
+      "nome": "Trattoria em Trastevere, duas ruas para dentro",
+      "destinoId": "roma",
+      "tipo": "trattoria",
+      "lat": 41.8896,
+      "lon": 12.4705,
+      "faixaPreco": "$$",
+      "porque": "Cacio e pepe, carbonara e amatriciana — os três clássicos, a €12–14 o prato."
+    },
+    {
+      "nome": "Ghetto: carciofo alla giudia",
+      "destinoId": "roma",
+      "tipo": "trattoria",
+      "lat": 41.8955,
+      "lon": 12.4722,
+      "faixaPreco": "$$",
+      "porque": "Alcachofra frita inteira, receita judaico-romana; outubro é começo de temporada."
+    },
+    {
+      "nome": "Mercato Centrale — andar de cima",
+      "destinoId": "florenca",
+      "tipo": "mercado",
+      "lat": 43.7766,
+      "lon": 11.2532,
+      "faixaPreco": "$",
+      "porque": "Dez balcões sob o mesmo teto: lampredotto, pasta fresca, trufa."
+    },
+    {
+      "nome": "Mercato di Sant'Ambrogio",
+      "destinoId": "florenca",
+      "tipo": "mercado",
+      "lat": 43.7705,
+      "lon": 11.2668,
+      "faixaPreco": "$",
+      "porque": "O mercado dos florentinos: almoço no balcão, sem turista, fecha às 14h."
+    },
+    {
+      "nome": "Trattoria na Piazza Santo Spirito",
+      "destinoId": "florenca",
+      "tipo": "trattoria",
+      "lat": 43.7667,
+      "lon": 11.2477,
+      "faixaPreco": "$$",
+      "porque": "Ribollita, pappa al pomodoro e a bistecca do último jantar."
+    }
+  ],
+  "frases": [
+    {
+      "pt": "Bom dia / boa noite",
+      "local": "Buongiorno / Buonasera",
+      "leitura": null
+    },
+    {
+      "pt": "Uma mesa para dois, por favor",
+      "local": "Un tavolo per due, per favore",
+      "leitura": null
+    },
+    {
+      "pt": "A conta, por favor",
+      "local": "Il conto, per favore",
+      "leitura": null
+    },
+    {
+      "pt": "Quanto custa?",
+      "local": "Quanto costa?",
+      "leitura": null
+    },
+    {
+      "pt": "Um café (expresso, no balcão)",
+      "local": "Un caffè, al banco",
+      "leitura": "no balcão custa metade da mesa"
+    },
+    {
+      "pt": "Sem coentro / sou alérgico a…",
+      "local": "Senza coriandolo / sono allergico a…",
+      "leitura": null
+    }
+  ],
+  "links": [
+    {
+      "titulo": "Coliseu — bilheteria oficial (CoopCulture)",
+      "url": "https://ticketing.colosseo.it",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Museus Vaticanos — site oficial",
+      "url": "https://www.museivaticani.va",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Uffizi — site oficial",
+      "url": "https://www.uffizi.it",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Pompeia — Parco Archeologico",
+      "url": "https://pompeiisites.org",
+      "categoria": "reservas"
+    },
+    {
+      "titulo": "Italo — trens",
+      "url": "https://www.italotreno.com",
+      "categoria": "transporte"
+    },
+    {
+      "titulo": "Trenitalia — trens e regional para Pisa",
+      "url": "https://www.trenitalia.com",
+      "categoria": "transporte"
+    },
+    {
+      "titulo": "Ryanair",
+      "url": "https://www.ryanair.com/pt/pt",
+      "categoria": "transporte"
+    },
+    {
+      "titulo": "Horários dos museus de Florença 2026",
+      "url": "https://www.european-traveler.com/italy/florence-new-opening-hours-of-top-sights-museums-and-churches/",
+      "categoria": "guia"
+    }
+  ],
+  "avisos": [
+    {
+      "nivel": "critico",
+      "texto": "Coliseu abre a venda em 18/9 às 7h45 (hora de Lisboa) para o dia 18/10. Conta criada e página aberta às 7h40; esgota em minutos."
+    },
+    {
+      "nivel": "atencao",
+      "texto": "Uffizi e Accademia fecham segunda; Museus Vaticanos fecham domingo. A ordem dos dias já respeita isso — não troque Florença e Roma de lugar."
+    },
+    {
+      "nivel": "atencao",
+      "texto": "Florença em outubro chove metade dos dias. Os dias ao ar livre têm plano B no roteiro."
+    },
+    {
+      "nivel": "info",
+      "texto": "Taxa de turismo se paga no check-in, às vezes só em dinheiro: €40 em Roma, €36 em Florença para o casal."
+    },
+    {
+      "nivel": "info",
+      "texto": "O relógio muda em 25/10, um dia depois da volta — nenhum horário do roteiro é afetado."
+    }
+  ]
+}

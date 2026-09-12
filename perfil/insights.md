@@ -49,8 +49,18 @@ corrigiu: mora em Portugal e gasta em euro.
   ele disse, nunca por inferência de idioma ou de contexto.
 - Contexto fixo → Portugal, EUR, Europe/Lisbon; companhia em casal.
 
+**Segunda rodada (mesma sessão)**
+- Escolheu "outubro de 2026" digitando o ano corrente numa opção que dizia
+  2027: viaja logo, não daqui a um ano. Cinco semanas de antecedência.
+- Manteve o teto de €2.000 quando ofereci subir; tirou Veneza; deixou Pompeia
+  como opção B para decidir na hora. Padrão: cabe no dinheiro primeiro,
+  ambição depois.
+- Interesses escolhidos: história antiga, museus e arte, comer bem — os três
+  de ingresso/reserva. Ritmo com folga.
+
 **Perguntas que não precisei fazer**
-- Nenhuma ainda — perfil estava vazio. A partir daqui: companhia, moeda e
-  fuso não se perguntam mais.
+- Nenhuma ainda — perfil estava vazio. A partir daqui: companhia, moeda,
+  fuso, aeroporto, ritmo, interesses e faixa de orçamento não se perguntam
+  mais. O próximo briefing deve ter uma rodada, não quatro.
 
 ---

@@ -45,7 +45,8 @@ Cada afirmação carrega o quanto se pode confiar nela:
 - História antiga: ruínas, sítios arqueológicos. (provável — briefing Itália)
 - Museus e arte, aceita ingresso com hora marcada. (provável — briefing Itália)
 - Comer bem: trattoria, mercado, vinho — pediu explicitamente. (provável — briefing Itália)
-- Prefere ver épocas comparadas antes de fixar data. (hipótese)
+- Prefere ver épocas comparadas antes de fixar data — e escolheu a mais
+  próxima, não a mais barata: viaja logo, com o que dá. (provável)
 
 ## Antipreferências
 
@@ -55,8 +56,10 @@ economiza rodadas inteiras de sugestão descartada._
 ## Orçamento
 
 - Faixa: escolheu o teto mais baixo oferecido (€2.000 para o casal, 8 dias,
-  Europa). Viaja econômico e prefere mais viagens a viagens caras. (hipótese —
-  uma só escolha)
+  Europa) e o manteve quando ofereci subir. Viaja econômico e prefere mais
+  viagens a viagens caras. (provável)
+- Aceita cortar cidade (Veneza) para caber no teto, e prefere deixar o extra
+  caro (Pompeia) como opção decidida na hora. (provável)
 - Onde aceita gastar mais: _a descobrir_
 - Onde corta sem dó: _a descobrir_
 - Usa milhas / pontos? _a descobrir_
